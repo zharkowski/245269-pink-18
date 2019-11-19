@@ -36,8 +36,8 @@
         <p class="cards__slogan">Взгляните на фотографии, которые выкладывают пользователи!</p>
         <p class="cards__slogan">Видите, как не хватает ваших?</p>
         <ul class="cards__list">
-          <li class="cards__item item item--panorama-of-the-day">
-            <article class="item__post-content post-content">
+          <li class="cards__item cards__item--panorama-of-the-day">
+            <article class="cards__post-content post-content">
               <a href="#" class="post-content__photo-link">
                 <img class="post-content__photo" src="https://via.placeholder.com/320x137" width="320" height="137" alt="Панорамный вид на холмы с моста.">
               </a>
@@ -46,8 +46,8 @@
               <p class="post-content__likes">Нравится: 215</p>
             </article>
           </li>
-          <li class="cards__item item">
-            <article class="item__post-content post-content">
+          <li class="cards__item">
+            <article class="cards__post-content post-content">
               <a href="#" class="post-content__photo-link">
                 <img class="post-content__photo" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Белая машина у темной стены и штатив для камеры на переднем плане.">
               </a>
@@ -56,8 +56,8 @@
               <p class="post-content__likes">Нравится: 356</p>
             </article>
           </li>
-          <li class="cards__item item">
-            <article class="item__post-content post-content">
+          <li class="cards__item">
+            <article class="cards__post-content post-content">
               <a href="#" class="post-content__photo-link">
                 <img class="post-content__photo" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Барабанная установка с подключенными микрофонами.">
               </a>
@@ -66,8 +66,8 @@
               <p class="post-content__likes">Нравится: 666</p>
             </article>
           </li>
-          <li class="cards__item item">
-            <article class="item__post-content post-content">
+          <li class="cards__item">
+            <article class="cards__post-content post-content">
               <a href="#" class="post-content__photo-link">
                 <img class="post-content__photo" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Вид неба через прозрачную крышу небоскреба.">
               </a>
@@ -76,8 +76,8 @@
               <p class="post-content__likes">Нравится: 215</p>
             </article>
           </li>
-          <li class="cards__item item">
-            <article class="item__post-content post-content">
+          <li class="cards__item">
+            <article class="cards__post-content post-content">
               <a href="#" class="post-content__photo-link">
                 <img class="post-content__photo" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Продажа дынь и арбусов на кубанской бахче.">
               </a>
@@ -86,8 +86,8 @@
               <p class="post-content__likes">Нравится: 4</p>
             </article>
           </li>
-          <li class="cards__item item">
-            <article class="item__post-content post-content">
+          <li class="cards__item">
+            <article class="cards__post-content post-content">
               <a href="#" class="post-content__photo-link">
                 <img class="post-content__photo" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Вид с вершины горы вниз с ногами фотографирующего.">
               </a>
@@ -96,8 +96,8 @@
               <p class="post-content__likes">Нравится: 150</p>
             </article>
           </li>
-          <li class="cards__item item">
-            <article class="item__post-content post-content">
+          <li class="cards__item">
+            <article class="cards__post-content post-content">
               <a href="#" class="post-content__photo-link">
                 <img class="post-content__photo" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Крыло самолета в воздухе на фоне яркого Солнца.">
               </a>
@@ -112,33 +112,31 @@
       <section class="upload">
         <p class="upload__slogan">Затмите их всех!</p>
         <p class="upload__slogan">Выкладывайте все, что накопилось в телефоне!</p>
-        <div class="upload__editing editing">
-          <img src="https://via.placeholder.com/280x374" alt="Заснеженная дорога в лесу">
-          <form class="editing__form" action="https://echo.htmlacademy.ru" method="post">
-            <ul class="editing__list">
-              <li class="editing__element editing__element--crop">
-                <label class="editing__label editing__label--crop">
-                  Размер
-                  <input class="editing__input editing__input--crop" name="crop-value" type="range">
-                </label>
-              </li>
-              <li class="editing__element editing__element--fill">
-                <label class="editing__label editing__label--fill">
-                  Заливка
-                  <input class="editing__input editing__input--fill" name="fill-value" type="range">
-                </label>
-              </li>
-              <li class="editing__element editing__element--contrast">
-                <label class="editing__label editing__label--contrast">
-                  Контрастность
-                  <input class="editing__input editing__input--contrast" name="contrast-value" type="range">
-                </label>
-              </li>
-            </ul>
-            <button class="editing__button editing__button--post button" type="submit">Запостить</button>
-            <button class="editing__button editing__button--cancel button" type="reset">Отмена</button>
-          </form>
-        </div>
+        <form class="upload__editing editing" action="https://echo.htmlacademy.ru" method="post">
+          <img class="editing__photo" src="https://via.placeholder.com/280x374" alt="Заснеженная дорога в лесу">
+          <ul class="editing__list">
+            <li class="editing__element editing__element--crop">
+              <label class="editing__label">
+                Размер
+                <input class="editing__input" name="crop-value" type="range">
+              </label>
+            </li>
+            <li class="editing__element editing__element--fill">
+              <label class="editing__label">
+                Заливка
+                <input class="editing__input" name="fill-value" type="range">
+              </label>
+            </li>
+            <li class="editing__element editing__element--contrast">
+              <label class="editing__label">
+                Контрастность
+                <input class="editing__input" name="contrast-value" type="range">
+              </label>
+            </li>
+          </ul>
+          <button class="editing__button editing__button--post button" type="submit">Запостить</button>
+          <button class="editing__button editing__button--cancel button" type="reset">Отмена</button>
+        </form>
       </section>
     </main>
 
