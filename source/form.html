@@ -6,30 +6,82 @@
   </head>
   <body>
     <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="https://via.placeholder.com/75x22" width="75" height="22" alt="Логотип Пинка">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a href="index.html">Главная</a>
-        </li>
-        <li class="site-list__item site-list__item--current">
-          <a href="photo.html">Фотографии</a>
-        </li>
-        <li class="site-list__item">
-          <a>Конкурс</a>
-        </li>
-        <li class="site-list__item">
-          <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="https://via.placeholder.com/75x22" width="75" height="22" alt="Логотип Пинка">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item site-list__item--current">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a>Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
     <main class="page-main">
       <h1 class="page-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+
+      <section class="competition">
+        <p class="competition__slogan">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+        <form class="competition__form form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="form__name">
+            <label for="second-name">Фамилия</label>
+            <input id="second-name" type="text" name="second-name" placeholder="Укажите фамилию *" required>
+            <label for="first-name">Имя</label>
+            <input id="first-name" type="text" name="first-name" placeholder="Введите ваше имя *" required>
+            <label for="patronymic">Отчество</label>
+            <input id="patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже">
+          </fieldset>
+          <fieldset class="form__achievements">
+            <legend>Ваши безбашенные достижения в путешествии</legend>
+            <input id="selfie-with-a-shark" type="checkbox" name="selfie-with-a-shark" checked>
+            <label for="selfie-with-a-shark">Сделал селфи с акулой</label>
+            <input id="sunburned-on-the-beach" type="checkbox" name="sunburned-on-the-beach" checked>
+            <label for="sunburned-on-the-beach">Обгорел на пляже</label>
+            <input id="saw-chuck-norris" type="checkbox" name="saw-chuck-norris">
+            <label for="saw-chuck-norris">Видел Чака Норриса</label>
+            <input id="bought-souvenirs" type="checkbox" name="bought-souvenirs">
+            <label for="bought-souvenirs">Накупил сувениров</label>
+            <input id="held-the-tower" type="checkbox" name="held-the-tower" checked>
+            <label for="held-the-tower">Удержал башню</label>
+            <input id="defeated-the-hotel" type="checkbox" name="defeated-the-hotel">
+            <label for="defeated-the-hotel">Разгромил отель</label>
+          </fieldset>
+          <fieldset class="form__contacts">
+            <label for="phone-number">Номер телефона</label>
+            <input id="phone-number" type="tel" name="user-phone-number" placeholder="Номер, пожалуйста">
+            <label for="email">Адрес почты</label>
+            <input id="email" type="email" name="user-email" placeholder="Введите почту *" required>
+          </fieldset>
+          <fieldset class="form__mobile-platform">
+            <legend>С каким приложением путешествовали?</legend>
+            <input id="ios" type="radio" name="mobile-platform" checked>
+            <label for="ios">Pink для iOS</label>
+            <input id="android" type="radio" name="mobile-platform">
+            <label for="android">Pink на Android</label>
+            <input id="windows-phone" type="radio" name="mobile-platform">
+            <label for="windows-phone">Windows Phone</label>
+          </fieldset>
+          <fieldset class="form__message">
+            <label for="message">Опишите свои эмоции</label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </fieldset>
+          <button class="form__button" type="submit">Отправить форму</button>
+          <small class="form__legend">
+            <sup>*</sup> — обязательные поля
+          </small>
+        </form>
+      </section>
     </main>
 
     <footer class="page-footer">
