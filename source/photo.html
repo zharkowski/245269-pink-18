@@ -115,18 +115,24 @@
         <div class="upload__editing editing">
           <img src="https://via.placeholder.com/280x374" alt="Заснеженная дорога в лесу">
           <form class="editing__form" action="https://echo.htmlacademy.ru" method="post">
-            <ul class="editing__instruments instruments">
-              <li class="instruments__element instruments__element--crop">
-                <label for="upload__crop">Размер</label>
-                <input id="upload__crop" name="crop-value" type="range">
+            <ul class="editing__list">
+              <li class="editing__element editing__element--crop">
+                <label class="editing__label editing__label--crop">
+                  Размер
+                  <input class="editing__input editing__input--crop" name="crop-value" type="range">
+                </label>
               </li>
-              <li class="instruments__element instruments__element--fill">
-                <label for="upload__fill">Заливка</label>
-                <input id="upload__fill" name="fill-value" type="range">
+              <li class="editing__element editing__element--fill">
+                <label class="editing__label editing__label--fill">
+                  Заливка
+                  <input class="editing__input editing__input--fill" name="fill-value" type="range">
+                </label>
               </li>
-              <li class="instruments__element instruments__element--contrast">
-                <label for="upload__contrast">Контрастность</label>
-                <input id="upload__contrast" name="contrast-value" type="range">
+              <li class="editing__element editing__element--contrast">
+                <label class="editing__label editing__label--contrast">
+                  Контрастность
+                  <input class="editing__input editing__input--contrast" name="contrast-value" type="range">
+                </label>
               </li>
             </ul>
             <button class="editing__button editing__button--post button" type="submit">Запостить</button>
