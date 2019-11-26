@@ -1,0 +1,30 @@
+.site-list {
+
+  &__item {
+    //---временно для сетки
+    padding: 16px;
+    //---
+    text-align: center;
+    vertical-align: center;
+
+    box-shadow: 0 1px 0 0 $black, inset 0 1px 0 0 rgba($white, 0.15);
+  }
+
+  &__item a {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    color: $white;
+    text-decoration: none;
+  }
+
+  &__item:hover a {
+    color: $pink;
+  }
+
+  &__item:active a {
+    opacity: 0.3;
+  }
+}

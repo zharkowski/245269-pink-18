@@ -1,0 +1,32 @@
+.reviews {
+  text-align: center;
+
+  padding-left: 20px;
+  padding-right: 20px;
+
+  background-color: $white;
+
+  &__item {
+    margin: 0;
+    margin-top: 50px;
+  }
+
+  &__user-name {
+    font-family: $OpenSans;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 30px;
+    color: $black;
+  }
+
+  &__text {
+    font-family: $OpenSans;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 30px;
+    letter-spacing: 0;
+    color: $blue--dark;
+  }
+}

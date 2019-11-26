@@ -1,0 +1,43 @@
+.post-content {
+  &__text {
+    padding-top: 25px;
+    padding-right: 18px;
+    padding-bottom: 26px;
+    padding-left: 18px;
+  }
+
+  &__user {
+    margin-top: 0;
+
+    font-family: $OpenSans;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    color: $blue--dark;
+  }
+
+  &__posting-time {
+    font-weight: 200;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  &__message {
+    font-family: $OpenSans;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: $blue--dark;
+  }
+
+  &__likes {
+    padding-left: 33px;
+
+    font-family: $OpenSans;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: $pink;
+  }
+}

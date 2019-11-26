@@ -1,0 +1,14 @@
+.inner-page-footer {
+  text-align: center;
+  background-color: $white;
+
+  &__logo {
+    width: 147px;
+    height: 40px;
+    margin: 40px auto;
+  }
+
+  &__copyright {
+    margin: 40px auto;
+  }
+}
