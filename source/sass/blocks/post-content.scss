@@ -1,4 +1,13 @@
 .post-content {
+  &__photo--panorama-of-the-day {
+    display: block;
+    width: 100vw;
+    height: auto;
+    position: relative;
+    top: 0;
+    left: calc(-50vw + 50%);
+  }
+
   &__text {
     padding-top: 25px;
     padding-right: 18px;

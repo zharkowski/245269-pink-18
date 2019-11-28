@@ -1,9 +1,5 @@
 .site-list {
-
   &__item {
-    //---временно для сетки
-    padding: 16px;
-    //---
     text-align: center;
     vertical-align: center;
 
@@ -16,15 +12,19 @@
     width: 100%;
     height: 100%;
 
-    color: $white;
+    color: $menu-mobile-color;
     text-decoration: none;
   }
 
   &__item:hover a {
-    color: $pink;
+    color: $menu-mobile-color--hover;
   }
 
   &__item:active a {
-    opacity: 0.3;
+    color: $menu-mobile-color--active;
+  }
+
+  &__link {
+    padding: 16px 0;
   }
 }

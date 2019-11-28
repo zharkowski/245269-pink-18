@@ -23,13 +23,4 @@
 
     background-color: $grey--light;
   }
-
-  &__item--panorama-of-the-day .post-content__photo {
-    display: block;
-    width: 100vw;
-    height: auto;
-    position: relative;
-    top: 0;
-    left: calc(-50vw + 50%);
-  }
 }

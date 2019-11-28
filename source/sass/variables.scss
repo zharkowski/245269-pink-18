@@ -6,3 +6,9 @@ $blue--dark: #283645;
 $grey--light: #f2f2f2;
 $pink: #d22856;
 
+$menu-mobile-color: $white;
+$menu-mobile-color--hover: $pink;
+$menu-mobile-color--active: rgba($pink, 0.3);
+$menu-desktop-color: $white;
+$menu-desktop-color--hover: $pink;
+$menu-desktop-color--active: rgba($white, 0.3);

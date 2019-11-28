@@ -1,6 +1,6 @@
 .page-header {
-
-  font-family: "OpenSans-Bold", "Arial", sans-serif;
+  font-family: $OpenSans;
+  font-weight: bold;
   font-size: 18px;
   line-height: 32px;
   letter-spacing: 0;
@@ -11,18 +11,10 @@
   background: $blue--dark;
 
   &__wrapper {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding: 21px 20px;
   }
 
-  &__logo-wrapper {
-    width: 75px;
-    height: 22px;
-    padding-top: 22px;
-  }
-
-  &__logo {
-
+  &__logo-link {
     display: block;
   }
 }

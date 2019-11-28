@@ -8,23 +8,25 @@
   <body class="photo-main">
     <div class="header-intro-wrapper header-intro-wrapper--inner-page">
       <header class="header-intro-wrapper__page-header page-header">
-        <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-image" src="https://via.placeholder.com/75x22" width="75" height="22" alt="Логотип Пинка.">
-        </a>
-        <nav class="main-nav">
+        <div class="page-header__wrapper">
+          <a class="page-header__logo-link" href="index.html">
+            <img class="page-header__logo-image" src="https://via.placeholder.com/75x22" width="75" height="22" alt="Логотип Пинка.">
+          </a>
           <button class="main-nav__toggle" type="button">Открыть меню</button>
+        </div>
+        <nav class="main-nav">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="index.html">Главная</a>
+              <a class="site-list__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item site-list__item--current">
-              <a>Фотографии</a>
+              <a class="site-list__link">Фотографии</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Конкурс</a>
+              <a class="site-list__link" href="form.html">Конкурс</a>
             </li>
             <li class="site-list__item">
-              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
         </nav>
@@ -44,7 +46,7 @@
             <article class="cards__post-content post-content">
               <h3 class="visually-hidden">Пост с фотографией</h3>
               <a href="#" class="post-content__photo-link">
-                <img class="post-content__photo" src="https://via.placeholder.com/320x137" width="320" height="137" alt="Панорамный вид на холмы с моста.">
+                <img class="post-content__photo post-content__photo--panorama-of-the-day" src="https://via.placeholder.com/320x137" width="320" height="137" alt="Панорамный вид на холмы с моста.">
               </a>
               <div class="post-content__text">
                 <p class="post-content__user">Анна <span class="post-content__posting-time">(5 минут назад)</span></p>
@@ -166,13 +168,11 @@
       </section>
     </main>
 
-    <footer class="inner-page-footer">
-      <div class="inner-page-footer__logo">
-        <a class="inner-page-footer__logo-link" href="index.html">
-          <img class="inner-page-footer__logo-image" src="https://via.placeholder.com/147x40" width="147" height="40" alt="Логотип Пинка.">
-        </a>
-      </div>
-      <div class="inner-page-footer__social social">
+    <footer class="page-footer">
+      <a class="page-footer__logo-link" href="index.html">
+        <img class="page-footer__logo-image" src="https://via.placeholder.com/147x40" width="147" height="40" alt="Логотип Пинка.">
+      </a>
+      <div class="page-footer__social social">
         <ul class="social__list list">
           <li class="social__item">
             <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Мы в Твиттере</a>
@@ -185,7 +185,7 @@
           </li>
         </ul>
       </div>
-      <div class="inner-page-footer__copyright copyright">
+      <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <img class="copyright__image" src="https://via.placeholder.com/27x34" alt="Логотип HTML Academy.">
