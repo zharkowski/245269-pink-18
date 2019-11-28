@@ -18,11 +18,11 @@
   &__user {
     margin-top: 0;
 
-    font-family: $OpenSans;
+    font-family: $default-font;
     font-weight: bold;
     font-size: 14px;
     line-height: 24px;
-    color: $blue--dark;
+    color: $text-color;
   }
 
   &__posting-time {
@@ -32,21 +32,21 @@
   }
 
   &__message {
-    font-family: $OpenSans;
+    font-family: $default-font;
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
-    color: $blue--dark;
+    color: $text-color;
   }
 
   &__likes {
     padding-left: 33px;
 
-    font-family: $OpenSans;
+    font-family: $default-font;
     font-weight: normal;
     font-size: 12px;
     line-height: 24px;
     text-transform: uppercase;
-    color: $pink;
+    color: $text-color--additional;
   }
 }

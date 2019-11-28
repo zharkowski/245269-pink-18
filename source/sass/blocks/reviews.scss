@@ -4,7 +4,7 @@
   padding-left: 20px;
   padding-right: 20px;
 
-  background-color: $white;
+  background-color: $background-color-main;
 
   &__item {
     margin: 0;
@@ -12,21 +12,21 @@
   }
 
   &__user-name {
-    font-family: $OpenSans;
+    font-family: $default-font;
     font-size: 18px;
     font-weight: bold;
     font-style: normal;
     line-height: 30px;
-    color: $black;
+    color: $heading-color;
   }
 
   &__text {
-    font-family: $OpenSans;
+    font-family: $default-font;
     font-size: 14px;
     font-weight: normal;
     font-style: normal;
     line-height: 30px;
     letter-spacing: 0;
-    color: $blue--dark;
+    color: $text-color;
   }
 }

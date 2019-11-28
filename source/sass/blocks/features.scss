@@ -10,28 +10,28 @@
     margin-top: 45px;
     margin-bottom: 120px;
 
-    font-family: $OpenSans;
+    font-family: $default-font;
     font-size: 24px;
     font-weight: 200;
-    color: $blue--dark;
+    color: $text-color;
   }
 
   &__title {
-    font-family: $OpenSans;
+    font-family: $default-font;
     font-size: 18px;
     line-height: 24px;
     font-weight: bold;
-    color: $black;
+    color: $heading-color;
   }
 
   &__text {
     margin-bottom: 40px;
 
-    font-family: $OpenSans;
+    font-family: $default-font;
     font-size: 14px;
     line-height: 24px;
     font-weight: normal;
-    color: $blue--dark;
+    color: $text-color;
   }
 
   &__picture {
@@ -50,6 +50,6 @@
     transform: rotate(-5deg);
 
     z-index: -1;
-    background-color: $grey--light;
+    background-color: $background-color-main--additional;
   }
 }

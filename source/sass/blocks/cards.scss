@@ -2,7 +2,7 @@
   padding-right: 20px;
   padding-left: 20px;
 
-  background-color: $white;
+  background-color: $background-color-main;
 
   &__slogan {
     text-align: center;
@@ -11,16 +11,16 @@
     margin-bottom: 56px;
     margin-left: 15px;
 
-    font-family: $OpenSans;
+    font-family: $default-font;
     font-weight: normal;
     font-size: 14px;
     line-height: 30px;
-    color: $blue--dark;
+    color: $text-color;
   }
 
   &__item {
     margin-bottom: 20px;
 
-    background-color: $grey--light;
+    background-color: $background-color-main--additional;
   }
 }

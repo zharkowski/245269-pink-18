@@ -1,10 +1,10 @@
 .copyright {
 
   &__text {
-    font-family: $OpenSans;
+    font-family: $default-font;
     font-weight: normal;
     font-size: 14px;
     line-height: 18px;
-    color: $blue--dark;
+    color: $text-color;
   }
 }

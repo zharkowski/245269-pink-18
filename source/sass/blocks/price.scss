@@ -18,7 +18,7 @@
     transform: rotate(-5deg);
 
     z-index: -1;
-    background-color: $grey--light;
+    background-color: $background-color-main--additional;
   }
 
   &__table-wrapper {
@@ -34,34 +34,34 @@
 
   &__element {
     padding: 14px 22px;
-    border: 2px solid $grey--light;
+    border: 2px solid $background-color-main--additional;
 
-    font-family: $OpenSans;
+    font-family: $default-font;
     font-weight: normal;
     font-size: 14px;
     line-height: 30px;
     text-transform: uppercase;
-    color: $blue--dark;
+    color: $text-color;
 
-    background-color: $white;
+    background-color: $background-color-main;
   }
 
   &__element--header {
-    color: $white;
-    border-top-color: $blue--dark;
+    color: $text-color--header;
+    border-top-color: $background-color-table-header;
     border-bottom: none;
 
-    background-color: $blue--dark;
+    background-color: $background-color-table-header;
   }
 
   &__tariff {
-    font-family: $OpenSans;
+    font-family: $default-font;
     font-weight: bold;
     font-size: 18px;
   }
 
   &__value {
-    font-family: $OpenSans;
+    font-family: $default-font;
     font-weight: 200;
     font-size: 24px;
   }
