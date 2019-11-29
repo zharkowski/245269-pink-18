@@ -1,0 +1,18 @@
+.page-footer {
+  padding-top: 40px;
+
+  text-align: center;
+  background-color: $background-color-main;
+
+  &__social {
+    margin-top: 40px;
+  }
+
+  &__logo-link {
+    margin: 40px auto;
+  }
+
+  &__copyright {
+    margin: 40px auto;
+  }
+}

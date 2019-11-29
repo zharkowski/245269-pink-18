@@ -1,0 +1,20 @@
+.page-header {
+  font-family: $default-font;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: $white;
+
+  background-color: $background-color-header--shown;
+  //background-color: $background-color-header--hidden;
+
+  &__wrapper {
+    padding: 21px 20px;
+  }
+
+  &__logo-link {
+    display: block;
+  }
+}
