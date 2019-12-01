@@ -1,7 +1,43 @@
 .button {
   font-family: $default-font;
-  font-size: 18px;
+  font-size: 21px;
   font-weight: bold;
   line-height: 18px;
   text-decoration: none;
+  color: $button-text-color;
+
+  background-color: transparent;
+
+  &:hover {
+    background-color: $button-color--hover;
+    color: $button-text-color--active;
+  }
+
+  &:active {
+    background-color: $button-color--active;
+    color: $button-text-color--active;
+  }
+
+  &--green {
+    line-height: 30px;
+    color: $button-text-color--green;
+    border: 2px solid $button-color--green;
+
+    background-color: $button-color--green;
+  }
+
+  &--green:hover {
+    background-color: $button-color--green-hover;
+    color: $button-text-color--green-hover;
+  }
+
+  &--green:active {
+    background-color: $button-color--green-active;
+    color: $button-text-color--green-active;
+  }
+
+  &--green:disabled {
+    background-color: $button-color--green-disabled;
+    color: $button-text-color--green-disabled;
+  }
 }

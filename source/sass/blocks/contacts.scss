@@ -1,0 +1,66 @@
+.contacts {
+  padding-top: 45px;
+  position: relative;
+  text-align: center;
+
+  &__text {
+    padding: 0 20px;
+  }
+
+  &__slogan {
+    margin-top: 0;
+
+    font-family: $default-font;
+    font-weight: 200;
+    font-size: 24px;
+    color: $text-color;
+  }
+
+  &__phone,
+  &__email,
+  &__come-to-us {
+    font-family: $default-font;
+    font-weight: bold;
+    font-size: 18px;
+    color: $text-color;
+  }
+
+  &__link,
+  &__address {
+    margin-top: 10px;
+
+    font-family: $default-font;
+    font-weight: 200;
+    font-size: 24px;
+    text-decoration: none;
+    color: $text-color--additional;
+  }
+
+  &__map {
+    display: block;
+    position: relative;
+
+    overflow: hidden;
+    //top: -445px;
+  }
+
+  &__map::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 1;
+
+    width: 100vw;
+    height: 100%;
+
+    mask: url("../img/bg-triangle-white-footer.svg");
+    mask-size: 100%;
+    mask-position: 0 0;
+    mask-repeat: no-repeat;
+    background-color: $background-color-main;
+  }
+
+  &__map-image {
+    margin-top: -426px;
+  }
+}

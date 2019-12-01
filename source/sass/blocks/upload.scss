@@ -1,0 +1,21 @@
+.upload {
+  background-color: $background-color-main;
+  text-align: center;
+
+  &__slogan {
+    margin: 50px 0;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    font-family: $default-font;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 30px;
+    color: $text-color;
+  }
+
+  &__editing {
+    padding: 20px;
+    background-color: $background-color-main--additional;
+  }
+}

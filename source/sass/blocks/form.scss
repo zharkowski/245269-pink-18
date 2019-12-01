@@ -1,0 +1,165 @@
+.form {
+  &__item {
+    margin-bottom: 45px;
+  }
+
+  &__name {
+    padding-right: 18px;
+    padding-left: 18px;
+    border: none;
+  }
+
+  &__label--text {
+    padding-left: 22px;
+
+    font-family: $default-font;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: $text-color--additional;
+  }
+
+  &__input[type="text"],
+  &__input[type="tel"],
+  &__input[type="email"] {
+    margin-top: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    width: 100%;
+    border: 2px solid $border-color;
+    padding: 15px 22px;
+
+    font-family: $default-font;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 30px;
+    color: $text-color;
+  }
+
+  &__input[type="text"]:hover,
+  &__input[type="tel"]:hover,
+  &__input[type="email"]:hover {
+    border-color: $text-color;
+  }
+
+  &__input[type="text"]:focus,
+  &__input[type="tel"]:focus,
+  &__input[type="email"]:focus {
+    border-color: $text-color--additional;
+  }
+
+  &__input[type="text"]:placeholder-shown,
+  &__input[type="tel"]:placeholder-shown,
+  &__input[type="email"]:placeholder-shown {
+    color: $text-color;
+  }
+
+  &__label--checkbox,
+  &__label--radio {
+    font-family: $default-font;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 30px;
+    color: $text-color;
+  }
+
+  &__achievements-wrapper {
+    background-color: $background-color-main--additional;
+  }
+
+  &__achievements {
+    border: none;
+  }
+
+  &__legend {
+    padding: 40px 30px;
+
+    text-align: center;
+    font-family: $default-font;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $text-color--additional;
+  }
+
+  &__contacts {
+    padding-top: 30px;
+    padding-right: 18px;
+    padding-left: 18px;
+    border: none;
+  }
+
+  &__platform-wrapper {
+    margin-top: 20px;
+    background-color: $background-color-main--additional;
+  }
+
+  &__platform {
+    padding-right: 18px;
+    padding-left: 18px;
+    border: none;
+  }
+
+  &__message {
+    padding-top: 30px;
+    padding-right: 18px;
+    padding-left: 18px;
+    border: none;
+  }
+
+  &__label--textarea {
+    font-family: $default-font;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: $text-color--additional;
+  }
+
+  &__label-value {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    box-sizing: border-box;
+    width: 100%;
+    border: 2px solid $border-color;
+    padding: 20px 20px;
+    margin-bottom: 52px;
+
+    font-family: $default-font;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: $text-color;
+
+    resize: none;
+  }
+
+  &__button {
+    width: calc(100% - 40px);
+    height: 60px;
+    margin: 0 20px;
+    margin-bottom: 45px;
+  }
+
+  &__designation {
+    display: block;
+    text-align: center;
+
+    font-family: $default-font;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: $text-color;
+  }
+
+  &__designation sup {
+    color: $text-color--additional;
+  }
+}

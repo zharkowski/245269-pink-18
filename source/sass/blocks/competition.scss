@@ -1,0 +1,14 @@
+.competition {
+  &__slogan {
+    padding: 50px 20px;
+
+    font-family: $default-font;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 30px;
+    color: $text-color;
+    text-align: center;
+
+    background-color: white;
+  }
+}
