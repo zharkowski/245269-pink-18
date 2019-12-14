@@ -1,0 +1,114 @@
+.research {
+  display: none;
+
+  //background-color: $background-color-main;
+  text-align: left;
+
+  &__slogan {
+    font-family: $default-font;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    color: $heading-color;
+  }
+
+  &__text {
+    font-family: $default-font;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: $text-color;
+  }
+
+  &__link {
+    font-family: $default-font;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: $text-color--additional;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .research{
+    display: block;
+
+    &__wrapper {
+      display: flex;
+      width: 620px;
+      padding-top: 60px;
+      padding-right: 20px;
+      padding-left: 20px;
+      margin: 0 auto;
+
+      //------- Временно ----------//
+      min-height: 276px;
+    }
+
+    &__diagram {
+      width: 50%;
+    }
+
+    &__content {
+      width: 50%;
+    }
+
+    &__slogan {
+      margin-top: 36px;
+      margin-bottom: 0;
+      padding-right: 142px;
+    }
+
+    &__text {
+      margin-top: 10px;
+      margin-bottom: 6px;
+      padding-right: 2px;
+    }
+
+    &__link {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .research{
+    //background-color: $background-color-main--additional;
+
+    &__wrapper {
+      width: 940px;
+      min-height: 414px;
+      padding-top: 0;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+
+    &__diagram {
+      width: 367px;
+    }
+
+    &__content {
+      width: 573px;
+    }
+
+    &__slogan {
+      margin-top: 91px;
+      margin-bottom: 22px;
+    }
+
+    &__text {
+      padding-right: 19px;
+      margin: 18px 0;
+
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+    &__link {
+      display: block;
+      margin: 31px 0;
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+}

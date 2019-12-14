@@ -1,0 +1,18 @@
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-family: $default-font;
+  color: $text-color;
+  font-style: normal;
+
+  background-color: $background-color-main;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

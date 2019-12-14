@@ -3,12 +3,16 @@
   position: relative;
   overflow: hidden;
 
-  padding-left: 20px;
-  padding-right: 20px;
+  &__wrapper {
+    width: 280px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+  }
 
   &__slogan {
-    margin-top: 45px;
-    margin-bottom: 120px;
+    margin-top: 42px;
+    margin-bottom: 113px;
 
     font-family: $default-font;
     font-size: 24px;
@@ -16,7 +20,27 @@
     color: $text-color;
   }
 
+  &__lists-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__list--pictures {
+    order: 2;
+
+    //-------- Временно ----------//
+    min-height: 278px;
+  }
+
+  &__list--descriptions {
+
+    //-------- Временно ----------//
+    min-height: 426px;
+  }
+
   &__title {
+    margin-bottom: 11px;
+
     font-family: $default-font;
     font-size: 18px;
     line-height: 24px;
@@ -25,7 +49,8 @@
   }
 
   &__text {
-    margin-bottom: 40px;
+    margin-top: 0;
+    margin-bottom: 32px;
 
     font-family: $default-font;
     font-size: 14px;
@@ -38,18 +63,108 @@
     margin-bottom: -43px;
   }
 
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
+  &__picture--grey {
+    display: none;
+  }
 
-    width: 130vw;
-    height: 1050px;
-    top: 250px;
-    left: calc(-60vw + 50%);
-    transform: rotate(-5deg);
+  &__picture--pink {
+    display: none;
+  }
 
-    z-index: -1;
-    background-color: $background-color-main--additional;
+  //&::before {
+  //  content: "";
+  //  display: block;
+  //  position: absolute;
+  //
+  //  width: 130vw;
+  //  height: 1050px;
+  //  top: 234px;
+  //  left: calc(-60vw + 50%);
+  //  transform: rotate(-5.5deg);
+  //
+  //  z-index: -1;
+  //  background-color: $background-color-main--additional;
+  //}
+}
+
+@media (min-width: $tablet-width) {
+  .features {
+    &__wrapper {
+      width: 620px;
+    }
+
+    &__slogan {
+      margin-top: 46px;
+      margin-bottom: 47px;
+      font-size: 40px;
+      line-height: 50px;
+    }
+
+    &__slogan p {
+      margin: 0;
+    }
+
+    &__lists-wrapper {
+      flex-direction: row;
+
+      //------ Временно --------//
+      min-height: 482px;
+    }
+
+    &__list--pictures {
+      order: 0;
+
+      //-------- Временно ----------//
+      min-height: 482px;
+    }
+
+    &__list {
+      width: 50%;
+    }
+
+    &::before {
+      top: 267px;
+      transform: rotate(-4.5deg);
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features {
+
+    &__wrapper {
+      width: 940px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    &__lists-wrapper {
+      display: block;
+    }
+
+    &__list {
+      width: auto;
+    }
+
+    &__slogan {
+      margin-top: 67px;
+
+      font-size: 50px;
+      line-height: 60px;
+    }
+
+    &__list--pictures {
+      //-------- Временно ----------//
+      min-height: 330px;
+    }
+
+    &__list--descriptions {
+      //------ Временно --------//
+      min-height: 325px;
+    }
+
+    &::before {
+      top: 370px;
+    }
   }
 }

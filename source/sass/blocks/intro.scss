@@ -1,31 +1,159 @@
 .intro {
-  min-height: 171px;
-  padding-left: 20px;
-  padding-right: 20px;
 
-  font-family: $default-font;
-  font-size: 24px;
-  font-weight: 200;
   color: $text-color--header;
+  text-align: center;
+  position: relative;
 
-  background-color: transparent;
+  //background-color: $background-color-download;
+  //background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: center 0;
+  background-repeat: no-repeat;
 
-  & p {
-    text-align: center;
+  //------- Временно для сетки ----------//
+  min-height: 632px;
+
+  &__wrapper {
+    width: 280px;
+    padding-top: 65px;
+    padding-right: 20px;
+    padding-bottom: 7px;
+    padding-left: 20px;
+    margin: 0 auto;
+
+    //background-image: url("../img/iphone-hand-mobile@1x.png");
+    background-position: 0 176px;
+    background-repeat: no-repeat;
   }
 
-  &__img {
-    position: relative;
-    bottom: -5px;
-    left: -20px;
+  &__main-link {
+    margin-top: 27px;
+    margin-bottom: 32px;
   }
 
-  &__page-title {
-    margin-top: 0;
-    padding-top: 35px;
+  &__slogan-wrapper {
+    min-height: 396px;
+  }
 
-    font-size: 24px;
+  &__slogan {
+    display: inline-block;
     font-weight: 200;
-    text-align: center;
+    font-size: 24px;
+    color: $text-color--header;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+
+  &__item {
+    //----- Временно для сетки -------//
+    min-height: 56px;
+  }
+
+  &__legend {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 22px 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .intro {
+    //background-image: url("../img/bg-back-tablet@1x.jpg");
+
+    &__wrapper {
+      width: 620px;
+      padding-top: 109px;
+
+      //background-image: url("../img/iphone-hand-tablet@1x.png");
+      background-position: -20px bottom;
+      background-repeat: no-repeat;
+    }
+
+    &__slogan-wrapper {
+      width: 50%;
+      min-height: 0;
+      margin-top: 93px;
+    }
+
+    &__slogan {
+      padding-left: 28px;
+      padding-right: 36px;
+      margin: 0;
+
+      font-size: 40px;
+      line-height: 48px;
+    }
+
+    &__main-link {
+      width: calc(50% - 10px);
+      margin-top: 30px;
+      margin-bottom: 46px;
+    }
+
+    &__list {
+      box-sizing: border-box;
+      width: calc(50% - 10px);
+      padding: 0 32px;
+      margin-bottom: 36px;
+    }
+
+    &__legend {
+      width: 50%;
+      margin-bottom: 102px;
+
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+
+    &__wrapper {
+      width: 940px;
+      padding-right: 10px;
+      padding-left: 10px;
+
+      background-image: url("../img/iphone-hand-desktop@1x.png");
+      background-position: calc(50% + 72px) bottom;
+    }
+
+    &__slogan-wrapper {
+      width: 300px;
+      margin-top: 107px;
+    }
+
+    &__slogan {
+      padding-left: 31px;
+      padding-right: 33px;
+
+      font-size: 50px;
+      line-height: 60px;
+    }
+
+    &__main-link {
+      width: 300px;
+      margin-top: 53px;
+      margin-bottom: 66px;
+
+      font-size: 21px;
+    }
+
+    &__list {
+      width: 300px;
+
+      margin-bottom: 55px;
+    }
+
+    &__legend {
+      width: 311px;
+      margin-bottom: 115px;
+    }
   }
 }

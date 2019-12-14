@@ -6,15 +6,60 @@
   letter-spacing: 0;
   text-transform: uppercase;
   color: $white;
+  position: relative;
+  z-index: 2;
 
   background-color: $background-color-header--shown;
   //background-color: $background-color-header--hidden;
 
-  &__wrapper {
+  &__logo-toggle-wrapper {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 320px;
+    min-height: 69px;
     padding: 21px 20px;
+    margin: 0 auto;
   }
 
   &__logo-link {
     display: block;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    &__logo-toggle-wrapper {
+      min-height: 109px;
+      width: 660px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    background-color: $background-color-header--hidden;
+
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 960px;
+      margin: 0 auto;
+    }
+
+
+    &__logo-toggle-wrapper {
+      min-height: 110px;
+      width: auto;
+      padding: 25px 10px;
+      margin: 0;
+
+      //---- Временно для сетки ------//
+      width: 167px;
+    }
+
+    &__toggle {
+      display: none;
+    }
   }
 }

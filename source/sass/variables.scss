@@ -1,5 +1,8 @@
 $default-font: "Open Sans", "Arial", sans-serif;
 
+$tablet-width: 660px;
+$desktop-width: 960px;
+
 $white: #ffffff;
 $black: #000000;
 $blue--dark: #283645;
@@ -25,7 +28,7 @@ $button-color--green-hover: $green--dark;
 $button-color--green-active: $green--dark;
 $button-color--green-disabled: $grey;
 $button-text-color: $white;
-$button-text-color--hover: $white;
+$button-text-color--hover: $pink;
 $button-text-color--active: rgba($pink, 0.3);
 $button-text-color--green: $white;
 $button-text-color--green-hover: $white;
