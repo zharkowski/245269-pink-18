@@ -9,9 +9,6 @@
     text-align: center;
     //background-color: $background-color-main;
 
-    //------- Временно ---------//
-    margin-top: 1508px;
-
     &__wrapper {
       display: flex;
       justify-content: space-between;
@@ -51,9 +48,6 @@
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    //------- Временно ---------//
-    margin-top: 1805px;
-
     &__wrapper {
       width: 940px;
       padding-top: 70px;

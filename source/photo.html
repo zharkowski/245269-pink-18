@@ -6,20 +6,20 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="photo-main">
-    <div class="header-intro-wrapper header-intro-wrapper--inner-page">
-      <header class="header-intro-wrapper__page-header page-header">
+    <header class="page-header">
+      <div class="page-header__wrapper">
         <div class="page-header__logo-toggle-wrapper">
           <a class="page-header__logo-link" href="index.html">
-            <img class="page-header__logo-image" src="https://via.placeholder.com/75x22" width="75" height="22" alt="Логотип Пинка.">
+  <!--          <img class="page-header__logo-image" src="https://via.placeholder.com/74x23" width="74" height="23" alt="Логотип Пинка.">-->
           </a>
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <button class="page-header__toggle" type="button"></button>
         </div>
         <nav class="main-nav">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a class="site-list__link" href="index.html">Главная</a>
             </li>
-            <li class="site-list__item site-list__item--current">
+            <li class="site-list__item">
               <a class="site-list__link">Фотографии</a>
             </li>
             <li class="site-list__item">
@@ -30,14 +30,14 @@
             </li>
           </ul>
         </nav>
-      </header>
-
-      <div class="header-intro-wrapper__intro intro">
-        <h1 class="intro__page-title">Фотографии пользователей</h1>
       </div>
-    </div>
+    </header>
 
     <main class="page-main">
+      <section class="intro">
+        <h1 class="intro__page-title">Фотографии пользователей</h1>
+      </section>
+
       <section class="cards">
         <h2 class="cards__title visually-hidden">Галерея фотографий</h2>
         <p class="cards__slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>

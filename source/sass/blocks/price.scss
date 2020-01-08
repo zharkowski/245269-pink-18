@@ -2,7 +2,7 @@
   overflow: hidden;
 
   &__wrapper {
-    margin-top: 125px;
+    margin-top: 126px;
     position: relative;
   }
 
@@ -18,7 +18,7 @@
     transform: rotate(-5deg);
 
     z-index: -1;
-    background-color: $background-color-main--additional;
+    //background-color: $background-color-main--additional;
   }
 
   &__table-wrapper {
@@ -43,15 +43,19 @@
     text-transform: uppercase;
     color: $text-color;
 
-    background-color: $background-color-main;
+    //background-color: $background-color-main;
+  }
+
+  &__element--additional {
+    display: none;
   }
 
   &__element--header {
     color: $text-color--header;
-    border-top-color: $background-color-table-header;
+    //border-top-color: $background-color-table-header;
     border-bottom: none;
 
-    background-color: $background-color-table-header;
+    //background-color: $background-color-table-header;
   }
 
   &__tariff {
@@ -68,5 +72,91 @@
 
   &__toggles {
     text-align: center;
+    margin: 35px 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .price {
+    &__wrapper {
+      width: 620px;
+      padding-top: 104px;
+      padding-right: 20px;
+      padding-bottom: 70px;
+      padding-left: 20px;
+      margin: 0 auto;
+    }
+
+    &__table {
+      width: 100%;
+      transform: none;
+    }
+
+    &__element {
+      width: 25%;
+      border-color: transparent;
+    }
+
+    &__element--additional {
+      display: table-cell;
+      padding: 7px 14px;
+
+      font-size: 14px;
+      text-transform: none;
+    }
+
+    &__element--header {
+      height: 75px;
+      padding: 0;
+    }
+
+    &__tariff {
+      font-size: 16px;
+    }
+
+    &__value {
+      font-size: 18px;
+    }
+
+    &__description {
+      display: none;
+    }
+
+    &__toggles {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .price {
+    &__wrapper {
+      width: 940px;
+      padding-top: 171px;
+      padding-right: 10px;
+      padding-bottom: 97px;
+      padding-left: 10px;
+    }
+
+    &__element--header {
+      height: 94px;
+    }
+
+    &__tariff {
+      font-size: 18px;
+    }
+
+    &__value {
+      font-size: 24px;
+    }
+
+    &__element--additional {
+      font-size: 18px;
+    }
+
+    &__element--additional {
+      box-sizing: border-box;
+      padding: 14px 20px;
+    }
   }
 }

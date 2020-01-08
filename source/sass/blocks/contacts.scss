@@ -3,6 +3,16 @@
   position: relative;
   text-align: center;
 
+  // ВРЕМЕННО
+  padding-bottom: 220px;
+
+  &__wrapper {
+    width: 280px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 0 auto;
+  }
+
   &__text {
     padding: 0 20px;
   }
@@ -28,7 +38,6 @@
   &__link,
   &__address {
     display: block;
-    margin-top: 10px;
 
     font-family: $default-font;
     font-weight: 200;
@@ -42,7 +51,6 @@
     position: relative;
 
     overflow: hidden;
-    //top: -445px;
   }
 
   &__map::before {
@@ -63,5 +71,82 @@
 
   &__map-image {
     margin-top: -426px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    padding-top: 50px;
+
+    // ВРЕМЕННО
+    padding-bottom: 400px;
+
+    &__wrapper {
+      width: 620px;
+    }
+
+    &__slogan {
+      margin-bottom: 0;
+
+      font-size: 40px;
+      line-height: 45px;
+    }
+
+    &__links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    &__phone,
+    &__email,
+    &__come-to-us {
+      display: block;
+      width: 298px;
+      margin-top: 45px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+
+    // ВРЕМЕННО
+    padding-bottom: 520px;
+
+    &__wrapper {
+      width: 940px;
+      padding-top: 15px;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+
+    &__slogan {
+      font-size: 50px;
+      line-height: 60px;
+    }
+
+    &__links {
+      margin-top: 9px;
+      justify-content: space-between;
+    }
+
+    &__link,
+    &__address {
+      margin-top: 20px;
+    }
+
+    &__phone {
+      order: 1;
+    }
+
+    &__come-to-us {
+      order: 2;
+    }
+
+    &__email {
+      order: 3;
+    }
   }
 }
