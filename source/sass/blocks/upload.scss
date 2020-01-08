@@ -2,11 +2,21 @@
   background-color: $background-color-main;
   text-align: center;
 
-  &__slogan {
-    margin: 50px 0;
-    padding-left: 20px;
+  &__slogan-wrapper,
+  &__editing-wrapper {
+    width: 280px;
     padding-right: 20px;
+    padding-left: 20px;
+    margin: 0 auto;
+  }
 
+  &__slogan-wrapper {
+    margin-top: 44px;
+    margin-bottom: 41px;
+  }
+
+
+  &__slogan {
     font-family: $default-font;
     font-weight: normal;
     font-size: 14px;
@@ -14,8 +24,59 @@
     color: $text-color;
   }
 
-  &__editing {
-    padding: 20px;
+  &__editing-wrapper {
+    padding-top: 20px;
+    padding-bottom: 27px;
+
     background-color: $background-color-main--additional;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .upload {
+    &__slogan-wrapper,
+    &__editing-wrapper {
+      width: 620px;
+    }
+
+    &__slogan-wrapper {
+      margin-bottom: 71px;
+    }
+
+    &__slogan {
+      font-size: 18px;
+    }
+
+    &__editing-wrapper {
+      padding-top: 57px;
+      padding-bottom: 54px;
+    }
+
+    &__editing {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .upload {
+    &__slogan-wrapper {
+      width: 940px;
+      padding-right: 10px;
+      padding-left: 10px;
+      margin-top: 0;
+      margin-bottom: 66px;
+    }
+
+    &__slogan {
+      margin-top: 4px;
+    }
+
+    &__editing-wrapper {
+      width: 800px;
+      padding-right: 60px;
+      padding-left: 80px;
+    }
   }
 }

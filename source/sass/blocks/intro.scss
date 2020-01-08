@@ -4,16 +4,15 @@
   text-align: center;
   position: relative;
 
-  //background-color: $background-color-download;
-  //background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-color: $background-color-download;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: center 0;
   background-repeat: no-repeat;
 
   &__page-title {
     margin-top: 94px;
-    margin-bottom: 83px;
-    padding-right: 20px;
-    padding-left: 20px;
+    margin-bottom: 82px;
+    padding: 0 20px;
 
     font-weight: 200;
     font-size: 24px;
@@ -21,15 +20,25 @@
 
   &__wrapper {
     width: 280px;
-    padding-top: 65px;
+    min-height: 169px;
+    padding-top: 66px;
     padding-right: 20px;
-    padding-bottom: 7px;
     padding-left: 20px;
     margin: 0 auto;
+  }
+
+  &__wrapper--index-page {
+    padding-top: 65px;
+    padding-bottom: 7px;
 
     background-image: url("../img/iphone-hand-mobile@1x.png");
     background-position: 0 176px;
     background-repeat: no-repeat;
+  }
+
+  &__page-title {
+    margin-top: 28px;
+    margin-bottom: 28px;
   }
 
   &__main-link {
@@ -69,15 +78,30 @@
 
 @media (min-width: $tablet-width) {
   .intro {
-    //background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+
+    &__page-title {
+      font-size: 50px;
+    }
 
     &__wrapper {
       width: 620px;
+      min-height: 296px;
+      padding-top: 110px;
+
+      line-height: 60px;
+    }
+
+    &__wrapper--index-page {
       padding-top: 109px;
 
       background-image: url("../img/iphone-hand-tablet@1x.png");
       background-position: -20px bottom;
       background-repeat: no-repeat;
+    }
+
+    &__page-title {
+      margin-top: 69px;
     }
 
     &__slogan-wrapper {
@@ -97,7 +121,7 @@
 
     &__main-link {
       width: calc(50% - 10px);
-      margin-top: 30px;
+      margin-top: 16px;
       margin-bottom: 46px;
     }
 
@@ -120,15 +144,25 @@
 
 @media (min-width: $desktop-width) {
   .intro {
-    //background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-image: url("../img/bg-back-desktop@1x.jpg");
 
     &__wrapper {
       width: 940px;
+      min-height: 272px;
+      padding-top: 109px;
       padding-right: 10px;
-      padding-left: 10px;
 
+      padding-left: 10px;
+    }
+
+    &__wrapper--index-page {
       background-image: url("../img/iphone-hand-desktop@1x.png");
       background-position: calc(50% + 72px) bottom;
+    }
+
+    &__page-title {
+      padding: 0 141px;
+      margin-top: 63px;
     }
 
     &__slogan-wrapper {
@@ -160,7 +194,7 @@
 
     &__legend {
       width: 311px;
-      margin-bottom: 115px;
+      margin-bottom: 102px;
     }
   }
 }

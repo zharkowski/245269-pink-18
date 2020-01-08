@@ -7,6 +7,7 @@ body {
   //background: $background-color-main url("../img/pink-photo-mobile.png") no-repeat 50% 0;
   background-size: 320px auto;
   min-height: 3430px;
+  //min-height: 4189px;
 }
 
 @media (min-width: $tablet-width) {
@@ -15,6 +16,7 @@ body {
     //background: $background-color-main url("../img/pink-photo-tablet.png") no-repeat 50% 0;
     background-size: 660px auto;
     min-height: 3678px;
+    //min-height: 3586px;
   }
 }
 
@@ -24,5 +26,6 @@ body {
     //background: $background-color-main url("../img/pink-photo-desktop.png") no-repeat 50% 0;
     background-size: 1200px auto;
     min-height: 4215px;
+    //min-height: 3374px;
   }
 }

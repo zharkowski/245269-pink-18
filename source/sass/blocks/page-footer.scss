@@ -1,13 +1,50 @@
 .page-footer {
-  display: none;
+  text-align: center;
+
+  background-color: $background-color-main;
+
+  &--index {
+    display: none;
+  }
+
+  &__wrapper {
+    width: 280px;
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 0 auto;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 30px;
+
+    //------- Временно ---------//
+    width: 177px;
+  }
+
+  &__copyright {
+    margin-top: 33px;
+  }
+
+  &__made-by {
+
+    font-family: $default-font;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: $text-color;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .page-footer {
-    display: block;
-
-    text-align: center;
-    //background-color: $background-color-main;
+    &--index {
+      display: block;
+    }
 
     &__wrapper {
       display: flex;
@@ -31,26 +68,25 @@
     }
 
     &__social {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-
+      margin-top: 0;
       //------- Временно ---------//
       width: 177px;
     }
 
     &__copyright {
+      margin-top: 0;
       //------- Временно ---------//
       width: 148px;
     }
   }
 }
 
+
 @media (min-width: $desktop-width) {
   .page-footer {
     &__wrapper {
       width: 940px;
-      padding-top: 70px;
+      padding-top: 102px;
       padding-right: 10px;
       padding-bottom: 67px;
       padding-left: 10px;
@@ -59,6 +95,14 @@
     &__copyright {
       //------- Временно ---------//
       width: 152px;
+    }
+
+    &__made-by {
+      font-size: 18px;
+    }
+
+    &__html-academy-link {
+      margin-left: 7px;
     }
   }
 }

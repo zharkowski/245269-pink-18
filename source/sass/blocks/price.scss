@@ -18,7 +18,7 @@
     transform: rotate(-5deg);
 
     z-index: -1;
-    //background-color: $background-color-main--additional;
+    background-color: $background-color-main--additional;
   }
 
   &__table-wrapper {
@@ -43,7 +43,7 @@
     text-transform: uppercase;
     color: $text-color;
 
-    //background-color: $background-color-main;
+    background-color: $background-color-main;
   }
 
   &__element--additional {
@@ -52,10 +52,10 @@
 
   &__element--header {
     color: $text-color--header;
-    //border-top-color: $background-color-table-header;
+    border-top-color: $background-color-table-header;
     border-bottom: none;
 
-    //background-color: $background-color-table-header;
+    background-color: $background-color-table-header;
   }
 
   &__tariff {
@@ -94,7 +94,6 @@
 
     &__element {
       width: 25%;
-      border-color: transparent;
     }
 
     &__element--additional {
@@ -108,6 +107,11 @@
     &__element--header {
       height: 75px;
       padding: 0;
+    }
+
+    &__element--header.price__element--additional {
+      border-color: transparent;
+      background-color: transparent;
     }
 
     &__tariff {

@@ -1,7 +1,7 @@
 .research {
   display: none;
 
-  //background-color: $background-color-main;
+  background-color: $background-color-main;
   text-align: left;
 
   &__slogan {
@@ -73,7 +73,7 @@
 
 @media (min-width: $desktop-width) {
   .research{
-    //background-color: $background-color-main--additional;
+    background-color: $background-color-main--additional;
 
     &__wrapper {
       width: 940px;

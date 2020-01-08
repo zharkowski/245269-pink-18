@@ -1,10 +1,91 @@
 .editing {
   &__list {
-    padding: 40px 0;
+    padding-top: 35px;
+    padding-bottom: 21px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
 
+  &__radio {
+    display: none;
+  }
+
+  &__range {
+    display: none;
+    width: 240px;
+    margin: 0 auto;
+    margin-bottom: 61px;
+  }
+
+  &__radio--crop:checked ~ &__range--crop,
+  &__radio--fill:checked ~ &__range--fill,
+  &__radio--contrast:checked ~ &__range-contrast {
+    display: block;
+  }
+
+  &__button {
+    margin-bottom: 12px;
   }
 
   &__button--cancel {
     margin-bottom: 40px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .editing {
+    &__input-wrapper {
+      width: 260px;
+      padding-right: 15px;
+    }
+
+    &__list {
+      display: none;
+    }
+
+    &__range {
+      display: block;
+      margin: 0;
+      margin-left: 58px;
+      margin-bottom: 31px;
+      width: 202px;
+      height: 41px;
+    }
+
+    &__button--post {
+      margin-top: 79px;
+      margin-bottom: 24px;
+    }
+
+    &__button--reset {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .editing {
+    &__input-wrapper {
+      width: 410px;
+      padding-right: 0;
+    }
+
+    &__range {
+      width: 288px;
+      margin-left: 92px;
+    }
+
+    &__button {
+      width: 183px;
+      margin: 0;
+    }
+
+    &__buttons-wrapper {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 158px;
+    }
   }
 }
