@@ -4,13 +4,14 @@
   text-align: center;
   position: relative;
 
-  background-color: $background-color-download;
+  background-color: $background-color-intro;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: center 0;
   background-repeat: no-repeat;
 
   &__page-title {
-    margin-top: 94px;
+    display: block;
+    margin-top: 6px;
     margin-bottom: 82px;
     padding: 0 20px;
 
@@ -20,7 +21,6 @@
 
   &__wrapper {
     width: 280px;
-    min-height: 169px;
     padding-top: 66px;
     padding-right: 20px;
     padding-left: 20px;
@@ -29,16 +29,11 @@
 
   &__wrapper--index-page {
     padding-top: 65px;
-    padding-bottom: 7px;
+    padding-bottom: 9px;
 
     background-image: url("../img/iphone-hand-mobile@1x.png");
-    background-position: 0 176px;
+    background-position: 0 175px;
     background-repeat: no-repeat;
-  }
-
-  &__page-title {
-    margin-top: 28px;
-    margin-bottom: 28px;
   }
 
   &__main-link {
@@ -46,11 +41,10 @@
     margin-bottom: 32px;
   }
 
-  &__slogan-wrapper {
-    min-height: 396px;
-  }
-
   &__slogan {
+    margin-bottom: 313px;
+    margin-top: 23px;
+
     display: inline-block;
     font-weight: 200;
     font-size: 24px;
@@ -86,8 +80,8 @@
 
     &__wrapper {
       width: 620px;
-      min-height: 296px;
       padding-top: 110px;
+      padding-bottom: 7px;
 
       line-height: 60px;
     }
@@ -102,18 +96,16 @@
 
     &__page-title {
       margin-top: 69px;
-    }
-
-    &__slogan-wrapper {
-      width: 50%;
-      min-height: 0;
-      margin-top: 93px;
+      margin-bottom: 141px;
     }
 
     &__slogan {
-      padding-left: 28px;
-      padding-right: 36px;
-      margin: 0;
+      box-sizing: border-box;
+      display: block;
+      width: calc(50% - 10px);
+      padding: 0 32px;
+      margin-top: 93px;
+      margin-bottom: 31px;
 
       font-size: 40px;
       line-height: 48px;
@@ -148,7 +140,6 @@
 
     &__wrapper {
       width: 940px;
-      min-height: 272px;
       padding-top: 109px;
       padding-right: 10px;
 
@@ -163,16 +154,14 @@
     &__page-title {
       padding: 0 141px;
       margin-top: 63px;
-    }
-
-    &__slogan-wrapper {
-      width: 300px;
-      margin-top: 107px;
+      margin-bottom: 102px;
     }
 
     &__slogan {
+      width: 300px;
       padding-left: 31px;
       padding-right: 33px;
+      margin-top: 107px;
 
       font-size: 50px;
       line-height: 60px;
@@ -194,7 +183,7 @@
 
     &__legend {
       width: 311px;
-      margin-bottom: 102px;
+      margin-bottom: 115px;
     }
   }
 }

@@ -4,6 +4,10 @@
   background-color: $background-color-main;
   text-align: left;
 
+  &__content {
+    padding-left: 308px;
+  }
+
   &__slogan {
     font-family: $default-font;
     font-weight: bold;
@@ -30,7 +34,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .research{
+  .research {
     display: block;
 
     &__wrapper {
@@ -72,7 +76,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .research{
+  .research {
     background-color: $background-color-main--additional;
 
     &__wrapper {
@@ -88,11 +92,12 @@
     }
 
     &__content {
+      padding-left: 366px;
       width: 573px;
     }
 
     &__slogan {
-      margin-top: 91px;
+      margin-top: 90px;
       margin-bottom: 22px;
     }
 
@@ -106,7 +111,7 @@
 
     &__link {
       display: block;
-      margin: 31px 0;
+      margin: 30px 0;
       font-size: 18px;
       line-height: 30px;
     }

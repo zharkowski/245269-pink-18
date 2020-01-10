@@ -5,13 +5,13 @@
 
   &__wrapper {
     width: 280px;
-    padding-left: 20px;
+    padding-top: 16px;
     padding-right: 20px;
+    padding-left: 20px;
     margin: 0 auto;
   }
 
   &__slogan {
-    margin-top: 42px;
     margin-bottom: 113px;
 
     font-family: $default-font;
@@ -20,22 +20,30 @@
     color: $text-color;
   }
 
-  &__lists-wrapper {
+  &__slogan-item:last-child {
+    margin-top: 26px;
+  }
+
+  &__item:last-child {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    height: 422px;
   }
 
-  &__list--pictures {
+  &__picture {
+    display: none;
+  }
+
+  &__item:last-child &__picture {
+    display: block;
     order: 2;
-
-    //-------- Временно ----------//
-    min-height: 278px;
+    margin: 0 auto;
   }
 
-  &__list--descriptions {
-
-    //-------- Временно ----------//
-    min-height: 426px;
+  &__item:last-child &__title {
+    margin: 0;
+    margin-bottom: 10px;
   }
 
   &__title {
@@ -59,15 +67,6 @@
     color: $text-color;
   }
 
-  &__picture {
-    margin-bottom: -43px;
-  }
-
-  &__picture--grey,
-  &__picture--pink{
-    display: none;
-  }
-
   &::before {
     content: "";
     display: block;
@@ -88,7 +87,7 @@
   .features {
     &__wrapper {
       width: 620px;
-      padding-top: 40px;
+      padding-top: 42px;
     }
 
     &__slogan {
@@ -98,31 +97,42 @@
       line-height: 50px;
     }
 
-    &__slogan p {
+    &__slogan-item {
       margin: 0;
     }
 
-    &__lists-wrapper {
-      flex-direction: row;
-
-      //------ Временно --------//
-      min-height: 482px;
-    }
-
-    &__list--pictures {
-      order: 0;
-
-      //-------- Временно ----------//
-      min-height: 482px;
-    }
-
-    &__list--descriptions {
-      padding-top: 54px;
+    &__slogan-item:last-child {
+      margin-top: 0;
+      padding: 0 20px;
     }
 
     &__list {
+      position: relative;
+      width: calc(50%);
+      padding-left: calc(50%);
+      padding-top: 33px;
+      padding-bottom: 7px;
+
       text-align: left;
-      width: 50%;
+    }
+
+    &__item {
+      margin: 36px 0;
+    }
+
+    &__item:last-child {
+      display: block;
+      height: auto;
+    }
+
+    &__item:last-child &__picture {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &__item:last-child &__title {
+      margin-bottom: 10px;
     }
 
     &__text {
@@ -154,42 +164,38 @@
       line-height: 60px;
     }
 
-    &__picture--grey,
-    &__picture--pink{
-      display: block;
-    }
-
-
-    &__lists-wrapper {
-      display: block;
+    &__slogan-item:last-child {
+      padding: 0 107px;
     }
 
     &__list {
-      width: auto;
       display: flex;
       justify-content: space-between;
-    }
+      width: 100%;
+      padding: 0;
+      padding-bottom: 31px;
 
-    &__list--pictures {
-      //-------- Временно ----------//
-      min-height: 330px;
-    }
-
-    &__list--descriptions {
-      padding-top: 0;
-      //------ Временно --------//
-      min-height: 297px;
-    }
-
-    &__item {
       text-align: center;
     }
 
-    &__item--description {
+    &__picture {
+      display: block;
+      margin: 0 auto;
+    }
+
+    &__item {
+      margin-top: 0;
+      margin-bottom: 0;
       width: 300px;
     }
 
+    &__item:last-child &__picture {
+      position: static;
+    }
+
+    &__item:last-child &__title,
     &__title {
+      margin-top: 57px;
       margin-bottom: 30px;
       padding: 0 30px;
 
