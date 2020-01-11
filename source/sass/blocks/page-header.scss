@@ -44,14 +44,13 @@
     &__wrapper {
       display: flex;
       justify-content: space-between;
-      width: 960px;
-      margin: 0 auto;
+      @include wrapper();
     }
 
 
     &__logo-toggle-wrapper {
       min-height: 110px;
-      padding: 25px 10px;
+      padding: 25px 0px;
       margin: 0;
       width: auto;
     }
