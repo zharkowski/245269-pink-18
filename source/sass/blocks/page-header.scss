@@ -16,11 +16,10 @@
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
-    width: 320px;
     min-height: 69px;
     padding: 21px 20px;
-    margin: 0 auto;
 
+    @include wrapper();
     // ВРЕМЕННО
     height: 66px;
   }
@@ -33,8 +32,6 @@
 @media (min-width: $tablet-width) {
   .page-header {
     &__logo-toggle-wrapper {
-      width: 660px;
-
       min-height: 109px;
     }
   }
@@ -54,12 +51,9 @@
 
     &__logo-toggle-wrapper {
       min-height: 110px;
-      width: auto;
       padding: 25px 10px;
       margin: 0;
-
-      //---- Временно для сетки ------//
-      width: 167px;
+      width: auto;
     }
 
     &__toggle {
