@@ -33,8 +33,9 @@
 @media (min-width: $tablet-width) {
   .page-header {
     &__logo-toggle-wrapper {
-      min-height: 109px;
       width: 660px;
+
+      min-height: 109px;
     }
   }
 }

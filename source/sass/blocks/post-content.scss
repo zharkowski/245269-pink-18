@@ -5,7 +5,7 @@
     height: auto;
   }
 
-  &__photo--panorama-of-the-day {
+  &--panorama-of-the-day &__photo {
     display: block;
     min-width: 100vw;
     height: auto;
@@ -85,12 +85,12 @@
       bottom: 22px;
     }
 
-    &__text--panorama-of-the-day {
+    &--panorama-of-the-day &__text {
       padding-top: 22px;
       min-height: 0;
     }
 
-    &__likes--panorama-of-the-day {
+    &--panorama-of-the-day &__likes {
       top: 22px;
       right: 28px;
       left: auto;

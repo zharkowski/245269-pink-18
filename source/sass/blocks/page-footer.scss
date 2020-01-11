@@ -8,11 +8,8 @@
   }
 
   &__wrapper {
-    width: 280px;
     padding-top: 40px;
-    padding-right: 20px;
-    padding-left: 20px;
-    margin: 0 auto;
+    @include wrapper();
   }
 
   &__social {
@@ -49,12 +46,8 @@
     &__wrapper {
       display: flex;
       justify-content: space-between;
-      width: 620px;
       padding-top: 35px;
-      padding-right: 20px;
       padding-bottom: 43px;
-      padding-left: 20px;
-      margin: 0 auto;
 
       //------- Временно ---------//
       min-height: 57px;
@@ -85,11 +78,8 @@
 @media (min-width: $desktop-width) {
   .page-footer {
     &__wrapper {
-      width: 940px;
       padding-top: 102px;
-      padding-right: 10px;
       padding-bottom: 67px;
-      padding-left: 10px;
     }
 
     &__copyright {

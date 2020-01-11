@@ -4,10 +4,7 @@
 
   &__slogan-wrapper,
   &__editing-wrapper {
-    width: 280px;
-    padding-right: 20px;
-    padding-left: 20px;
-    margin: 0 auto;
+    @include wrapper();
   }
 
   &__slogan-wrapper {
@@ -25,21 +22,31 @@
   }
 
   &__editing-wrapper {
+    position: relative;
     padding-top: 20px;
     padding-bottom: 27px;
+    z-index: 1;
 
     background-color: $background-color-main--additional;
+  }
+
+  &__editing-wrapper::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    z-index: -1;
+    background-color: $background-color-main--additional;
+    top: 0;
+    left: calc(50% - 50vw);
   }
 }
 
 @media (min-width: $tablet-width) {
   .upload {
-    &__slogan-wrapper,
-    &__editing-wrapper {
-      width: 620px;
-    }
-
     &__slogan-wrapper {
+      margin-top: 45px;
       margin-bottom: 71px;
     }
 
@@ -49,7 +56,7 @@
 
     &__editing-wrapper {
       padding-top: 57px;
-      padding-bottom: 54px;
+      padding-bottom: 29px;
     }
 
     &__editing {
@@ -59,12 +66,9 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .upload {
     &__slogan-wrapper {
-      width: 940px;
-      padding-right: 10px;
-      padding-left: 10px;
       margin-top: 0;
       margin-bottom: 66px;
     }
@@ -75,8 +79,13 @@
 
     &__editing-wrapper {
       width: 800px;
+      padding-top: 55px;
       padding-right: 60px;
       padding-left: 80px;
+    }
+
+    &__editing-wrapper::before {
+      display: none;
     }
   }
 }

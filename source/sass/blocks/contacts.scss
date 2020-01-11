@@ -7,10 +7,7 @@
   padding-bottom: 220px;
 
   &__wrapper {
-    width: 280px;
-    padding-right: 20px;
-    padding-left: 20px;
-    margin: 0 auto;
+    @include wrapper();
   }
 
   &__text {
@@ -81,10 +78,6 @@
     // ВРЕМЕННО ВМЕСТО КАРТЫ
     padding-bottom: 400px;
 
-    &__wrapper {
-      width: 620px;
-    }
-
     &__slogan {
       margin-bottom: 0;
 
@@ -103,7 +96,7 @@
     &__come-to-us {
       display: block;
       width: 298px;
-      margin-top: 45px;
+      margin-top: 43px;
       margin-bottom: 0;
     }
   }
@@ -116,10 +109,7 @@
     padding-bottom: 520px;
 
     &__wrapper {
-      width: 940px;
       padding-top: 15px;
-      padding-right: 10px;
-      padding-left: 10px;
     }
 
     &__slogan {
@@ -128,7 +118,7 @@
     }
 
     &__links {
-      margin-top: 9px;
+      margin-top: 6px;
       justify-content: space-between;
     }
 

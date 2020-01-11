@@ -2,11 +2,8 @@
   //background-color: $background-color-main;
 
   &__wrapper {
-    width: 280px;
     padding-top: 31px;
-    padding-right: 20px;
-    padding-left: 20px;
-    margin: 0 auto;
+    @include wrapper();
   }
 
   &__slogan {
@@ -36,14 +33,13 @@
 @media (min-width: $tablet-width) {
   .cards {
     &__wrapper {
-      width: 620px;
       padding-top: 32px;
     }
 
     &__slogan {
-      margin: 59px 0;
+      margin: 53px 0;
       padding: 0 25px;
-      margin-bottom: 108px;
+      margin-bottom: 76px;
 
       font-size: 18px;
     }
@@ -68,11 +64,6 @@
 
 @media (min-width: $desktop-width) {
   .cards {
-    &__wrapper {
-      width: 940px;
-      padding-right: 10px;
-      padding-left: 10px;
-    }
 
     &__slogan {
       padding: 0 149px;

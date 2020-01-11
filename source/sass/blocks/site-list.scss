@@ -41,18 +41,19 @@
     padding-right: 10px;
 
     &__item {
-      height: 109px;
-      padding-left: 80px;
+      margin-left: 80px;
 
       font-weight: normal;
       font-size: 18px;
-      line-height: 109px;
       text-transform: none;
     }
 
     &__link {
+      display: flex;
+      align-items: center;
       padding: 0;
-      height: auto;
+      width: 100%;
+      min-height: 109px;
     }
   }
 }

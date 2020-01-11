@@ -1,7 +1,31 @@
 $default-font: "Open Sans", "Arial", sans-serif;
 
+$mobile-width: 320px;
 $tablet-width: 660px;
 $desktop-width: 960px;
+
+$mobile-padding: 20px;
+$tablet-padding: 20px;
+$desktop-padding: 10px;
+
+@mixin wrapper() {
+  margin: 0 auto;
+  @media (min-width: $mobile-width) {
+    width: calc(#{$mobile-width} - #{$mobile-padding} * 2);
+    padding-right: $mobile-padding;
+    padding-left: $mobile-padding;
+  }
+  @media (min-width: $tablet-width) {
+    width: calc(#{$tablet-width} - #{$tablet-padding} * 2);
+    padding-right: $tablet-padding;
+    padding-left: $tablet-padding;
+  }
+  @media (min-width: $desktop-width) {
+    width: calc(#{$desktop-width} - #{$desktop-padding} * 2);
+    padding-right: $desktop-padding;
+    padding-left: $desktop-padding;
+  }
+}
 
 $white: #ffffff;
 $black: #000000;

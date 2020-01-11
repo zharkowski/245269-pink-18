@@ -79,12 +79,9 @@
 @media (min-width: $tablet-width) {
   .price {
     &__wrapper {
-      width: 620px;
       padding-top: 104px;
-      padding-right: 20px;
       padding-bottom: 70px;
-      padding-left: 20px;
-      margin: 0 auto;
+      @include wrapper();
     }
 
     &__table {
@@ -135,11 +132,8 @@
 @media (min-width: $desktop-width) {
   .price {
     &__wrapper {
-      width: 940px;
       padding-top: 171px;
-      padding-right: 10px;
       padding-bottom: 97px;
-      padding-left: 10px;
     }
 
     &__element--header {

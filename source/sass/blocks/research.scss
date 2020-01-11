@@ -4,6 +4,10 @@
   background-color: $background-color-main;
   text-align: left;
 
+  &__wrapper {
+    @include wrapper();
+  }
+
   &__content {
     padding-left: 308px;
   }
@@ -39,11 +43,7 @@
 
     &__wrapper {
       display: flex;
-      width: 620px;
       padding-top: 60px;
-      padding-right: 20px;
-      padding-left: 20px;
-      margin: 0 auto;
 
       //------- Временно ----------//
       min-height: 276px;
@@ -80,11 +80,8 @@
     background-color: $background-color-main--additional;
 
     &__wrapper {
-      width: 940px;
       min-height: 414px;
       padding-top: 0;
-      padding-right: 10px;
-      padding-left: 10px;
     }
 
     &__diagram {

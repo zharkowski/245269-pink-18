@@ -1,12 +1,14 @@
 .page-main {
-  overflow: hidden;
-  //padding-top: 65px;
-  margin-top: -65px;
+  &__intro {
+    margin-top: -65px;
+  }
 }
 
 
 @media (min-width: $tablet-width) {
   .page-main {
-    margin-top: -109px;
+    &__intro {
+      margin-top: -109px;
+    }
   }
 }
