@@ -1,14 +1,22 @@
 .reviews {
   text-align: center;
+  padding-top: 42px;
 
-  padding-left: 20px;
-  padding-right: 20px;
+  &__wrapper {
+    @include wrapper();
+  }
 
   background-color: $background-color-main;
 
+  &__quotes-item {
+    display: none;
+  }
+
   &__item {
+    display: flex;
+    flex-direction: column;
+
     margin: 0;
-    margin-top: 50px;
   }
 
   &__user-name {
@@ -28,5 +36,71 @@
     line-height: 30px;
     letter-spacing: 0;
     color: $text-color;
+  }
+
+  &__legend {
+    display: none;
+  }
+
+  &__toggles {
+    margin-top: 8px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    padding-top: 80px;
+
+    &__user-name {
+      order: 1;
+      margin-top: 16px;
+
+      font-size: 20px;
+    }
+
+    &__text {
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+    &__legend {
+      order: 2;
+      display: block;
+      margin-top: 2px;
+
+      font-size: 14px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    padding-top: 70px;
+
+    &__quotes-item {
+      display: block;
+      margin: 0 auto;
+      fill: #efefef;
+    }
+
+    &__list {
+      width: 790px;
+      margin: 0 auto;
+      margin-top: 32px;
+    }
+
+    &__user-name {
+      margin-top: 18px;
+
+      font-size: 24px;
+    }
+
+    &__legend {
+      font-size: 18px;
+    }
+
+    &__toggles {
+      display: none;
+    }
   }
 }

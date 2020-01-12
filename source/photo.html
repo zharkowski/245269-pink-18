@@ -2,17 +2,18 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Пинк: Фотографии</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="photo-main">
-    <div class="header-intro-wrapper header-intro-wrapper--inner-page">
-      <header class="header-intro-wrapper__page-header page-header">
-        <div class="page-header__wrapper">
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <div class="page-header__logo-toggle-wrapper">
           <a class="page-header__logo-link" href="index.html">
-            <img class="page-header__logo-image" src="https://via.placeholder.com/75x22" width="75" height="22" alt="Логотип Пинка.">
+            <img class="page-header__logo-image" src="https://via.placeholder.com/147x40" width="147" height="40" alt="Логотип Пинка.">
           </a>
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <button class="page-header__toggle" type="button"></button>
         </div>
         <nav class="main-nav">
           <ul class="main-nav__list site-list">
@@ -30,165 +31,187 @@
             </li>
           </ul>
         </nav>
-      </header>
-
-      <div class="header-intro-wrapper__intro intro">
-        <h1 class="intro__page-title">Фотографии пользователей</h1>
       </div>
-    </div>
+    </header>
 
     <main class="page-main">
+      <section class="page-main__intro intro">
+        <div class="intro__wrapper">
+          <h1 class="intro__page-title">Фотографии пользователей</h1>
+        </div>
+      </section>
+
       <section class="cards">
-        <h2 class="cards__title visually-hidden">Галерея фотографий</h2>
-        <p class="cards__slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-        <ul class="cards__list list">
-          <li class="cards__item cards__item--panorama-of-the-day">
-            <article class="cards__post-content post-content">
-              <h3 class="visually-hidden">Пост с фотографией</h3>
-              <a href="#" class="post-content__photo-link">
-                <img class="post-content__photo post-content__photo--panorama-of-the-day" src="https://via.placeholder.com/320x137" width="320" height="137" alt="Панорамный вид на холмы с моста.">
-              </a>
-              <div class="post-content__text">
-                <p class="post-content__user">Анна <span class="post-content__posting-time">(5 минут назад)</span></p>
-                <p class="post-content__message">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-                <p class="post-content__likes">Нравится: 215</p>
-              </div>
-            </article>
-          </li>
-          <li class="cards__item">
-            <article class="cards__post-content post-content">
-              <h3 class="visually-hidden">Пост с фотографией</h3>
-              <a href="#" class="post-content__photo-link">
-                <img class="post-content__photo" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Белая машина у темной стены и штатив для камеры на переднем плане.">
-              </a>
-              <div class="post-content__text">
-                <p class="post-content__user">Левон <span class="post-content__posting-time">(5 часов назад)</span></p>
-                <p class="post-content__message">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-                <p class="post-content__likes">Нравится: 356</p>
-              </div>
-            </article>
-          </li>
-          <li class="cards__item">
-            <article class="cards__post-content post-content">
-              <h3 class="visually-hidden">Пост с фотографией</h3>
-              <a href="#" class="post-content__photo-link">
-                <img class="post-content__photo" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Барабанная установка с подключенными микрофонами.">
-              </a>
-              <div class="post-content__text">
-                <p class="post-content__user">Антон <span class="post-content__posting-time">(12 часов назад)</span></p>
-                <p class="post-content__message">Соседи будут рады!</p>
-                <p class="post-content__likes">Нравится: 666</p>
-              </div>
-            </article>
-          </li>
-          <li class="cards__item">
-            <article class="cards__post-content post-content">
-              <h3 class="visually-hidden">Пост с фотографией</h3>
-              <a href="#" class="post-content__photo-link">
-                <img class="post-content__photo" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Вид неба через прозрачную крышу небоскреба.">
-              </a>
-              <div class="post-content__text">
-                <p class="post-content__user">Борис <span class="post-content__posting-time">(20 часов назад)</span></p>
-                <p class="post-content__message">Здесь могла быть ваша цитата о высоком и вечном.</p>
-                <p class="post-content__likes">Нравится: 215</p>
-              </div>
-            </article>
-          </li>
-          <li class="cards__item">
-            <article class="cards__post-content post-content">
-              <h3 class="visually-hidden">Пост с фотографией</h3>
-              <a href="#" class="post-content__photo-link">
-                <img class="post-content__photo" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Продажа дынь и арбусов на кубанской бахче.">
-              </a>
-              <div class="post-content__text">
-                <p class="post-content__user">Сергей <span class="post-content__posting-time">(25 часов назад)</span></p>
-                <p class="post-content__message">Самая кубанская в мире!</p>
-                <p class="post-content__likes">Нравится: 4</p>
-              </div>
-            </article>
-          </li>
-          <li class="cards__item">
-            <article class="cards__post-content post-content">
-              <h3 class="visually-hidden">Пост с фотографией</h3>
-              <a href="#" class="post-content__photo-link">
-                <img class="post-content__photo" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Вид с вершины горы вниз с ногами фотографирующего.">
-              </a>
-              <div class="post-content__text">
-                <p class="post-content__user">Максим <span class="post-content__posting-time">(40 часов назад)</span></p>
-                <p class="post-content__message">Где снег-то?</p>
-                <p class="post-content__likes">Нравится: 150</p>
-              </div>
-            </article>
-          </li>
-          <li class="cards__item">
-            <article class="cards__post-content post-content">
-              <h3 class="visually-hidden">Пост с фотографией</h3>
-              <a href="#" class="post-content__photo-link">
-                <img class="post-content__photo" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Крыло самолета в воздухе на фоне яркого Солнца.">
-              </a>
-              <div class="post-content__text">
-                <p class="post-content__user">Надежда <span class="post-content__posting-time">(45 часов назад)</span></p>
-                <p class="post-content__message">Всем GM и взаимные лайки!</p>
-                <p class="post-content__likes">Нравится: 2560</p>
-              </div>
-            </article>
-          </li>
-        </ul>
+        <div class="cards__wrapper">
+          <h2 class="cards__title visually-hidden">Галерея фотографий</h2>
+          <p class="cards__slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+          <ul class="cards__list list">
+            <li class="cards__item cards__item--panorama-of-the-day">
+              <article class="cards__post-content post-content post-content--panorama-of-the-day">
+                <h3 class="visually-hidden">Пост с фотографией</h3>
+                <a class="post-content__photo-link" href="#">
+                  <img class="post-content__photo" src="https://via.placeholder.com/660x509" width="660" height="509" alt="Панорамный вид на холмы с моста.">
+<!--                  <img class="post-content__photo post-content__photo&#45;&#45;panorama-of-the-day" src="https://via.placeholder.com/320x137" width="320" height="137" alt="Панорамный вид на холмы с моста.">-->
+                </a>
+                <div class="post-content__text">
+                  <p class="post-content__user">Анна <span class="post-content__posting-time">(5 минут назад)</span></p>
+                  <p class="post-content__message">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои</p>
+                  <p class="post-content__likes">Нравится: 215</p>
+                </div>
+              </article>
+            </li>
+            <li class="cards__item">
+              <article class="cards__post-content post-content">
+                <h3 class="visually-hidden">Пост с фотографией</h3>
+                <a class="post-content__photo-link" href="#">
+                  <img class="post-content__photo" src="https://via.placeholder.com/300x300" width="300" height="300" alt="Белая машина у темной стены и штатив для камеры на переднем плане.">
+                </a>
+                <div class="post-content__text">
+                  <p class="post-content__user">Левон <span class="post-content__posting-time">(5 часов назад)</span></p>
+                  <p class="post-content__message">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                  <p class="post-content__likes">Нравится: 356</p>
+                </div>
+              </article>
+            </li>
+            <li class="cards__item">
+              <article class="cards__post-content post-content">
+                <h3 class="visually-hidden">Пост с фотографией</h3>
+                <a class="post-content__photo-link" href="#">
+                  <img class="post-content__photo" src="https://via.placeholder.com/300x300" width="300" height="300" alt="Барабанная установка с подключенными микрофонами.">
+                </a>
+                <div class="post-content__text">
+                  <p class="post-content__user">Антон <span class="post-content__posting-time">(12 часов назад)</span></p>
+                  <p class="post-content__message">Соседи будут рады!</p>
+                  <p class="post-content__likes">Нравится: 666</p>
+                </div>
+              </article>
+            </li>
+            <li class="cards__item">
+              <article class="cards__post-content post-content">
+                <h3 class="visually-hidden">Пост с фотографией</h3>
+                <a class="post-content__photo-link" href="#">
+                  <img class="post-content__photo" src="https://via.placeholder.com/300x300" width="300" height="300" alt="Вид неба через прозрачную крышу небоскреба.">
+                </a>
+                <div class="post-content__text">
+                  <p class="post-content__user">Борис <span class="post-content__posting-time">(20 часов назад)</span></p>
+                  <p class="post-content__message">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                  <p class="post-content__likes">Нравится: 215</p>
+                </div>
+              </article>
+            </li>
+            <li class="cards__item">
+              <article class="cards__post-content post-content">
+                <h3 class="visually-hidden">Пост с фотографией</h3>
+                <a class="post-content__photo-link" href="#">
+                  <img class="post-content__photo" src="https://via.placeholder.com/300x300" width="300" height="300" alt="Продажа дынь и арбусов на кубанской бахче.">
+                </a>
+                <div class="post-content__text">
+                  <p class="post-content__user">Сергей <span class="post-content__posting-time">(25 часов назад)</span></p>
+                  <p class="post-content__message">Самая кубанская в мире!</p>
+                  <p class="post-content__likes">Нравится: 4</p>
+                </div>
+              </article>
+            </li>
+            <li class="cards__item">
+              <article class="cards__post-content post-content">
+                <h3 class="visually-hidden">Пост с фотографией</h3>
+                <a class="post-content__photo-link" href="#">
+                  <img class="post-content__photo" src="https://via.placeholder.com/300x300" width="300" height="300" alt="Вид с вершины горы вниз с ногами фотографирующего.">
+                </a>
+                <div class="post-content__text">
+                  <p class="post-content__user">Максим <span class="post-content__posting-time">(40 часов назад)</span></p>
+                  <p class="post-content__message">Где снег-то?</p>
+                  <p class="post-content__likes">Нравится: 150</p>
+                </div>
+              </article>
+            </li>
+            <li class="cards__item">
+              <article class="cards__post-content post-content">
+                <h3 class="visually-hidden">Пост с фотографией</h3>
+                <a class="post-content__photo-link" href="#">
+                  <img class="post-content__photo" src="https://via.placeholder.com/300x300" width="300" height="300" alt="Крыло самолета в воздухе на фоне яркого Солнца.">
+                </a>
+                <div class="post-content__text">
+                  <p class="post-content__user">Надежда <span class="post-content__posting-time">(45 часов назад)</span></p>
+                  <p class="post-content__message">Всем GM и взаимные лайки!</p>
+                  <p class="post-content__likes">Нравится: 2560</p>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="upload">
-        <h2 class="upload__title visually-hidden">Добавление своей фотографии</h2>
-        <p class="upload__slogan">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!</p>
-        <form class="upload__editing editing" action="https://echo.htmlacademy.ru" method="post">
-          <img class="editing__photo" src="https://via.placeholder.com/280x374" alt="Заснеженная дорога в лесу">
-          <ul class="editing__list list">
-            <li class="editing__element editing__element--crop">
-              <label class="editing__label">
-                Размер
-                <input class="editing__input" name="crop-value" type="range">
-              </label>
-            </li>
-            <li class="editing__element editing__element--fill">
-              <label class="editing__label">
-                Заливка
-                <input class="editing__input" name="fill-value" type="range">
-              </label>
-            </li>
-            <li class="editing__element editing__element--contrast">
-              <label class="editing__label">
-                Контрастность
-                <input class="editing__input" name="contrast-value" type="range">
-              </label>
-            </li>
-          </ul>
-          <button class="editing__button editing__button--post button" type="submit">Запостить</button>
-          <button class="editing__button editing__button--cancel button" type="reset">Отмена</button>
-        </form>
+        <div class="upload__slogan-wrapper">
+          <h2 class="upload__title visually-hidden">Добавление своей фотографии</h2>
+          <p class="upload__slogan">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!</p>
+        </div>
+        <div class="upload__editing-wrapper">
+          <form class="upload__editing editing" action="https://echo.htmlacademy.ru" method="post">
+            <img class="editing__photo" src="https://via.placeholder.com/300x300" width="300" height="300" alt="Заснеженная дорога в лесу">
+            <div class="editing__input-wrapper">
+              <input class="editing__radio editing__radio--crop" id="editing-crop" name="editing-slider" type="radio" checked>
+              <input class="editing__radio editing__radio--fill" id="editing-fill" name="editing-slider" type="radio">
+              <input class="editing__radio editing__radio--contrast" id="editing-contrast" name="editing-slider" type="radio">
+              <ul class="editing__list list">
+                <li class="editing__element">
+                  <label class="editing__label" for="editing-crop">
+                    <img class="editing__icon" src="https://via.placeholder.com/22x22" width="22" height="22" alt="">
+                    <input class="editing__range editing__range--crop" name="crop-value" type="range">
+                  </label>
+                </li>
+                <li class="editing__element">
+                  <label class="editing__label" for="editing-fill">
+                    <img class="editing__icon" src="https://via.placeholder.com/22x22" width="22" height="22" alt="">
+                    <input class="editing__range editing__range--fill" name="fill-value" type="range">
+                  </label>
+                </li>
+                <li class="editing__element">
+                  <label class="editing__label" for="editing-contrast">
+                    <img class="editing__icon" src="https://via.placeholder.com/22x22" width="22" height="22" alt="">
+                    <input class="editing__range editing__range--contrast" name="contrast-value" type="range">
+                  </label>
+                </li>
+              </ul>
+              <div class="editing__buttons-wrapper">
+                <button class="editing__button button button--post" type="submit">Запостить</button>
+                <button class="editing__button button button--reset" type="reset">Отмена</button>
+              </div>
+            </div>
+          </form>
+        </div>
       </section>
     </main>
 
     <footer class="page-footer">
-      <a class="page-footer__logo-link" href="index.html">
-        <img class="page-footer__logo-image" src="https://via.placeholder.com/147x40" width="147" height="40" alt="Логотип Пинка.">
-      </a>
-      <div class="page-footer__social social">
-        <ul class="social__list list">
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Мы в Твиттере</a>
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo-link" href="index.html">
+          <img class="page-footer__logo-image" src="https://via.placeholder.com/147x40" width="147" height="40" alt="Логотип Пинка.">
+        </a>
+        <ul class="page-footer__social list">
+          <li class="page-footer__item">
+            <a class="page-footer__link page-footer__link--twitter" href="https://twitter.com/htmlacademy_ru?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+              <img src="https://via.placeholder.com/50x50" width="50" height="50" alt="">
+            </a>
           </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          <li class="page-footer__item">
+            <a class="page-footer__link page-footer__link--facebook" href="https://www.facebook.com/htmlacademy">
+              <img src="https://via.placeholder.com/50x50" width="50" height="50" alt="">
+            </a>
           </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">Мы в Ютубе</a>
+          <li class="page-footer__item">
+            <a class="page-footer__link page-footer__link--youtube" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">
+              <img src="https://via.placeholder.com/50x50" width="50" height="50" alt="">
+            </a>
           </li>
         </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__image" src="https://via.placeholder.com/27x34" alt="Логотип HTML Academy.">
-        </a>
+        <div class="page-footer__copyright">
+          <span class="page-footer__made-by">Разработано</span>
+          <a class="page-footer__html-academy-link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="page-footer__html-academy-logo" src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип HTML Academy.">
+          </a>
+        </div>
       </div>
     </footer>
   </body>

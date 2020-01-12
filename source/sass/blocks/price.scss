@@ -2,7 +2,7 @@
   overflow: hidden;
 
   &__wrapper {
-    margin-top: 125px;
+    margin-top: 126px;
     position: relative;
   }
 
@@ -13,7 +13,7 @@
 
     width: 130vw;
     height: 1050px;
-    top: -70px;
+    top: 40px;
     left: calc(-60vw + 50%);
     transform: rotate(-5deg);
 
@@ -46,6 +46,10 @@
     background-color: $background-color-main;
   }
 
+  &__element--additional {
+    display: none;
+  }
+
   &__element--header {
     color: $text-color--header;
     border-top-color: $background-color-table-header;
@@ -68,5 +72,89 @@
 
   &__toggles {
     text-align: center;
+    margin: 35px 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .price {
+    &__wrapper {
+      padding-top: 104px;
+      padding-bottom: 70px;
+      @include wrapper();
+    }
+
+    &__table {
+      width: 100%;
+      transform: none;
+    }
+
+    &__element {
+      width: 25%;
+    }
+
+    &__element--additional {
+      display: table-cell;
+      padding: 7px 14px;
+
+      font-size: 14px;
+      text-transform: none;
+    }
+
+    &__element--header {
+      height: 75px;
+      padding: 0;
+    }
+
+    &__element--header.price__element--additional {
+      border-color: transparent;
+      background-color: transparent;
+    }
+
+    &__tariff {
+      font-size: 16px;
+    }
+
+    &__value {
+      font-size: 18px;
+    }
+
+    &__description {
+      display: none;
+    }
+
+    &__toggles {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .price {
+    &__wrapper {
+      padding-top: 171px;
+      padding-bottom: 97px;
+    }
+
+    &__element--header {
+      height: 94px;
+    }
+
+    &__tariff {
+      font-size: 18px;
+    }
+
+    &__value {
+      font-size: 24px;
+    }
+
+    &__element--additional {
+      font-size: 18px;
+    }
+
+    &__element--additional {
+      box-sizing: border-box;
+      padding: 14px 20px;
+    }
   }
 }

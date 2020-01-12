@@ -1,22 +1,32 @@
 .post-content {
-  &__photo--panorama-of-the-day {
+  &__photo {
     display: block;
-    width: 100vw;
+    min-width: 100%;
+    height: auto;
+  }
+
+  &--panorama-of-the-day &__photo {
+    display: block;
+    min-width: 100vw;
     height: auto;
     position: relative;
     top: 0;
     left: calc(-50vw + 50%);
   }
 
+  &__photo-link {
+    display: block;
+  }
+
   &__text {
-    padding-top: 25px;
+    padding-top: 17px;
     padding-right: 18px;
-    padding-bottom: 26px;
+    padding-bottom: 21px;
     padding-left: 18px;
   }
 
   &__user {
-    margin-top: 0;
+    margin: 0;
 
     font-family: $default-font;
     font-weight: bold;
@@ -32,6 +42,8 @@
   }
 
   &__message {
+    margin: 0;
+
     font-family: $default-font;
     font-weight: normal;
     font-size: 14px;
@@ -40,7 +52,9 @@
   }
 
   &__likes {
-    padding-left: 33px;
+    margin-top: 9px;
+    margin-bottom: 0;
+    padding-left: 31px;
 
     font-family: $default-font;
     font-weight: normal;
@@ -48,5 +62,48 @@
     line-height: 24px;
     text-transform: uppercase;
     color: $text-color--additional;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .post-content {
+    min-height: 455px;
+
+    &__text {
+      position: relative;
+      min-height: 110px;
+      padding-top: 24px;
+      padding-left: 28px;
+      padding-right: 28px;
+    }
+
+    &__likes {
+      position: absolute;
+      width: 245px;
+      padding-left: 0;
+      left: 27px;
+      bottom: 22px;
+    }
+
+    &--panorama-of-the-day &__text {
+      padding-top: 22px;
+      min-height: 0;
+    }
+
+    &--panorama-of-the-day &__likes {
+      top: 22px;
+      right: 28px;
+      left: auto;
+      bottom: auto;
+      width: auto;
+      padding-right: 31px;
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .post-content {
+
   }
 }

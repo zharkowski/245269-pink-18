@@ -1,18 +1,98 @@
 .page-footer {
-  padding-top: 40px;
-
   text-align: center;
+
   background-color: $background-color-main;
 
-  &__social {
-    margin-top: 40px;
+  &--index {
+    display: none;
   }
 
-  &__logo-link {
-    margin: 40px auto;
+  &__wrapper {
+    padding-top: 40px;
+    @include wrapper();
+  }
+
+  &__social {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 30px;
+
+    //------- Временно ---------//
+    width: 177px;
   }
 
   &__copyright {
-    margin: 40px auto;
+    margin-top: 33px;
+  }
+
+  &__made-by {
+
+    font-family: $default-font;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: $text-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    &--index {
+      display: block;
+    }
+
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 35px;
+      padding-bottom: 43px;
+
+      //------- Временно ---------//
+      min-height: 57px;
+    }
+
+    &__logo-link {
+      display: block;
+
+      //------- Временно ---------//
+      width: 147px;
+    }
+
+    &__social {
+      margin-top: 0;
+      //------- Временно ---------//
+      width: 177px;
+    }
+
+    &__copyright {
+      margin-top: 0;
+      //------- Временно ---------//
+      width: 148px;
+    }
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    &__wrapper {
+      padding-top: 102px;
+      padding-bottom: 67px;
+    }
+
+    &__copyright {
+      //------- Временно ---------//
+      width: 152px;
+    }
+
+    &__made-by {
+      font-size: 18px;
+    }
+
+    &__html-academy-link {
+      margin-left: 7px;
+    }
   }
 }

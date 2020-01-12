@@ -1,8 +1,36 @@
 $default-font: "Open Sans", "Arial", sans-serif;
 
+$mobile-width: 320px;
+$tablet-width: 660px;
+$desktop-width: 960px;
+
+$mobile-padding: 20px;
+$tablet-padding: 20px;
+$desktop-padding: 10px;
+
+@mixin wrapper() {
+  margin: 0 auto;
+  @media (min-width: $mobile-width) {
+    width: calc(#{$mobile-width} - #{$mobile-padding} * 2);
+    padding-right: $mobile-padding;
+    padding-left: $mobile-padding;
+  }
+  @media (min-width: $tablet-width) {
+    width: calc(#{$tablet-width} - #{$tablet-padding} * 2);
+    padding-right: $tablet-padding;
+    padding-left: $tablet-padding;
+  }
+  @media (min-width: $desktop-width) {
+    width: calc(#{$desktop-width} - #{$desktop-padding} * 2);
+    padding-right: $desktop-padding;
+    padding-left: $desktop-padding;
+  }
+}
+
 $white: #ffffff;
 $black: #000000;
 $blue--dark: #283645;
+$blue--dark-sec: #1d2631;
 $grey: #e5e5e5;
 $grey--light: #f2f2f2;
 $pink: #d22856;
@@ -11,6 +39,7 @@ $green--dark: #1c9b5e;
 
 $background-color-header--shown: $blue--dark;
 $background-color-header--hidden: rgba($black, 0.3);
+$background-color-intro: $blue--dark-sec;
 $background-color-download: $background-color-header--shown;
 $background-color-main: $white;
 $background-color-main--additional: $grey--light;
@@ -25,12 +54,27 @@ $button-color--green-hover: $green--dark;
 $button-color--green-active: $green--dark;
 $button-color--green-disabled: $grey;
 $button-text-color: $white;
-$button-text-color--hover: $white;
+$button-text-color--hover: $pink;
 $button-text-color--active: rgba($pink, 0.3);
 $button-text-color--green: $white;
 $button-text-color--green-hover: $white;
 $button-text-color--green-active: rgba($white, 0.3);
 $button-text-color--green-disabled: $white;
+$button-post-border: $pink;
+$button-post-text: $pink;
+$button-post-text--hover: $white;
+$button-post-background--hover: $pink;
+$button-post-text--active: rgba($white, 0.3);
+$button-post-background--active: $pink;
+$button-reset-border: rgba($blue--dark, 0.1);
+$button-reset-border--hover: rgba($blue--dark, 0.3);
+$button-reset-border--active: rgba($blue--dark, 0.3);
+$button-reset-text: rgba($blue--dark, 0.1);
+$button-reset-text--hover: rgba($blue--dark, 0.3);
+$button-reset-text--active: rgba($white, 0.3);
+$button-reset-background: transparent;
+$button-reset-background--hover: transparent;
+$button-reset-background--active: rgba($blue--dark, 0.3);
 
 $text-color: $blue--dark;
 $text-color--header: $white;

@@ -3,6 +3,13 @@
   position: relative;
   text-align: center;
 
+  // ВРЕМЕННО ВМЕСТО КАРТЫ
+  padding-bottom: 220px;
+
+  &__wrapper {
+    @include wrapper();
+  }
+
   &__text {
     padding: 0 20px;
   }
@@ -27,7 +34,7 @@
 
   &__link,
   &__address {
-    margin-top: 10px;
+    display: block;
 
     font-family: $default-font;
     font-weight: 200;
@@ -41,7 +48,6 @@
     position: relative;
 
     overflow: hidden;
-    //top: -445px;
   }
 
   &__map::before {
@@ -62,5 +68,75 @@
 
   &__map-image {
     margin-top: -426px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    padding-top: 50px;
+
+    // ВРЕМЕННО ВМЕСТО КАРТЫ
+    padding-bottom: 400px;
+
+    &__slogan {
+      margin-bottom: 0;
+
+      font-size: 40px;
+      line-height: 45px;
+    }
+
+    &__links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    &__phone,
+    &__email,
+    &__come-to-us {
+      display: block;
+      width: 298px;
+      margin-top: 43px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+
+    // ВРЕМЕННО ВМЕСТО КАРТЫ
+    padding-bottom: 520px;
+
+    &__wrapper {
+      padding-top: 15px;
+    }
+
+    &__slogan {
+      font-size: 50px;
+      line-height: 60px;
+    }
+
+    &__links {
+      margin-top: 6px;
+      justify-content: space-between;
+    }
+
+    &__link,
+    &__address {
+      margin-top: 20px;
+    }
+
+    &__phone {
+      order: 1;
+    }
+
+    &__come-to-us {
+      order: 2;
+    }
+
+    &__email {
+      order: 3;
+    }
   }
 }
