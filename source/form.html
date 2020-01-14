@@ -40,139 +40,149 @@
           <h1 class="intro__page-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
         </div>
       </section>
+
       <section class="competition">
-        <h2 class="competition__title visually-hidden">Конкурс</h2>
-        <p class="competition__slogan">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
-        <form class="competition__form form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="form__name">
-            <label class="form__label form__label--text">
-              Фамилия:
-              <input class="form__input" type="text" name="second-name" placeholder="Укажите фамилию *" required>
-            </label>
-            <label class="form__label form__label--text">
-              Имя:
-              <input class="form__input" type="text" name="first-name" placeholder="Введите ваше имя *" required>
-            </label>
-            <label class="form__label form__label--text">
-              Отчество:
-              <input class="form__input" type="text" name="patronymic" placeholder="Ну и отчество тоже">
-            </label>
-          </fieldset>
-          <div class="form__achievements-wrapper">
-            <fieldset class="form__achievements">
+        <div class="competition__wrapper">
+          <h2 class="competition__title visually-hidden">Конкурс</h2>
+          <p class="competition__slogan">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="competition__slogan--form">Пожалуйста, заполните форму ниже:</span></p>
+          <form class="competition__form form" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset class="form__name">
+              <label class="form__label form__label--name">
+                <span class="form__label-value form__label-value--name">Фамилия:</span>
+                <input class="form__input form__input--name" type="text" name="second-name" placeholder="Укажите фамилию *" required>
+              </label>
+              <label class="form__label form__label--name">
+                <span class="form__label-value form__label-value--name">Имя:</span>
+                <input class="form__input form__input--name" type="text" name="first-name" placeholder="Введите ваше имя *" required>
+              </label>
+              <label class="form__label form__label--name">
+                <span class="form__label-value form__label-value--name">Отчество:</span>
+                <input class="form__input form__input--name" type="text" name="patronymic" placeholder="Ну и отчество тоже">
+              </label>
+            </fieldset>
+            <div class="form__achievements-wrapper">
+              <fieldset class="form__achievements">
               <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
-              <ul class="form__list list">
-                <li class="form__item">
+              <ul class="form__list form__list--achievements list">
+                <li class="form__item form__item--achievements">
                   <label class="form__label form__label--checkbox">
-                    <input class="form__input" type="checkbox" name="selfie-with-a-shark" checked>
+                    <input class="form__input form__input--achievements" type="checkbox" name="selfie-with-a-shark" checked>
                     Сделал селфи с акулой
                   </label>
                 </li>
-                <li class="form__item">
+                <li class="form__item form__item--achievements">
                   <label class="form__label form__label--checkbox">
-                    <input class="form__input" type="checkbox" name="sunburned-on-the-beach" checked>
+                    <input class="form__input form__input--achievements" type="checkbox" name="sunburned-on-the-beach" checked>
                     Обгорел на пляже
                   </label>
                 </li>
-                <li class="form__item">
+                <li class="form__item form__item--achievements">
                   <label class="form__label form__label--checkbox">
-                    <input class="form__input" type="checkbox" name="saw-chuck-norris">
+                    <input class="form__input form__input--achievements" type="checkbox" name="saw-chuck-norris">
                     Видел Чака Норриса
                   </label>
                 </li>
-                <li class="form__item">
+                <li class="form__item form__item--achievements">
                   <label class="form__label form__label--checkbox">
-                    <input class="form__input" type="checkbox" name="bought-souvenirs">
+                    <input class="form__input form__input--achievements" type="checkbox" name="bought-souvenirs">
                     Накупил сувениров
                   </label>
                 </li>
-                <li class="form__item">
+                <li class="form__item form__item--achievements">
                   <label class="form__label form__label--checkbox">
-                    <input class="form__input" type="checkbox" name="held-the-tower" checked>
+                    <input class="form__input form__input--achievements" type="checkbox" name="held-the-tower" checked>
                     Удержал башню
                   </label>
                 </li>
-                <li class="form__item">
+                <li class="form__item form__item--achievements">
                   <label class="form__label form__label--checkbox">
-                    <input class="form__input" type="checkbox" name="defeated-the-hotel">
+                    <input class="form__input form__input--achievements" type="checkbox" name="defeated-the-hotel">
                     Разгромил отель
                   </label>
                 </li>
               </ul>
             </fieldset>
-          </div>
-          <fieldset class="form__contacts">
-            <label class="form__label form__label--text">
-              Номер телефона
-              <input class="form__input" type="tel" name="user-phone-number" placeholder="Номер, пожалуйста">
-            </label>
-            <label class="form__label form__label--text">
-              Адрес почты
-              <input class="form__input" type="email" name="user-email" placeholder="Введите почту *" required>
-            </label>
-          </fieldset>
-          <div class="form__platform-wrapper">
-            <fieldset class="form__platform">
-              <legend class="form__legend">С каким приложением путешествовали?</legend>
-              <ul class="form_list list">
-                <li class="form__item form__item--radio">
-                  <label class="form__label form__label--radio">
-                    <input class="form__input" type="radio" name="mobile-platform" checked>
-                    Pink для iOS
-                  </label>
-                </li>
-                <li class="form__item form__item--radio">
-                  <label class="form__label form__label--radio">
-                    <input class="form__input" type="radio" name="mobile-platform">
-                    Pink на Android
-                  </label>
-                </li>
-                <li class="form__item form__item--radio">
-                  <label class="form__label form__label--radio">
-                    <input class="form__input" type="radio" name="mobile-platform">
-                    Windows Phone
-                  </label>
-                </li>
-              </ul>
+            </div>
+            <fieldset class="form__contacts">
+              <legend class="form__legend form__legend--contacts">Контактная информация</legend>
+              <label class="form__label form__label--contacts">
+                <span class="form__label-value form__label-value--contacts">Номер телефона</span>
+                <input class="form__input form__input--contacts" type="tel" name="user-phone-number" placeholder="Номер, пожалуйста">
+              </label>
+              <label class="form__label form__label--contacts">
+                <span class="form__label-value form__label-value--contacts">Адрес почты</span>
+                <input class="form__input form__input--contacts" type="email" name="user-email" placeholder="Введите почту *" required>
+              </label>
             </fieldset>
-          </div>
-          <fieldset class="form__message">
-            <label class="form__label form__label--textarea">
-              <span class="form__label-value">Опишите свои эмоции</span>
-              <textarea class="form__text" name="message" rows="6" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-            </label>
-          </fieldset>
-          <button class="form__button button button--green" type="submit">Отправить форму</button>
-          <small class="form__designation">
-            <sup>*</sup> — обязательные поля
-          </small>
-        </form>
+            <div class="form__platform-wrapper">
+              <fieldset class="form__platform">
+                <legend class="form__legend">С каким приложением путешествовали?</legend>
+                <ul class="form__list form__list--platform list">
+                  <li class="form__item form__item--radio">
+                    <label class="form__label form__label--radio">
+                      <input class="form__input form__input--platform" type="radio" name="mobile-platform" checked>
+                      Pink для iOS
+                    </label>
+                  </li>
+                  <li class="form__item form__item--radio">
+                    <label class="form__label form__label--radio">
+                      <input class="form__input form__input--platform" type="radio" name="mobile-platform">
+                      Pink на Android
+                    </label>
+                  </li>
+                  <li class="form__item form__item--radio">
+                    <label class="form__label form__label--radio">
+                      <input class="form__input form__input--platform" type="radio" name="mobile-platform">
+                      Windows Phone
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+            <fieldset class="form__message">
+              <legend class="form__legend form__legend--message">Опишите свои эмоции</legend>
+              <label class="form__label form__label--textarea">
+                <textarea class="form__text" name="message" rows="3" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              </label>
+            </fieldset>
+            <div class="form__button-designation-wrapper">
+              <button class="form__button button button--green" type="submit">Отправить форму</button>
+              <small class="form__designation">
+              <span class="form__asterisk">*</span> — обязательные <span class="form__asterisk-added">для заполнения</span> поля
+            </small>
+            </div>
+          </form>
+        </div>
       </section>
     </main>
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo-link" href="index.html">
-          <!--        <img class="page-footer__logo-image" src="https://via.placeholder.com/147x40" width="147" height="40" alt="Логотип Пинка.">-->
+          <img class="page-footer__logo-image" src="https://via.placeholder.com/147x40" width="147" height="40" alt="Логотип Пинка.">
         </a>
-        <div class="page-footer__social social">
-          <ul class="social__list list">
-            <li class="social__item">
-              <!--              <a class="social__link social__link&#45;&#45;twitter" href="https://twitter.com/htmlacademy_ru?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Мы в Твиттере</a>-->
-            </li>
-            <li class="social__item">
-              <!--              <a class="social__link social__link&#45;&#45;facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>-->
-            </li>
-            <li class="social__item">
-              <!--              <a class="social__link social__link&#45;&#45;youtube" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">Мы в Ютубе</a>-->
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__copyright copyright">
-          <!--        <b class="copyright__text">Разработано</b>-->
-          <!--        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">-->
-          <!--          <img class="copyright__image" src="https://via.placeholder.com/27x34" alt="Логотип HTML Academy.">-->
-          <!--        </a>-->
+        <ul class="page-footer__social list">
+          <li class="page-footer__item">
+            <a class="page-footer__link page-footer__link--twitter" href="https://twitter.com/htmlacademy_ru?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+              <img src="https://via.placeholder.com/50x50" width="50" height="50" alt="">
+            </a>
+          </li>
+          <li class="page-footer__item">
+            <a class="page-footer__link page-footer__link--facebook" href="https://www.facebook.com/htmlacademy">
+              <img src="https://via.placeholder.com/50x50" width="50" height="50" alt="">
+            </a>
+          </li>
+          <li class="page-footer__item">
+            <a class="page-footer__link page-footer__link--youtube" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">
+              <img src="https://via.placeholder.com/50x50" width="50" height="50" alt="">
+            </a>
+          </li>
+        </ul>
+        <div class="page-footer__copyright">
+          <span class="page-footer__made-by">Разработано</span>
+          <a class="page-footer__html-academy-link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="page-footer__html-academy-logo" src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип HTML Academy.">
+          </a>
         </div>
       </div>
     </footer>
