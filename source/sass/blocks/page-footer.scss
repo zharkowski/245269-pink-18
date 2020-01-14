@@ -26,14 +26,6 @@
   &__copyright {
     margin-top: 33px;
   }
-
-  &__made-by {
-    font-family: $default-font;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
-    color: $text-color;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -66,33 +58,16 @@
     }
 
     &__copyright {
-      display: flex;
       margin-top: 0;
-      //------- Временно ---------//
-      width: 148px;
     }
   }
 }
-
 
 @media (min-width: $desktop-width) {
   .page-footer {
     &__wrapper {
       padding-top: 102px;
       padding-bottom: 67px;
-    }
-
-    &__copyright {
-      //------- Временно ---------//
-      width: 152px;
-    }
-
-    &__made-by {
-      font-size: 18px;
-    }
-
-    &__html-academy-link {
-      margin-left: 7px;
     }
   }
 }
