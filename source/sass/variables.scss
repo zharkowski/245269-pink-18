@@ -27,6 +27,10 @@ $desktop-padding: 10px;
   }
 }
 
+@mixin fieldset-border() {
+  border: 2px solid $border-color;
+}
+
 $white: #ffffff;
 $black: #000000;
 $blue--dark: #283645;

@@ -1,14 +1,14 @@
 .page-footer {
   text-align: center;
 
-  background-color: $background-color-main;
+  //background-color: $background-color-main;
 
   &--index {
     display: none;
   }
 
   &__wrapper {
-    padding-top: 40px;
+    padding-top: 55px;
     @include wrapper();
   }
 
@@ -28,7 +28,6 @@
   }
 
   &__made-by {
-
     font-family: $default-font;
     font-weight: normal;
     font-size: 14px;
@@ -67,6 +66,7 @@
     }
 
     &__copyright {
+      display: flex;
       margin-top: 0;
       //------- Временно ---------//
       width: 148px;

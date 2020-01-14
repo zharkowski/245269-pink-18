@@ -1,6 +1,5 @@
 .competition {
   &__slogan {
-    padding: 50px 20px;
 
     font-family: $default-font;
     font-weight: normal;
@@ -9,6 +8,45 @@
     color: $text-color;
     text-align: center;
 
-    background-color: white;
+    //background-color: $background-color-main;
+  }
+
+  &__slogan--form {
+    display: none;
+  }
+
+  &__wrapper {
+    @include wrapper();
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .competition {
+    &__form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__slogan {
+      font-size: 18px;
+      padding: 0 29px;
+      margin: 23px 0;
+    }
+
+    &__slogan--form {
+      display: inline;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .competition {
+    &__slogan {
+      padding: 0 68px;
+    }
+
+    &__form {
+      padding-top: 0;
+    }
   }
 }
