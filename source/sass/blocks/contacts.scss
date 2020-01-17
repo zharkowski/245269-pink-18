@@ -3,11 +3,11 @@
   position: relative;
   text-align: center;
 
-  // ВРЕМЕННО ВМЕСТО КАРТЫ
-  padding-bottom: 220px;
-
   &__wrapper {
     @include wrapper();
+
+    // ВРЕМЕННО ВМЕСТО КАРТЫ
+    padding-bottom: 220px;
   }
 
   &__text {
@@ -16,6 +16,7 @@
 
   &__slogan {
     margin-top: 0;
+    margin-bottom: 28px;
 
     font-family: $default-font;
     font-weight: 200;
@@ -26,6 +27,7 @@
   &__phone,
   &__email,
   &__come-to-us {
+    margin: 17px 0;
     font-family: $default-font;
     font-weight: bold;
     font-size: 18px;
@@ -75,8 +77,11 @@
   .contacts {
     padding-top: 50px;
 
-    // ВРЕМЕННО ВМЕСТО КАРТЫ
-    padding-bottom: 400px;
+    &__wrapper {
+      margin-bottom: 6px;
+      // ВРЕМЕННО ВМЕСТО КАРТЫ
+      padding-bottom: 400px;
+    }
 
     &__slogan {
       margin-bottom: 0;
@@ -104,12 +109,11 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
-
-    // ВРЕМЕННО ВМЕСТО КАРТЫ
-    padding-bottom: 520px;
-
     &__wrapper {
       padding-top: 15px;
+
+      // ВРЕМЕННО ВМЕСТО КАРТЫ
+      padding-bottom: 520px;
     }
 
     &__slogan {
@@ -118,7 +122,7 @@
     }
 
     &__links {
-      margin-top: 6px;
+      margin-top: 9px;
       justify-content: space-between;
     }
 

@@ -44,9 +44,6 @@
     font-size: 18px;
     line-height: 30px;
     color: $text-color;
-
-    //ВРЕМЕННО
-    background-color: transparent;
   }
 
   &__input--name:hover,
@@ -116,7 +113,9 @@
   }
 
   &__legend--message {
-    padding: 39px 30px 44px;
+    margin: 0 auto;
+    margin-top: 2px;
+    //padding: 39px 30px 44px;
   }
 
   &__contacts {

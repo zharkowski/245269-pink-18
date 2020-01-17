@@ -19,8 +19,24 @@
     margin: 0 auto;
     margin-bottom: 61px;
     position: absolute;
-    bottom: 0;
-    left: 19px;
+    bottom: -2px;
+    left: 18px;
+  }
+
+  &__element::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 1px;
+    top: 154px;
+    left: -20px;
+    background-color: rgba($blue--dark, 0.033);
+  }
+
+  &__element:nth-child(2)::before,
+  &__element:nth-child(3)::before {
+    display: none;
   }
 
   &__radio--crop:checked ~ &__list &__range--crop,
@@ -49,6 +65,27 @@
 
     &__element {
       padding-bottom: 20px;
+      position: relative;
+    }
+
+    //&__element:first-child::before {
+    //  width: 275px;
+    //}
+
+    &__element::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 275px;
+      height: 1px;
+      top: 46px;
+      left: -2px;
+      background-color: rgba($blue--dark, 0.033);
+    }
+
+    &__element:nth-child(2)::before,
+    &__element:nth-child(3)::before {
+      display: block;
     }
 
     &__label {
@@ -72,6 +109,10 @@
     &__button {
       margin-bottom: 24px;
     }
+
+    &__button:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -88,7 +129,16 @@
     }
 
     &__element {
-      padding-bottom: 7px;
+      padding-bottom: 9px;
+    }
+
+    &__element:first-child::before {
+      width: 410px;
+    }
+
+    &__element::before {
+      top: 53px;
+      left: 0;
     }
 
     &__range {
@@ -104,7 +154,7 @@
     &__buttons-wrapper {
       display: flex;
       justify-content: space-between;
-      margin-top: 81px;
+      margin-top: 88px;
     }
   }
 }

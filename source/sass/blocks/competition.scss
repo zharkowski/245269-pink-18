@@ -16,12 +16,17 @@
   }
 
   &__wrapper {
+    padding-top: 31px;
     @include wrapper();
   }
 }
 
 @media (min-width: $tablet-width) {
   .competition {
+    &__wrapper {
+      margin-top: 37px;
+    }
+
     &__form {
       display: flex;
       flex-direction: column;

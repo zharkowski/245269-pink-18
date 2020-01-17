@@ -31,6 +31,39 @@ $desktop-padding: 10px;
   border: 2px solid $border-color;
 }
 
+@mixin toggles() {
+  display: block;
+  position: relative;
+  padding: 0;
+  margin: 0 10px;
+  width: 6px;
+  height: 6px;
+  background-color:
+    transparent;
+  border: none;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 6px;
+    height: 6px;
+    border: 3px solid
+    #283645;
+    border-radius: 50%;
+    background-color: #ffffff;
+  }
+
+  &--active::before {
+    width: 12px;
+    height: 12px;
+    margin-left: -2px;
+    margin-top: -2px;
+  }
+}
+
 $white: #ffffff;
 $black: #000000;
 $blue--dark: #283645;
@@ -40,11 +73,13 @@ $grey--light: #f2f2f2;
 $pink: #d22856;
 $green: #2aab6d;
 $green--dark: #1c9b5e;
+$green-leafy: #3dc644;
+$orange: #f25b26;
 
-$background-color-header--shown: $blue--dark;
-$background-color-header--hidden: rgba($black, 0.3);
+$background-color-header--opened: $blue--dark;
+$background-color-header--closed: rgba($black, 0.3);
 $background-color-intro: $blue--dark-sec;
-$background-color-download: $background-color-header--shown;
+$background-color-download: $background-color-header--opened;
 $background-color-main: $white;
 $background-color-main--additional: $grey--light;
 $background-color-table-header: $blue--dark;

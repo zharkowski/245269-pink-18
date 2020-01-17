@@ -9,54 +9,24 @@
   position: relative;
   z-index: 2;
 
-  background-color: $background-color-header--shown;
-  //background-color: $background-color-header--hidden;
-
-  &__logo-toggle-wrapper {
-    display: flex;
-    justify-content: space-between;
-    box-sizing: border-box;
-    min-height: 69px;
-    padding: 21px 20px;
-
-    @include wrapper();
-    // ВРЕМЕННО
-    height: 66px;
-  }
-
-  &__logo-link {
-    display: block;
-  }
+  //background-color: $background-color-header--opened;
+  //background-color: $background-color-header--closed;
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
-    &__logo-toggle-wrapper {
-      min-height: 109px;
-    }
+
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
-    background-color: $background-color-header--hidden;
+    background-color: $background-color-header--closed;
 
     &__wrapper {
       display: flex;
       justify-content: space-between;
       @include wrapper();
-    }
-
-
-    &__logo-toggle-wrapper {
-      min-height: 110px;
-      padding: 25px 0px;
-      margin: 0;
-      width: auto;
-    }
-
-    &__toggle {
-      display: none;
     }
   }
 }
