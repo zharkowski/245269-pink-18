@@ -8,14 +8,14 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__wrapper">
-        <nav class="main-nav main-nav--closed main-nav--nojs">
-          <div class="main-nav__logo-toggle-wrapper">
-            <a class="main-nav__logo-link">
-              <img class="main-nav__logo-image" src="img/logo-pink-white-tablet.svg" width="146" height="40" alt="Логотип Пинка.">
-            </a>
-            <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          </div>
+      <div class="page-header__wrapper page-header__wrapper--menu-opened page-header__wrapper--nojs">
+        <div class="page-header__logo-toggle-wrapper">
+          <a class="page-header__logo-link">
+            <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Пинка.">
+          </a>
+          <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        </div>
+        <nav class="page-header__main-nav main-nav ">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a class="site-list__link">Главная</a>
@@ -48,17 +48,17 @@
             <ul class="intro__list list">
               <li class="intro__item">
                 <a href="https://www.apple.com/ru/ios/app-store/">
-                  <img class="download__img list__img--app-store" src="https://via.placeholder.com/47x56" alt="Приложение Пинк в App Store.">
+                  <img class="intro__item-img intro__item-img--app-store" src="https://via.placeholder.com/47x56" alt="Приложение Пинк в App Store.">
                 </a>
               </li>
               <li class="intro__item">
                 <a href="https://play.google.com/store/apps?hl=ru">
-                  <img class="download__img list__img--google-play" src="https://via.placeholder.com/43x47" alt="Приложениие Пинк в Google Play.">
+                  <img class="intro__item-img intro__item-img--google-play" src="https://via.placeholder.com/43x47" alt="Приложениие Пинк в Google Play.">
                 </a>
               </li>
               <li class="intro__item">
                 <a href="https://www.microsoft.com/ru-ru/store/apps/windows">
-                  <img class="download__img list__img--windows-store" src="https://via.placeholder.com/44x41" alt="Приложение Пинк в Windows Store.">
+                  <img class="intro__item-img intro__item-img--windows-store" src="https://via.placeholder.com/44x41" alt="Приложение Пинк в Windows Store.">
                 </a>
               </li>
             </ul>
@@ -100,7 +100,7 @@
           <h2 class="visually-hidden">Исследование</h2>
           <div class="research__content">
             <p class="research__slogan">Эффект на 24 часа!</p>
-            <p class="research__text">Британские ученые провели исследования и доказали,
+            <p class="research__text">Британские ученые провели исследования и доказали,<br class="research__br">
               что положительный эффект от использования приложения длится целые сутки!</p>
             <a href="#" class="research__link">Узнать больше об исследовании</a>
           </div>
@@ -160,106 +160,79 @@
                   <span class="visually-hidden">Список функций</span>
                 </th>
                 <th class="price__element price__element--header">
-                  <div class="price__cell-content">
-                    <span class="price__tariff">База</span>
-                    <br>
-                    <span class="price__value">1,99 USD</span>
-                  </div>
+                  <p class="price__tariff">База</p>
+                  <p class="price__value">1,99 USD</p>
                 </th>
                 <th class="price__element price__element--header price__element--hit">
-                  <div class="price__cell-content">
-                    <span class="price__tariff">Стандарт</span>
-                    <br>
-                    <span class="price__value">3,99 USD</span>
-                  </div>
+                  <p class="price__tariff">Стандарт</p>
+                  <p class="price__value">3,99 USD</p>
                 </th>
                 <th class="price__element price__element--header">
-                  <div class="price__cell-content">
-                    <span class="price__tariff">Анлим</span>
-                    <br>
-                    <span class="price__value">9,99 USD</span>
-                  </div>
+                  <p class="price__tariff">Анлим</p>
+                  <p class="price__value">9,99 USD</p>
                 </th>
               </tr>
               <tr>
                 <td class="price__element price__function price__element--additional">Розовый фильтр</td>
                 <td class="price__element price__function price__function--on">
-                  <div class="price__cell-content">
-                    <span class="price__description">Розовый фильтр</span>
-                    <svg width="31" height="21" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                      <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-                    </svg>
-                  </div>
+                  <span class="price__description">Розовый фильтр</span>
+                  <svg width="31" height="21" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                    <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                  </svg>
                 </td>
                 <td class="price__element price__function price__function--on">
-                  <div class="price__cell-content">
-                    <span class="price__description">Розовый фильтр</span>
-                    <svg width="31" height="21" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                      <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-                    </svg>
-                  </div>
+                  <span class="price__description">Розовый фильтр</span>
+                  <svg width="31" height="21" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                    <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                  </svg>
                 </td>
                 <td class="price__element price__function price__function--on">
-                  <div class="price__cell-content">
-                    <span class="price__description">Розовый фильтр</span>
-                    <svg width="31" height="21" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                      <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-                    </svg>
-                  </div>
+                  <span class="price__description">Розовый фильтр</span>
+                  <svg width="31" height="21" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                    <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                  </svg>
                 </td>
               </tr>
               <tr>
                 <td class="price__element price__function price__element--additional">Смайлики</td>
                 <td class="price__element price__function price__function--off">
-                  <div class="price__cell-content">
-                    <span class="price__description">Смайлики</span>
-                    <svg width="26" height="27" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
-                      <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
-                    </svg>
-                  </div>
+                  <span class="price__description">Смайлики</span>
+                  <svg width="26" height="27" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+                    <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+                  </svg>
                 </td>
                 <td class="price__element price__function price__function--on">
-                  <div class="price__cell-content">
-                    <span class="price__description">Смайлики</span>
-                    <svg width="31" height="21" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                      <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-                    </svg>
-                  </div>
+                  <span class="price__description">Смайлики</span>
+                  <svg width="31" height="21" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                    <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                  </svg>
                 </td>
                 <td class="price__element price__function price__function--on">
-                  <div class="price__cell-content">
-                    <span class="price__description">Смайлики</span>
-                    <svg width="31" height="21" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                      <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-                    </svg>
-                  </div>
+                  <span class="price__description">Смайлики</span>
+                  <svg width="31" height="21" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                    <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                  </svg>
                 </td>
               </tr>
               <tr>
                 <td class="price__element price__function price__element--additional">Комментарии</td>
                 <td class="price__element price__function price__function--off">
-                  <div class="price__cell-content">
-                    <span class="price__description">Комментарии</span>
-                    <svg width="26" height="27" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
-                      <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
-                    </svg>
-                  </div>
+                  <span class="price__description">Комментарии</span>
+                  <svg width="26" height="27" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+                    <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+                  </svg>
                 </td>
                 <td class="price__element price__function price__function--off">
-                  <div class="price__cell-content">
-                    <span class="price__description">Комментарии</span>
-                    <svg width="26" height="27" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
-                      <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
-                    </svg>
-                  </div>
+                  <span class="price__description">Комментарии</span>
+                  <svg width="26" height="27" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+                    <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+                  </svg>
                 </td>
                 <td class="price__element price__function price__function--on">
-                  <div class="price__cell-content">
-                    <span class="price__description">Комментарии</span>
-                    <svg width="31" height="21" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                      <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-                    </svg>
-                  </div>
+                  <span class="price__description">Комментарии</span>
+                  <svg width="31" height="21" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                    <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                  </svg>
                 </td>
               </tr>
             </table>

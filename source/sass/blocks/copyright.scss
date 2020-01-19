@@ -49,6 +49,7 @@
 
 @media (min-width: $desktop-width) {
   .copyright {
+    padding-top: 9px;
 
     &__made-by {
       font-size: 18px;
@@ -59,7 +60,7 @@
     }
 
     &__html-academy-logo {
-      margin-top: 3px;
+      margin-top: 6px;
     }
   }
 }

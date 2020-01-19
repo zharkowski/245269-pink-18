@@ -32,7 +32,16 @@
     transform: translateX(calc(-100vw + 64px));
   }
 
+  &__table tr {
+    background-color: $background-color-main;
+  }
+
+  &__table tr:first-child {
+    background-color: $text-color;
+  }
+
   &__element {
+    position: relative;
     padding: 14px 22px;
     border: 2px solid $background-color-main--additional;
 
@@ -42,8 +51,6 @@
     line-height: 30px;
     text-transform: uppercase;
     color: $text-color;
-
-    background-color: $background-color-main;
   }
 
   &__element--additional {
@@ -51,11 +58,11 @@
   }
 
   &__element--header {
-    color: $text-color--header;
-    border-top-color: $background-color-table-header;
-    border-bottom: none;
+    padding: 0;
 
-    background-color: $background-color-table-header;
+    color: $text-color--header;
+    border-top: none;
+    border-bottom: none;
   }
 
   &__element--hit {
@@ -83,12 +90,18 @@
   }
 
   &__tariff {
+    margin-top: 15px;
+    margin-bottom: 0;
+
     font-family: $default-font;
     font-weight: bold;
     font-size: 18px;
   }
 
   &__value {
+    margin-top: 2px;
+    margin-bottom: 19px;
+
     font-family: $default-font;
     font-weight: 200;
     font-size: 24px;
@@ -118,9 +131,9 @@
 
   &__function svg {
     position: absolute;
-    top: 5px;
+    top: 19px;
     left: auto;
-    right: -4px;
+    right: 18px;
   }
 
   &__function--on path{
@@ -170,7 +183,7 @@
 
     &__element--header.price__element--additional {
       border-color: transparent;
-      background-color: transparent;
+      background-color: $background-color-main--additional;
     }
 
     &__element--hit::before {

@@ -1,4 +1,4 @@
-$default-font: "Open Sans", "Arial", sans-serif;
+$default-font: "OpenSans", "Arial", sans-serif;
 
 $mobile-width: 320px;
 $tablet-width: 660px;
@@ -38,8 +38,7 @@ $desktop-padding: 10px;
   margin: 0 10px;
   width: 6px;
   height: 6px;
-  background-color:
-    transparent;
+  background-color: transparent;
   border: none;
 
   &::before {

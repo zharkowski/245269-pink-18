@@ -8,14 +8,14 @@
   </head>
   <body>
     <header class="page-header">
-    <div class="page-header__wrapper">
-      <nav class="main-nav main-nav--closed main-nav--nojs">
-        <div class="main-nav__logo-toggle-wrapper">
-          <a class="main-nav__logo-link">
-            <img class="main-nav__logo-image" src="img/logo-pink-white-tablet.svg" width="146" height="40" alt="Логотип Пинка.">
-          </a>
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        </div>
+    <div class="page-header__wrapper page-header__wrapper--menu-opened page-header__wrapper--nojs">
+      <div class="page-header__logo-toggle-wrapper">
+        <a class="page-header__logo-link">
+          <img class="page-header__logo-image" src="img/logo-pink-white-tablet.svg" width="146" height="40" alt="Логотип Пинка.">
+        </a>
+        <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      </div>
+      <nav class="page-header__main-nav main-nav ">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link" href="index.html">Главная</a>
@@ -65,38 +65,38 @@
               <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
               <ul class="form__list form__list--achievements list">
                 <li class="form__item form__item--achievements">
-                  <label class="form__label form__label--checkbox">
-                    <input class="form__input form__input--achievements" type="checkbox" name="selfie-with-a-shark" checked>
+                  <input class="form__input form__input--achievements" id="selfie-with-a-shark" type="checkbox" name="selfie-with-a-shark" checked>
+                  <label class="form__label form__label--checkbox" for="selfie-with-a-shark">
                     Сделал селфи с акулой
                   </label>
                 </li>
                 <li class="form__item form__item--achievements">
-                  <label class="form__label form__label--checkbox">
-                    <input class="form__input form__input--achievements" type="checkbox" name="sunburned-on-the-beach" checked>
+                  <input class="form__input form__input--achievements" id="sunburned-on-the-beach" type="checkbox" name="sunburned-on-the-beach" checked>
+                  <label class="form__label form__label--checkbox" for="sunburned-on-the-beach">
                     Обгорел на пляже
                   </label>
                 </li>
                 <li class="form__item form__item--achievements">
-                  <label class="form__label form__label--checkbox">
-                    <input class="form__input form__input--achievements" type="checkbox" name="saw-chuck-norris">
+                  <input class="form__input form__input--achievements" id="saw-chuck-norris" type="checkbox" name="saw-chuck-norris">
+                  <label class="form__label form__label--checkbox" for="saw-chuck-norris">
                     Видел Чака Норриса
                   </label>
                 </li>
                 <li class="form__item form__item--achievements">
-                  <label class="form__label form__label--checkbox">
-                    <input class="form__input form__input--achievements" type="checkbox" name="bought-souvenirs">
+                  <input class="form__input form__input--achievements" id="bought-souvenirs" type="checkbox" name="bought-souvenirs">
+                  <label class="form__label form__label--checkbox" for="bought-souvenirs">
                     Накупил сувениров
                   </label>
                 </li>
                 <li class="form__item form__item--achievements">
-                  <label class="form__label form__label--checkbox">
-                    <input class="form__input form__input--achievements" type="checkbox" name="held-the-tower" checked>
+                  <input class="form__input form__input--achievements" id="held-the-tower" type="checkbox" name="held-the-tower" checked>
+                  <label class="form__label form__label--checkbox" for="held-the-tower">
                     Удержал башню
                   </label>
                 </li>
                 <li class="form__item form__item--achievements">
-                  <label class="form__label form__label--checkbox">
-                    <input class="form__input form__input--achievements" type="checkbox" name="defeated-the-hotel">
+                  <input class="form__input form__input--achievements" id="defeated-the-hotel" type="checkbox" name="defeated-the-hotel">
+                  <label class="form__label form__label--checkbox" for="defeated-the-hotel">
                     Разгромил отель
                   </label>
                 </li>
@@ -119,20 +119,20 @@
                 <legend class="form__legend">С каким приложением путешествовали?</legend>
                 <ul class="form__list form__list--platform list">
                   <li class="form__item form__item--radio">
-                    <label class="form__label form__label--radio">
-                      <input class="form__input form__input--platform" type="radio" name="mobile-platform" checked>
+                    <input class="form__input form__input--platform" id="mobile-platform--ios" type="radio" name="mobile-platform" checked>
+                    <label class="form__label form__label--radio" for="mobile-platform--ios">
                       Pink для iOS
                     </label>
                   </li>
                   <li class="form__item form__item--radio">
-                    <label class="form__label form__label--radio">
-                      <input class="form__input form__input--platform" type="radio" name="mobile-platform">
+                    <input class="form__input form__input--platform" id="mobile-platform--android" type="radio" name="mobile-platform">
+                    <label class="form__label form__label--radio" for="mobile-platform--android">
                       Pink на Android
                     </label>
                   </li>
                   <li class="form__item form__item--radio">
-                    <label class="form__label form__label--radio">
-                      <input class="form__input form__input--platform" type="radio" name="mobile-platform">
+                    <input class="form__input form__input--platform" id="mobile-platform--windows-phone" type="radio" name="mobile-platform">
+                    <label class="form__label form__label--radio" for="mobile-platform--windows-phone">
                       Windows Phone
                     </label>
                   </li>

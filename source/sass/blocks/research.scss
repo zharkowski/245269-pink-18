@@ -28,6 +28,10 @@
     color: $text-color;
   }
 
+  &__br {
+    display: none;
+  }
+
   &__link {
     font-family: $default-font;
     font-weight: normal;
@@ -80,7 +84,7 @@
     background-color: $background-color-main--additional;
 
     &__wrapper {
-      min-height: 414px;
+      min-height: 410px;
       padding-top: 0;
     }
 
@@ -94,7 +98,7 @@
     }
 
     &__slogan {
-      margin-top: 90px;
+      margin-top: 89px;
       margin-bottom: 22px;
     }
 
@@ -104,6 +108,10 @@
 
       font-size: 18px;
       line-height: 30px;
+    }
+
+    &__br {
+      display: inline;
     }
 
     &__link {
