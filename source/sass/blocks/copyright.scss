@@ -1,0 +1,66 @@
+.copyright {
+  &__made-by {
+    font-family: $default-font;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: $text-color;
+  }
+
+  &__html-academy-link {
+    text-decoration: none;
+  }
+
+  &__html-academy-logo {
+    fill: $pink;
+    margin-left: 10px;
+    margin-bottom: -13px;
+  }
+
+  &__html-academy-link:hover &__html-academy-logo {
+    fill: $blue--dark;
+  }
+
+  &__html-academy-link:active &__html-academy-logo {
+    fill: rgba($blue--dark, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    padding-top: 13px;
+
+    &__html-academy-link {
+      display: flex;
+      margin-left: 18px;
+    }
+
+    &__made-by {
+      display: block;
+      margin: auto 0;
+    }
+
+    &__html-academy-logo {
+      margin: auto 0;
+      margin-left: 15px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    padding-top: 9px;
+
+    &__made-by {
+      font-size: 18px;
+    }
+
+    &__html-academy-link {
+      margin-left: -15px;
+    }
+
+    &__html-academy-logo {
+      margin-top: 6px;
+    }
+  }
+}

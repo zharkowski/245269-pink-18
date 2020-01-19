@@ -28,12 +28,36 @@
 
     background-color: $background-color-main--additional;
   }
+
+  &__item--panorama-of-the-day {
+    position: relative;
+  }
+
+  &__item--panorama-of-the-day::before {
+    content: "Панорама дня";
+    display: block;
+    position: absolute;
+    width: 140px;
+    height: 36px;
+    top: 0;
+    right: 0;
+    z-index: 2;
+
+    font-family: $default-font;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $text-color--header;
+    text-align: center;
+
+    background-color: $pink;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .cards {
     &__wrapper {
-      padding-top: 32px;
+      padding-top: 38px;
     }
 
     &__slogan {
@@ -57,7 +81,11 @@
     &__item--panorama-of-the-day {
       order: -1;
       width: 100%;
-      margin-bottom: 53px;
+      margin-bottom: 50px;
+    }
+
+    &__item--panorama-of-the-day::before {
+      top: 58px;
     }
   }
 }
@@ -71,7 +99,11 @@
     }
 
     &__item {
-      margin-bottom: 54px;
+      margin-bottom: 50px;
+    }
+
+    &__item--panorama-of-the-day::before {
+      top: 54px;
     }
   }
 }

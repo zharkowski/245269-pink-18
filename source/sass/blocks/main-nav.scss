@@ -1,10 +1,75 @@
 .main-nav {
-  //display: none;
-  //background-color: $background-color-header--shown;
+  background-color: $background-color-header--opened;
 
   &__list {
     list-style: none;
     padding: 0;
     margin: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+
+  }
+}
+
+//@media (max-width: calc(#{$desktop-width} - 1px)) {
+//  .main-nav {
+//    &--closed {
+//      background-color: $background-color-header--closed;
+//    }
+//
+//    &--opened {
+//      background-color: $background-color-header--opened;
+//    }
+//
+//    &--closed &__list {
+//      display: none;
+//    }
+//
+//  }
+//}
+
+@media (max-width: calc(#{$desktop-width} - 1px)) and (min-width: $tablet-width) {
+  .main-nav {
+    &--closed &__logo-toggle-wrapper {
+      padding: 27px 20px 42px;
+    }
+
+    &--opened &__logo-toggle-wrapper {
+      padding: 26px 20px 42px;
+    }
+
+    &--closed &__toggle::before {
+      top: 9px;
+    }
+
+    &--opened &__toggle::before,
+    &--opened &__toggle::after {
+      top: 20px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    //width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+
+    &__logo-toggle-wrapper {
+      min-height: 110px;
+      padding: 25px 0;
+      margin: 0;
+      width: auto;
+      box-shadow: none;
+      background-color: transparent;
+    }
+
+    &__toggle {
+      display: none;
+    }
   }
 }

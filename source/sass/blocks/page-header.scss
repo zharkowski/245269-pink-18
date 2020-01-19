@@ -9,37 +9,133 @@
   position: relative;
   z-index: 2;
 
-  background-color: $background-color-header--shown;
-  //background-color: $background-color-header--hidden;
-
   &__logo-toggle-wrapper {
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
-    min-height: 69px;
-    padding: 21px 20px;
+    //box-shadow: 0 1px 0 0 #000000;
+    border-bottom: 1px solid black;
+    width: 100%;
+  }
 
-    @include wrapper();
-    // ВРЕМЕННО
-    height: 66px;
+  &__wrapper--menu-closed &__logo-toggle-wrapper {
+    padding: 21px 20px;
+    background-color: $background-color-header--closed;
+  }
+
+  &__wrapper--menu-opened &__logo-toggle-wrapper {
+    padding: 22px 20px 24px;
+    background-color: $background-color-header--opened;
+  }
+
+  &__toggle {
+    margin: auto 0;
+    position: relative;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
   }
 
   &__logo-link {
     display: block;
+    line-height: 0;
   }
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
-    &__logo-toggle-wrapper {
-      min-height: 109px;
+    &__wrapper &__logo-toggle-wrapper {
+      //min-height: 109px;
+      padding-top: 26px;
+      padding-right: 20px;
+      padding-left: 20px;
+      padding-bottom: 42px;
+    }
+  }
+}
+
+@media (max-width: calc(#{$desktop-width} - 1px)) {
+  .page-header {
+    &__wrapper--menu-closed &__main-nav {
+      display: none;
+    }
+
+    &__wrapper--nojs &__toggle {
+      display: none;
+    }
+
+    &__wrapper--menu-closed &__toggle {
+      width: 50px;
+      height: 24px;
+    }
+
+    &__wrapper--menu-opened &__toggle {
+      width: 23px;
+      height: 22px;
+    }
+
+    &__wrapper--menu-closed &__toggle::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 50px;
+      height: 4px;
+      z-index: 2;
+
+      background-color: $menu-mobile-color;
+      box-shadow: 0 10px 0 0 $menu-mobile-color, 0 20px 0 0 $menu-mobile-color;
+    }
+
+    &__wrapper--menu-closed &__toggle:hover::before {
+      background-color: $menu-mobile-color--hover;
+      box-shadow: 0 10px 0 0 $menu-mobile-color--hover, 0 20px 0 0 $menu-mobile-color--hover;
+    }
+
+    &__wrapper--menu-closed &__toggle:active::before {
+      background-color: $menu-mobile-color--active;
+      box-shadow: 0 10px 0 0 $menu-mobile-color--active, 0 20px 0 0 $menu-mobile-color--active;
+    }
+
+    &__wrapper--menu-opened &__toggle::before,
+    &__wrapper--menu-opened &__toggle::after {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: -3px;
+
+      width: 30px;
+      height: 4px;
+      z-index: 2;
+
+      background-color: $menu-mobile-color;
+    }
+
+    &__wrapper--menu-opened &__toggle::before {
+      transform: rotate(45deg);
+    }
+
+    &__wrapper--menu-opened &__toggle::after {
+      transform: rotate(-45deg);
+    }
+
+    &__wrapper--menu-opened &__toggle:hover::before,
+    &__wrapper--menu-opened &__toggle:hover::after {
+      background-color: $menu-mobile-color--hover;
+    }
+
+    &__wrapper--menu-opened &__toggle:active::before,
+    &__wrapper--menu-opened &__toggle:active::after {
+      background-color: $menu-mobile-color--active;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
-    background-color: $background-color-header--hidden;
+    background-color: $background-color-header--closed;
 
     &__wrapper {
       display: flex;
@@ -47,16 +143,16 @@
       @include wrapper();
     }
 
-
-    &__logo-toggle-wrapper {
-      min-height: 110px;
-      padding: 25px 0px;
-      margin: 0;
+    &__wrapper--menu-closed &__logo-toggle-wrapper,
+    &__wrapper--menu-opened &__logo-toggle-wrapper {
+      background-color: transparent;
+      padding: 25px 0 43px;
       width: auto;
+      box-shadow: none;
     }
 
-    &__toggle {
-      display: none;
+    &__copyright {
+      padding-top: 10px;
     }
   }
 }

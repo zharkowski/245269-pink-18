@@ -1,38 +1,53 @@
 .page-footer {
   text-align: center;
 
-  //background-color: $background-color-main;
+  background-color: $background-color-main;
 
   &--index {
     display: none;
   }
 
   &__wrapper {
-    padding-top: 55px;
+    padding-top: 40px;
     @include wrapper();
   }
 
   &__social {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     margin: 0 auto;
-    margin-top: 30px;
-
-    //------- Временно ---------//
-    width: 177px;
+    margin-top: 33px;
+    width: 100%;
+    //width: 177px;
   }
 
   &__copyright {
-    margin-top: 33px;
+    margin-top: 38px;
   }
 
-  &__made-by {
-    font-family: $default-font;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
-    color: $text-color;
+  &__link {
+    display: block;
+  }
+
+  &__item {
+    width: 43px;
+    height: 43px;
+    margin: 0 7px;
+    border: 3px solid rgba($blue--dark, 0.1);
+    border-radius: 50%;
+  }
+
+  &__item:hover {
+    border-color: $blue--dark;
+  }
+
+  &__item:active {
+    opacity: 0.1;
+  }
+
+  &__item img {
+    margin: auto 0;
   }
 }
 
@@ -45,54 +60,34 @@
     &__wrapper {
       display: flex;
       justify-content: space-between;
-      padding-top: 35px;
-      padding-bottom: 43px;
-
-      //------- Временно ---------//
-      min-height: 57px;
+      padding-top: 31px;
+      padding-bottom: 39px;
     }
 
     &__logo-link {
       display: block;
-
-      //------- Временно ---------//
-      width: 147px;
     }
 
     &__social {
-      margin-top: 0;
-      //------- Временно ---------//
-      width: 177px;
+      width: 325px;
+      margin-top: 3px;
     }
 
     &__copyright {
-      display: flex;
       margin-top: 0;
-      //------- Временно ---------//
-      width: 148px;
     }
   }
 }
 
-
 @media (min-width: $desktop-width) {
   .page-footer {
     &__wrapper {
-      padding-top: 102px;
+      padding-top: 70px;
       padding-bottom: 67px;
     }
 
-    &__copyright {
-      //------- Временно ---------//
-      width: 152px;
-    }
-
-    &__made-by {
-      font-size: 18px;
-    }
-
-    &__html-academy-link {
-      margin-left: 7px;
+    &__social {
+      margin-top: 5px;
     }
   }
 }

@@ -73,8 +73,9 @@
       position: relative;
       min-height: 110px;
       padding-top: 24px;
-      padding-left: 28px;
       padding-right: 28px;
+      padding-bottom: 23px;
+      padding-left: 28px;
     }
 
     &__likes {
@@ -86,12 +87,12 @@
     }
 
     &--panorama-of-the-day &__text {
-      padding-top: 22px;
+      padding-top: 24px;
       min-height: 0;
     }
 
     &--panorama-of-the-day &__likes {
-      top: 22px;
+      top: 25px;
       right: 28px;
       left: auto;
       bottom: auto;
@@ -104,6 +105,9 @@
 
 @media (min-width: $desktop-width) {
   .post-content {
-
+    &--panorama-of-the-day &__likes {
+      top: 24px;
+      right: 31px;
+    }
   }
 }

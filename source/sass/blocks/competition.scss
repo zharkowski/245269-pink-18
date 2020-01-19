@@ -16,12 +16,18 @@
   }
 
   &__wrapper {
+    padding-top: 31px;
+    padding-bottom: 15px;
     @include wrapper();
   }
 }
 
 @media (min-width: $tablet-width) {
   .competition {
+    &__wrapper {
+      margin-top: 37px;
+    }
+
     &__form {
       display: flex;
       flex-direction: column;
@@ -41,6 +47,10 @@
 
 @media (min-width: $desktop-width) {
   .competition {
+    &__wrapper {
+      padding-bottom: 0;
+    }
+
     &__slogan {
       padding: 0 68px;
     }
