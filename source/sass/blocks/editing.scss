@@ -55,6 +55,16 @@
     fill: rgba($blue--dark, 0.3);
   }
 
+  &__icon:hover path,
+  &__icon:hover rect {
+    fill: rgba($blue--dark, 0.5);
+  }
+
+  &__icon:active path,
+  &__icon:active rect {
+    fill: $pink;
+  }
+
   &__radio--crop:checked ~ &__list &__icon--crop path,
   &__radio--fill:checked ~ &__list &__icon--fill path,
   &__radio--fill:checked ~ &__list &__icon--fill rect,
