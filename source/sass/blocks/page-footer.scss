@@ -19,7 +19,6 @@
     margin: 0 auto;
     margin-top: 33px;
     width: 100%;
-    //width: 177px;
   }
 
   &__copyright {
@@ -46,8 +45,17 @@
     opacity: 0.1;
   }
 
-  &__item img {
-    margin: auto 0;
+  &__img {
+    margin-bottom: -8px;
+  }
+
+  &__img path{
+    fill: $pink;
+  }
+
+  &__img--youtube {
+    margin-bottom: -5px;
+    margin-left: 1px;
   }
 }
 
@@ -60,7 +68,7 @@
     &__wrapper {
       display: flex;
       justify-content: space-between;
-      padding-top: 31px;
+      padding-top: 36px;
       padding-bottom: 39px;
     }
 
@@ -86,8 +94,21 @@
       padding-bottom: 67px;
     }
 
+    &__logo-link {
+      margin-right: 8px;
+    }
+
     &__social {
       margin-top: 5px;
+    }
+
+    &__copyright {
+      margin-left: 8px;
+    }
+
+    &__img--youtube {
+      margin-bottom: -6px;
+      margin-right: -2px;
     }
   }
 }

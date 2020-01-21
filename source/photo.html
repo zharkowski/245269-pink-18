@@ -11,7 +11,11 @@
       <div class="page-header__wrapper page-header__wrapper--menu-opened page-header__wrapper--nojs">
         <div class="page-header__logo-toggle-wrapper">
           <a class="page-header__logo-link">
-            <img class="page-header__logo-image" src="img/logo-pink-white-desktop.svg" width="146" height="40" alt="Логотип Пинка.">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Пинка.">
+            </picture>
           </a>
           <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         </div>
@@ -51,12 +55,15 @@
               <article class="cards__post-content post-content post-content--panorama-of-the-day">
                 <h3 class="visually-hidden">Пост с фотографией</h3>
                 <a class="post-content__photo-link" href="#">
-                  <img class="post-content__photo" src="https://via.placeholder.com/1200x506" alt="Панорамный вид на холмы с моста.">
-<!--                  <img class="post-content__photo post-content__photo&#45;&#45;panorama-of-the-day" src="https://via.placeholder.com/320x137" width="320" height="137" alt="Панорамный вид на холмы с моста.">-->
+                  <picture>
+                    <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+                    <img class="post-content__photo" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Панорамный вид на холмы с моста.">
+                  </picture>
                 </a>
                 <div class="post-content__text">
                   <p class="post-content__user">Анна <span class="post-content__posting-time">(5 минут назад)</span></p>
-                  <p class="post-content__message">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои</p>
+                  <p class="post-content__message">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
                   <p class="post-content__likes">Нравится: 215</p>
                 </div>
               </article>
@@ -65,7 +72,11 @@
               <article class="cards__post-content post-content">
                 <h3 class="visually-hidden">Пост с фотографией</h3>
                 <a class="post-content__photo-link" href="#">
-                  <img class="post-content__photo" src="https://via.placeholder.com/300x400" alt="Белая машина у темной стены и штатив для камеры на переднем плане.">
+                  <picture>
+                    <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                    <img class="post-content__photo" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" width="280" height="180" alt="Панорамный вид на холмы с моста.">
+                  </picture>
                 </a>
                 <div class="post-content__text">
                   <p class="post-content__user">Левон <span class="post-content__posting-time">(5 часов назад)</span></p>
@@ -78,7 +89,11 @@
               <article class="cards__post-content post-content">
                 <h3 class="visually-hidden">Пост с фотографией</h3>
                 <a class="post-content__photo-link" href="#">
-                  <img class="post-content__photo" src="https://via.placeholder.com/300x400" alt="Барабанная установка с подключенными микрофонами.">
+                  <picture>
+                    <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                    <img class="post-content__photo" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" width="280" height="180" alt="Панорамный вид на холмы с моста.">
+                  </picture>
                 </a>
                 <div class="post-content__text">
                   <p class="post-content__user">Антон <span class="post-content__posting-time">(12 часов назад)</span></p>
@@ -91,7 +106,11 @@
               <article class="cards__post-content post-content">
                 <h3 class="visually-hidden">Пост с фотографией</h3>
                 <a class="post-content__photo-link" href="#">
-                  <img class="post-content__photo" src="https://via.placeholder.com/300x400" alt="Вид неба через прозрачную крышу небоскреба.">
+                  <picture>
+                    <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                    <img class="post-content__photo" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" width="280" height="180" alt="Панорамный вид на холмы с моста.">
+                  </picture>
                 </a>
                 <div class="post-content__text">
                   <p class="post-content__user">Борис <span class="post-content__posting-time">(20 часов назад)</span></p>
@@ -104,7 +123,11 @@
               <article class="cards__post-content post-content">
                 <h3 class="visually-hidden">Пост с фотографией</h3>
                 <a class="post-content__photo-link" href="#">
-                  <img class="post-content__photo" src="https://via.placeholder.com/300x400" alt="Продажа дынь и арбусов на кубанской бахче.">
+                  <picture>
+                    <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                    <img class="post-content__photo" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" width="280" height="180" alt="Панорамный вид на холмы с моста.">
+                  </picture>
                 </a>
                 <div class="post-content__text">
                   <p class="post-content__user">Сергей <span class="post-content__posting-time">(25 часов назад)</span></p>
@@ -117,8 +140,11 @@
               <article class="cards__post-content post-content">
                 <h3 class="visually-hidden">Пост с фотографией</h3>
                 <a class="post-content__photo-link" href="#">
-                  <img class="post-content__photo" src="https://via.placeholder.com/300x400" alt="Вид с вершины горы вниз с ногами фотографирующего.">
-                </a>
+                  <picture>
+                    <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                    <img class="post-content__photo" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" width="280" height="180" alt="Панорамный вид на холмы с моста.">
+                  </picture>                </a>
                 <div class="post-content__text">
                   <p class="post-content__user">Максим <span class="post-content__posting-time">(40 часов назад)</span></p>
                   <p class="post-content__message">Где снег-то?</p>
@@ -130,8 +156,11 @@
               <article class="cards__post-content post-content">
                 <h3 class="visually-hidden">Пост с фотографией</h3>
                 <a class="post-content__photo-link" href="#">
-                  <img class="post-content__photo" src="https://via.placeholder.com/300x400" alt="Крыло самолета в воздухе на фоне яркого Солнца.">
-                </a>
+                  <picture>
+                    <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                    <img class="post-content__photo" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" width="280" height="180" alt="Панорамный вид на холмы с моста.">
+                  </picture>                </a>
                 <div class="post-content__text">
                   <p class="post-content__user">Надежда <span class="post-content__posting-time">(45 часов назад)</span></p>
                   <p class="post-content__message">Всем GM и взаимные лайки!</p>
@@ -150,7 +179,11 @@
         </div>
         <div class="upload__editing-wrapper">
           <form class="upload__editing editing" action="https://echo.htmlacademy.ru" method="post">
-            <img class="editing__photo" src="https://via.placeholder.com/300x400" width="300" height="400" alt="Заснеженная дорога в лесу">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+              <img class="editing__img" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" width="280" height="374" alt="Панорамный вид на холмы с моста.">
+            </picture>
             <div class="editing__input-wrapper">
               <input class="editing__radio editing__radio--crop" id="editing-crop" name="editing-slider" type="radio" checked>
               <input class="editing__radio editing__radio--fill" id="editing-fill" name="editing-slider" type="radio">
@@ -158,19 +191,27 @@
               <ul class="editing__list list">
                 <li class="editing__element">
                   <label class="editing__label" for="editing-crop">
-                    <img class="editing__icon" src="https://via.placeholder.com/44x44" alt="">
+                    <svg class="editing__icon editing__icon--crop" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                      <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
+                    </svg>
                     <input class="editing__range editing__range--crop" name="crop-value" type="range">
                   </label>
                 </li>
                 <li class="editing__element">
                   <label class="editing__label" for="editing-fill">
-                    <img class="editing__icon" src="https://via.placeholder.com/48x43" alt="">
+                    <svg class="editing__icon editing__icon--fill" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                      <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
+                      <rect y="40" width="48" height="3"/>
+                    </svg>
                     <input class="editing__range editing__range--fill" name="fill-value" type="range">
                   </label>
                 </li>
                 <li class="editing__element">
                   <label class="editing__label" for="editing-contrast">
-                    <img class="editing__icon" src="https://via.placeholder.com/32x32" alt="">
+                    <svg class="editing__icon editing__icon--contrast" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
+                      <path fill="#231F20" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
+                      <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
+                    </svg>
                     <input class="editing__range editing__range--contrast" name="contrast-value" type="range">
                   </label>
                 </li>
@@ -188,22 +229,35 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo-link" href="index.html">
-          <img class="page-footer__logo-image" src="https://via.placeholder.com/147x40" width="147" height="40" alt="Логотип Пинка.">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+            <img class="page-header__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип Пинка.">
+          </picture>
         </a>
         <ul class="page-footer__social list">
           <li class="page-footer__item">
             <a class="page-footer__link page-footer__link--twitter" href="https://twitter.com/htmlacademy_ru?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
-              <img src="https://via.placeholder.com/18x14" width="18" height="14" alt="">
+              <svg class="page-footer__img page-footer__img--twitter" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+                <g id="W6EeEF_1_">
+                  <g>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z"/>
+                  </g>
+                </g>
+              </svg>
             </a>
           </li>
           <li class="page-footer__item">
             <a class="page-footer__link page-footer__link--facebook" href="https://www.facebook.com/htmlacademy">
-              <img src="https://via.placeholder.com/9x18" width="9" height="18" alt="">
+              <svg class="page-footer__img page-footer__img--facebook" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
+                <path d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z"/>
+              </svg>
             </a>
           </li>
           <li class="page-footer__item">
             <a class="page-footer__link page-footer__link--youtube" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">
-              <img src="https://via.placeholder.com/15x13" width="15" height="13" alt="">
+              <svg class="page-footer__img page-footer__img--youtube" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
+                <path d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z"/>
+              </svg>
             </a>
           </li>
         </ul>

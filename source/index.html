@@ -11,7 +11,11 @@
       <div class="page-header__wrapper page-header__wrapper--menu-opened page-header__wrapper--nojs">
         <div class="page-header__logo-toggle-wrapper">
           <a class="page-header__logo-link">
-            <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Пинка.">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Пинка.">
+            </picture>
           </a>
           <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         </div>
@@ -48,17 +52,17 @@
             <ul class="intro__list list">
               <li class="intro__item">
                 <a href="https://www.apple.com/ru/ios/app-store/">
-                  <img class="intro__item-img intro__item-img--app-store" src="https://via.placeholder.com/47x56" alt="Приложение Пинк в App Store.">
+                  <img class="intro__item-img intro__item-img--app-store" src="img/logo-apple.svg" width="47" height="57" alt="Приложение Пинк в App Store.">
                 </a>
               </li>
               <li class="intro__item">
                 <a href="https://play.google.com/store/apps?hl=ru">
-                  <img class="intro__item-img intro__item-img--google-play" src="https://via.placeholder.com/43x47" alt="Приложениие Пинк в Google Play.">
+                  <img class="intro__item-img intro__item-img--google-play" src="img/logo-android.svg" width="42" height="47" alt="Приложениие Пинк в Google Play.">
                 </a>
               </li>
               <li class="intro__item">
                 <a href="https://www.microsoft.com/ru-ru/store/apps/windows">
-                  <img class="intro__item-img intro__item-img--windows-store" src="https://via.placeholder.com/44x41" alt="Приложение Пинк в Windows Store.">
+                  <img class="intro__item-img intro__item-img--windows-store" src="img/logo-microsoft.svg" width="44" height="42" alt="Приложение Пинк в Windows Store.">
                 </a>
               </li>
             </ul>
@@ -77,17 +81,25 @@
           </div>
           <ul class="features__list list">
             <li class="features__item">
-              <img class="features__picture" src="img/iphone-screen-1-desktop@1x.png" alt="Черно-белая фотография мусорных баков на Айфоне.">
+              <picture class="features__picture">
+                <img src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" width="292" height="302" alt="Черно-белая фотография мусорных баков на Айфоне">
+              </picture>
               <h3 class="features__title">Поднимает настроение</h3>
               <p class="features__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </li>
             <li class="features__item">
-              <img class="features__picture" src="img/iphone-screen-2-desktop@1x.png" alt="Фотография мусорных баков через розовый фильтр на Айфоне.">
+              <picture class="features__picture">
+                <img src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" width="292" height="302" alt="Фотография мусорных баков через розовый фильтр на Айфоне">
+              </picture>
               <h3 class="features__title">Меняет мир вокруг</h3>
               <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
             </li>
             <li class="features__item">
-              <img class="features__picture" src="img/iphone-screen-3-desktop@1x.png" alt="Фотография мусорных баков через розовый фильтр с приветствием на Айфоне.">
+              <picture class="features__picture">
+                <source media="(min-width: 960px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
+                <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
+                <img src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" width="157" height="320" alt="Фотография мусорных баков через розовый фильтр с приветствием на Айфоне">
+              </picture>
               <h3 class="features__title">Заводит новых друзей</h3>
               <p class="features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
@@ -264,8 +276,13 @@
             </p>
           </div>
         </div>
-<!--        <a class="contacts__map" href="#">-->
-<!--          <img class="contacts__map-image" src="https://via.placeholder.com/320x645" alt="Наш офис находится на ул. Большая Конюшенная, 19/8">-->
+        <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.60362530032!2d30.320858716231182!3d59.938719169054025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1579479100648!5m2!1sru!2sru"  frameborder="0" style="border: none;" allowfullscreen=""></iframe>
+        <!--        <a class="contacts__map" href="#">-->
+<!--          <picture class="contacts__map-image">-->
+<!--            <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">-->
+<!--            <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">-->
+<!--            <img src="img/bg-map-mobile@1x.png" srcset="img/bg-map-desktop@2x.jpg 2x" width="320" height="645" alt="Наш офис находится на ул. Большая Конюшенная, 19/8">-->
+<!--          </picture>-->
 <!--        </a>-->
       </section>
     </main>
@@ -273,22 +290,35 @@
     <footer class="page-footer page-footer--index">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo-link" href="index.html">
-          <img class="page-footer__logo-image" src="https://via.placeholder.com/147x40" width="147" height="40" alt="Логотип Пинка.">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+            <img class="page-header__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип Пинка.">
+          </picture>
         </a>
         <ul class="page-footer__social list">
           <li class="page-footer__item">
             <a class="page-footer__link page-footer__link--twitter" href="https://twitter.com/htmlacademy_ru?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
-              <img src="https://via.placeholder.com/18x14" width="18" height="14" alt="">
+              <svg class="page-footer__img page-footer__img--twitter" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+                <g id="W6EeEF_1_">
+                  <g>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z"/>
+                  </g>
+                </g>
+              </svg>
             </a>
           </li>
           <li class="page-footer__item">
             <a class="page-footer__link page-footer__link--facebook" href="https://www.facebook.com/htmlacademy">
-              <img src="https://via.placeholder.com/9x18" width="9" height="18" alt="">
+              <svg class="page-footer__img page-footer__img--facebook" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
+                <path d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z"/>
+              </svg>
             </a>
           </li>
           <li class="page-footer__item">
             <a class="page-footer__link page-footer__link--youtube" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">
-              <img src="https://via.placeholder.com/15x13" width="15" height="13" alt="">
+              <svg class="page-footer__img page-footer__img--youtube" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
+                <path d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z"/>
+              </svg>
             </a>
           </li>
         </ul>

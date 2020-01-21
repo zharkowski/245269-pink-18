@@ -69,6 +69,11 @@
   .post-content {
     min-height: 455px;
 
+    &--panorama-of-the-day &__photo {
+      min-width: 106vw;
+      left: calc(-53vw + 50%);
+    }
+
     &__text {
       position: relative;
       min-height: 110px;
@@ -105,6 +110,11 @@
 
 @media (min-width: $desktop-width) {
   .post-content {
+    &--panorama-of-the-day &__photo {
+      min-width: 100vw;
+      left: calc(-50vw + 50%);
+    }
+
     &--panorama-of-the-day &__likes {
       top: 24px;
       right: 31px;

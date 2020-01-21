@@ -405,6 +405,36 @@
     &__label--contacts {
       display: flex;
       flex-direction: column-reverse;
+      position: relative;
+    }
+
+    &__label--contacts::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+
+      top: 22px;
+      right: 22px;
+    }
+
+    &__label--phone::before {
+      mask: url("../img/icon-phone.svg");
+      mask-size: contain;
+      mask-position: 0 0;
+      mask-repeat: no-repeat;
+      background-color: $pink;
+    }
+
+    &__label--mail::before {
+      top: 26px;
+
+      mask: url("../img/icon-mail.svg");
+      mask-size: contain;
+      mask-position: 0 0;
+      mask-repeat: no-repeat;
+      background-color: $pink;
     }
 
     &__label-value--contacts {
@@ -449,7 +479,7 @@
 
     &__button-designation-wrapper {
       margin-top: 66px;
-      margin-bottom: 41px;
+      margin-bottom: 35px;
       order: 5;
       display: flex;
       justify-content: space-between;

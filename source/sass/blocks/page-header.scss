@@ -20,6 +20,7 @@
 
   &__wrapper--menu-closed &__logo-toggle-wrapper {
     padding: 21px 20px;
+    padding-bottom: 20px;
     background-color: $background-color-header--closed;
   }
 
@@ -45,12 +46,20 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
+    &__wrapper--menu-opened &__toggle {
+      margin-top: 19px;
+    }
+
     &__wrapper &__logo-toggle-wrapper {
-      //min-height: 109px;
       padding-top: 26px;
       padding-right: 20px;
       padding-left: 20px;
       padding-bottom: 42px;
+    }
+
+    &__logo-image {
+      width: 147px;
+      height: auto;
     }
   }
 }

@@ -143,6 +143,11 @@
       top: 267px;
       transform: rotate(-4.5deg);
     }
+
+    &__picture img {
+      width: 268px;
+      height: auto;
+    }
   }
 }
 
@@ -179,6 +184,11 @@
       margin: 0 auto;
     }
 
+    &__picture img {
+      width: 292px;
+      height: auto;
+    }
+
     &__item {
       margin-top: 0;
       margin-bottom: 0;
@@ -192,12 +202,20 @@
 
     &__item:last-child &__title,
     &__title {
-      margin-top: 57px;
-      margin-bottom: 30px;
+      margin-top: 49px;
+      margin-bottom: 27px;
       padding: 0 30px;
 
       font-size: 30px;
-      line-height: 27px;
+      line-height: 28px;
+    }
+
+    &__item:nth-child(2) img {
+      margin-right: -5px;
+    }
+
+    &__item:nth-child(3) img {
+      margin-right: -5px;
     }
 
     &__text {

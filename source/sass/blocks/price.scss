@@ -149,7 +149,7 @@
   .price {
     &__wrapper {
       padding-top: 87px;
-      padding-bottom: 70px;
+      padding-bottom: 69px;
       @include wrapper();
     }
 
@@ -192,11 +192,14 @@
     }
 
     &__tariff {
+      margin-top: 10px;
       font-size: 16px;
     }
 
     &__value {
       font-size: 18px;
+      margin-top: 0;
+      margin-bottom: 7px;
     }
 
     &__description {
@@ -228,14 +231,17 @@
     }
 
     &__element--header {
-      height: 94px;
     }
 
     &__tariff {
+      margin-top: 16px;
+
       font-size: 18px;
     }
 
     &__value {
+      margin-bottom: 22px;
+
       font-size: 24px;
     }
 

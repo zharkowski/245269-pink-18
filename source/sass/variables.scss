@@ -8,6 +8,8 @@ $mobile-padding: 20px;
 $tablet-padding: 20px;
 $desktop-padding: 10px;
 
+$retina-dppx: 1.5dppx;
+
 @mixin wrapper() {
   margin: 0 auto;
   @media (min-width: $mobile-width) {
