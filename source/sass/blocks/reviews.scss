@@ -121,7 +121,11 @@
 
 @media (min-width: $desktop-width) {
   .reviews {
-    padding-top: 70px;
+    padding-top: 72px;
+
+    &__wrapper {
+      position: relative;
+    }
 
     &__quotes-item {
       display: block;
@@ -147,6 +151,41 @@
 
     &__toggles-list {
       display: none;
+    }
+
+    &__prev-button,
+    &__next-button {
+      display: block;
+      position: absolute;
+      width: 22px;
+      height: 42px;
+      border: none;
+      background-color: transparent;
+
+      top: 142px;
+    }
+
+    &__prev-button {
+      left: 2px;
+    }
+
+    &__next-button {
+      right: 18px;
+    }
+
+    &__prev-button path,
+    &__next-button path {
+      fill: rgba($blue--dark, 0.3);
+    }
+
+    &__prev-button:hover path,
+    &__next-button:hover path {
+      fill: rgba($blue--dark, 0.6);
+    }
+
+    &__prev-button:active path,
+    &__next-button:active path {
+      fill: rgba($blue--dark, 0.1);
     }
   }
 }

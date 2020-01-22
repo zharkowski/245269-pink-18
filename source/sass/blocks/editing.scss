@@ -1,11 +1,16 @@
 .editing {
+  &__img {
+    width: 300px;
+    height: 400px;
+  }
+
   &__list {
     position: relative;
-    padding-top: 35px;
-    padding-bottom: 104px;
+    padding-top: 41px;
+    padding-bottom: 101px;
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
   }
 
@@ -17,9 +22,9 @@
     display: none;
     width: 240px;
     margin: 0 auto;
-    margin-bottom: 61px;
+    margin-bottom: 58px;
     position: absolute;
-    bottom: -2px;
+    bottom: 3px;
     left: 18px;
   }
 
@@ -45,6 +50,42 @@
     display: block;
   }
 
+  &__icon path,
+  &__icon rect {
+    fill: rgba($blue--dark, 0.3);
+  }
+
+  &__icon:hover path,
+  &__icon:hover rect {
+    fill: rgba($blue--dark, 0.5);
+  }
+
+  &__icon:active path,
+  &__icon:active rect {
+    fill: $pink;
+  }
+
+  &__radio--crop:checked ~ &__list &__icon--crop path,
+  &__radio--fill:checked ~ &__list &__icon--fill path,
+  &__radio--fill:checked ~ &__list &__icon--fill rect,
+  &__radio--contrast:checked ~ &__list &__icon--contrast path {
+    fill: $pink;
+  }
+
+  &__icon--crop {
+    margin-left: -11px;
+  }
+
+  &__icon--fill {
+    margin-left: -15px;
+    margin-top: 2px;
+  }
+
+  &__icon--contrast {
+    margin-left: -6px;
+    margin-top: 8px;
+  }
+
   &__button {
     margin-bottom: 12px;
   }
@@ -68,10 +109,6 @@
       position: relative;
     }
 
-    //&__element:first-child::before {
-    //  width: 275px;
-    //}
-
     &__element::before {
       content: "";
       display: block;
@@ -93,6 +130,31 @@
       justify-content: space-around;
       margin-bottom: 21px;
       margin-top: 8px;
+      margin-right: -5px;
+    }
+
+    &__icon--crop {
+      width: 22px;
+      height: 22px;
+      margin-left: -14px;
+    }
+
+    &__icon--fill {
+      width: 24px;
+      height: 22px;
+      margin-left: -13px;
+    }
+
+    &__icon--contrast {
+      width: 16px;
+      height: 16px;
+      margin-left: -9px;
+      margin-top: 1px;
+    }
+
+    &__icon path,
+    &__icon rect {
+      fill: $pink;
     }
 
     &__radio ~ &__list &__range {
@@ -141,9 +203,30 @@
       left: 0;
     }
 
+    &__icon--crop {
+      width: 47px;
+      height: 47px;
+      margin-left: -1px;
+      margin-top: -3px;
+    }
+
+    &__icon--fill {
+      width: 61px;
+      height: 48px;
+      margin-left: -6px;
+      margin-top: -3px;
+    }
+
+    &__icon--contrast {
+      width: 32px;
+      height: 32px;
+      margin-left: 6px;
+      margin-top: -1px;
+    }
+
     &__range {
       width: 288px;
-      margin-right: 30px;
+      margin-right: 34px;
     }
 
     &__button {
