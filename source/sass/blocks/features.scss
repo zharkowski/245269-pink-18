@@ -28,6 +28,10 @@
     height: 425px;
   }
 
+  &__br {
+    display: none;
+  }
+
   &__picture {
     display: none;
   }
@@ -89,9 +93,9 @@
 
     &__slogan {
       margin-top: 6px;
-      margin-bottom: 47px;
+      margin-bottom: 53px;
       font-size: 40px;
-      line-height: 50px;
+      line-height: 48px;
     }
 
     &__slogan-item {
@@ -137,6 +141,10 @@
 
     &__text {
       margin-bottom: 35px;
+    }
+
+    &__br {
+      display: inline;
     }
 
     &::before {
@@ -187,6 +195,10 @@
     &__picture img {
       width: 292px;
       height: auto;
+    }
+
+    &__br {
+      display: none;
     }
 
     &__item {

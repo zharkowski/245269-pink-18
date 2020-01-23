@@ -1,14 +1,14 @@
 .contacts {
-  padding-top: 45px;
+  padding-top: 42px;
   position: relative;
   text-align: center;
   overflow: hidden;
+  z-index: 2;
 
   &__wrapper {
+    position: relative;
+    z-index: 2;
     @include wrapper();
-
-    // ВРЕМЕННО ВМЕСТО КАРТЫ
-    //padding-bottom: 220px;
   }
 
   &__text {
@@ -17,7 +17,7 @@
 
   &__slogan {
     margin-top: 0;
-    margin-bottom: 28px;
+    margin-bottom: 29px;
 
     font-family: $default-font;
     font-weight: 200;
@@ -36,7 +36,7 @@
   }
 
   &__come-to-us {
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
 
   &__link,
@@ -64,10 +64,7 @@
     display: block;
     position: relative;
     width: 100vw;
-    height: 220px;
-
-
-    //overflow: hidden;
+    height: 240px;
   }
 
   &::before {
@@ -75,27 +72,27 @@
     display: block;
     position: absolute;
     z-index: 1;
+    overflow: hidden;
 
-    width: 152vw;
-    height: 100px;
+    width: 1200px;
+    height: 125px;
 
-    top: 396px;
-    left: calc(-76vw + 50%);
+    top: 322px;
+    left: calc(50vw - 600px);
 
-    mask: url("../img/bg-triangle-white-footer.svg");
-    mask-size: contain;
-    mask-position: 0 0;
-    mask-repeat: no-repeat;
-    background-color: $background-color-main;
+    background-image: url("../img/bg-triangle-white-footer.svg");
+    background-size: 1200px;
+    background-position: 0 -1px;
+    background-repeat: no-repeat;
   }
 }
 
 @media (min-width: $tablet-width) {
   .contacts {
-    padding-top: 46px;
+    padding-top: 48px;
 
     &__wrapper {
-      margin-bottom: 6px;
+      margin-bottom: 0;
     }
 
     &__slogan {
@@ -125,15 +122,11 @@
     }
 
     &::before {
-      width: 150vw;
-      height: 100px;
-
-      top: 373px;
-      left: calc(-72.5vw + 50%);
+      top: 350px;
     }
 
     &__map {
-      height: 390px;
+      height: 396px;
     }
   }
 }
@@ -172,16 +165,12 @@
     }
 
     &__map {
-      height: 510px;
+      height: 519px;
     }
 
     &::before {
-      width: 1200px;
-      height: 134px;
-
-      top: 356px;
-      left: calc(-50.5vw + 50%);
-      //background-color: black;
+      background-position: 0 0;
+      top: 352px;
     }
   }
 }

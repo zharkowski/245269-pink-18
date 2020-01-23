@@ -9,7 +9,11 @@
   }
 
   &__content {
+    position: relative;
     padding-left: 308px;
+
+    background: url("../../img/icon-timer.svg") no-repeat 0 0;
+    background-size: 238px 276px;
   }
 
   &__slogan {
@@ -28,7 +32,7 @@
     color: $text-color;
   }
 
-  &__br {
+  &__desktop-br {
     display: none;
   }
 
@@ -48,9 +52,6 @@
     &__wrapper {
       display: flex;
       padding-top: 60px;
-
-      //------- Временно ----------//
-      min-height: 276px;
     }
 
     &__diagram {
@@ -59,12 +60,34 @@
 
     &__content {
       width: 50%;
+      padding-bottom: 26px;
+    }
+
+    &__content::before {
+      content: "24";
+      display: block;
+      position: absolute;
+      box-sizing: border-box;
+      width: 202px;
+      height: 202px;
+      top: 0;
+      left: 0;
+      border: 13px solid $text-color--additional;
+      border-radius: 50%;
+      margin: 19px;
+      margin-top: 55px;
+      padding-top: 9px;
+
+      font-size: 96px;
+      line-height: 149.5px;
+      font-weight: bold;
+      color: $text-color--additional;
+      text-align: center;
     }
 
     &__slogan {
       margin-top: 36px;
       margin-bottom: 0;
-      padding-right: 142px;
     }
 
     &__text {
@@ -95,6 +118,18 @@
     &__content {
       padding-left: 366px;
       width: 573px;
+      background-size: 298px 345px;
+    }
+
+    &__content::before {
+      width: 253px;
+      height: 253px;
+      margin: 23px;
+      margin-top: 69px;
+      border-width: 16px;
+
+      font-size: 120px;
+      line-height: 187px;
     }
 
     &__slogan {
@@ -110,7 +145,11 @@
       line-height: 30px;
     }
 
-    &__br {
+    &__tablet-br {
+      display: none;
+    }
+
+    &__text-br {
       display: inline;
     }
 

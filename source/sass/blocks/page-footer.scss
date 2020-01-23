@@ -42,20 +42,32 @@
   }
 
   &__item:active {
-    opacity: 0.1;
+    border-color: rgba($blue--dark, 0.1);
+    opacity: 0.3;
   }
 
   &__img {
     margin-bottom: -8px;
-  }
-
-  &__img path{
     fill: $pink;
+
   }
 
   &__img--youtube {
     margin-bottom: -5px;
     margin-left: 1px;
+  }
+
+  &__logo-image {
+    fill: $blue--dark;
+  }
+
+  &__logo-image:hover {
+    fill: $pink;
+  }
+
+  &__logo-image:active {
+    fill: $blue--dark;
+    opacity: 0.3;
   }
 }
 
@@ -94,16 +106,8 @@
       padding-bottom: 67px;
     }
 
-    &__logo-link {
-      margin-right: 8px;
-    }
-
     &__social {
       margin-top: 5px;
-    }
-
-    &__copyright {
-      margin-left: 8px;
     }
 
     &__img--youtube {

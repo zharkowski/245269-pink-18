@@ -10,7 +10,7 @@
   background-position: center 0;
   background-repeat: no-repeat;
 
-  @media (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
     background-size: 320px auto;
     background-position-y: -3px;
@@ -40,7 +40,7 @@
     background-position: 0 175px;
     background-repeat: no-repeat;
 
-    @media (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
       background-image: url("../img/iphone-hand-mobile@2x.png");
       background-size: 256px auto;
     }
@@ -96,7 +96,7 @@
 
     background-image: url("../img/bg-back-tablet@1x.jpg");
 
-    @media (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
       background-size: 1200px auto;
       background-position-y: 1px;
@@ -118,13 +118,13 @@
 
     &__wrapper--index-page {
       padding-top: 109px;
-      padding-bottom: 92px;
+      padding-bottom: 96px;
 
       background-image: url("../img/iphone-hand-tablet@1x.png");
       background-position: -20px bottom;
       background-repeat: no-repeat;
 
-      @media (min-resolution: $retina-dppx) {
+      @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
         background-image: url("../img/iphone-hand-tablet@2x.png");
         background-size: 701px auto;
       }
@@ -147,7 +147,7 @@
 
     &__main-link {
       margin-top: 16px;
-      margin-bottom: 46px;
+      margin-bottom: 45px;
     }
 
     &__list {
@@ -158,6 +158,10 @@
 
     &__item {
       margin: auto 0;
+    }
+
+    &__item-img--google-play {
+      margin-top: 4px;
     }
 
     &__legend {
@@ -177,7 +181,7 @@
 
     background-image: url("../img/bg-back-desktop@1x.jpg");
 
-    @media (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
       background-size: 2555px auto;
       background-position-y: 12px;
@@ -192,7 +196,7 @@
       background-position: calc(50% + 72px) bottom;
       padding-bottom: 106px;
 
-      @media (min-resolution: $retina-dppx) {
+      @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
         background-image: url("../img/iphone-hand-desktop@2x.png");
         background-size: 1050px auto;
       }

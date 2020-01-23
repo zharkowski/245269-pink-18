@@ -19,6 +19,7 @@
   }
 
   &__text {
+    position: relative;
     padding-top: 17px;
     padding-right: 18px;
     padding-bottom: 21px;
@@ -63,6 +64,14 @@
     text-transform: uppercase;
     color: $text-color--additional;
   }
+
+  &__likes-icon {
+    position: absolute;
+    bottom: 26px;
+    left: 18px;
+
+    fill: $pink;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -79,8 +88,12 @@
       min-height: 110px;
       padding-top: 24px;
       padding-right: 28px;
-      padding-bottom: 23px;
+      padding-bottom: 21px;
       padding-left: 28px;
+    }
+
+    &--panorama-of-the-day &__text {
+      padding-bottom: 24px;
     }
 
     &__likes {
@@ -89,6 +102,19 @@
       padding-left: 0;
       left: 27px;
       bottom: 22px;
+    }
+
+    &__likes-icon {
+      right: 32px;
+      bottom: 29px;
+      left: auto;
+    }
+
+    &--panorama-of-the-day &__likes-icon {
+      top: 30px;
+      right: 29px;
+      bottom: auto;
+      left: auto;
     }
 
     &--panorama-of-the-day &__text {

@@ -17,4 +17,6 @@
       headerWrapper.classList.add('page-header__wrapper--menu-closed');
     }
   })
+
+
 })();

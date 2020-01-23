@@ -47,10 +47,16 @@
   &__toggles-list {
     display: flex;
     justify-content: center;
+    margin-top: 33px;
   }
 
   &__toggle {
     @include toggles();
+  }
+
+  &__prev-button,
+  &__next-button {
+    display: none;
   }
 
   //&__toggle {
@@ -110,11 +116,7 @@
     }
 
     &__toggles-list {
-      margin-top: 19px;
-    }
-
-    &__toggles-list {
-      margin-top: 4px;
+      margin-top: 34px;
     }
   }
 }
@@ -173,18 +175,18 @@
       right: 18px;
     }
 
-    &__prev-button path,
-    &__next-button path {
+    &__prev-button svg,
+    &__next-button svg {
       fill: rgba($blue--dark, 0.3);
     }
 
-    &__prev-button:hover path,
-    &__next-button:hover path {
+    &__prev-button:hover svg,
+    &__next-button:hover svg {
       fill: rgba($blue--dark, 0.6);
     }
 
-    &__prev-button:active path,
-    &__next-button:active path {
+    &__prev-button:active svg,
+    &__next-button:active svg {
       fill: rgba($blue--dark, 0.1);
     }
   }
