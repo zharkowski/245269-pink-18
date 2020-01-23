@@ -50,25 +50,21 @@
     display: block;
   }
 
-  &__icon path,
-  &__icon rect {
+  &__icon {
     fill: rgba($blue--dark, 0.3);
   }
 
-  &__icon:hover path,
-  &__icon:hover rect {
+  &__icon:hover {
     fill: rgba($blue--dark, 0.5);
   }
 
-  &__icon:active path,
-  &__icon:active rect {
+  &__icon:active {
     fill: $pink;
   }
 
-  &__radio--crop:checked ~ &__list &__icon--crop path,
-  &__radio--fill:checked ~ &__list &__icon--fill path,
-  &__radio--fill:checked ~ &__list &__icon--fill rect,
-  &__radio--contrast:checked ~ &__list &__icon--contrast path {
+  &__radio--crop:checked ~ &__list &__icon--crop,
+  &__radio--fill:checked ~ &__list &__icon--fill,
+  &__radio--contrast:checked ~ &__list &__icon--contrast {
     fill: $pink;
   }
 
@@ -152,8 +148,9 @@
       margin-top: 1px;
     }
 
-    &__icon path,
-    &__icon rect {
+    &__icon,
+    &__icon:hover,
+    &__icon:active {
       fill: $pink;
     }
 
@@ -186,6 +183,7 @@
     }
 
     &__label {
+      margin-bottom: 22px;
       margin-top: 0;
       justify-content: space-between;
     }
@@ -204,24 +202,24 @@
     }
 
     &__icon--crop {
-      width: 47px;
-      height: 47px;
+      width: 44px;
+      height: 45px;
       margin-left: -1px;
       margin-top: -3px;
     }
 
     &__icon--fill {
-      width: 61px;
-      height: 48px;
-      margin-left: -6px;
-      margin-top: -3px;
+      width: 48px;
+      height: 43px;
+      margin-left: 0;
+      margin-top: -1px;
     }
 
     &__icon--contrast {
       width: 32px;
       height: 32px;
       margin-left: 6px;
-      margin-top: -1px;
+      margin-top: 2px;
     }
 
     &__range {

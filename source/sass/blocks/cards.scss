@@ -92,13 +92,16 @@
 
 @media (min-width: $desktop-width) {
   .cards {
-
     &__slogan {
       padding: 0 149px;
       margin-bottom: 89px;
     }
 
     &__item {
+      margin-bottom: 54px;
+    }
+
+    &__item--panorama-of-the-day {
       margin-bottom: 50px;
     }
 

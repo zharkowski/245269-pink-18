@@ -47,10 +47,16 @@
   &__toggles-list {
     display: flex;
     justify-content: center;
+    margin-top: 33px;
   }
 
   &__toggle {
     @include toggles();
+  }
+
+  &__prev-button,
+  &__next-button {
+    display: none;
   }
 
   //&__toggle {
@@ -110,11 +116,7 @@
     }
 
     &__toggles-list {
-      margin-top: 19px;
-    }
-
-    &__toggles-list {
-      margin-top: 4px;
+      margin-top: 34px;
     }
   }
 }

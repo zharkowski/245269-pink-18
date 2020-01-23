@@ -38,8 +38,22 @@
   }
 
   &__logo-link {
-    display: block;
     line-height: 0;
+  }
+
+  &__logo-image {
+    width: 75px;
+    height: 23px;
+    fill: $white;
+  }
+
+  &__logo-image:hover {
+    fill: $pink;
+  }
+
+  &__logo-image:active {
+    fill: $white;
+    opacity: 0.3;
   }
 }
 
@@ -58,7 +72,7 @@
 
     &__logo-image {
       width: 147px;
-      height: auto;
+      height: 41px;
     }
   }
 }
@@ -157,6 +171,7 @@
       padding: 25px 0 43px;
       width: auto;
       box-shadow: none;
+      border: none;
     }
 
     &__copyright {

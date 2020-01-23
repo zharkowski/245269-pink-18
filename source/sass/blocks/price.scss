@@ -2,7 +2,7 @@
   overflow: hidden;
 
   &__wrapper {
-    margin-top: 111px;
+    margin-top: 140px;
     position: relative;
   }
 
@@ -131,16 +131,21 @@
 
   &__function svg {
     position: absolute;
-    top: 19px;
+    top: 16px;
     left: auto;
-    right: 18px;
+    right: 19px;
   }
 
-  &__function--on path{
+  &__function--on svg {
+    top: 18px;
+    right: 11px;
+  }
+
+  &__function--on svg{
     fill: $green-leafy;
   }
 
-  &__function--off path{
+  &__function--off svg{
     fill: $orange;
   }
 }
@@ -151,6 +156,8 @@
       padding-top: 87px;
       padding-bottom: 69px;
       @include wrapper();
+
+      margin-top: 29px;
     }
 
     &__wrapper::before {
@@ -213,7 +220,7 @@
     &__function svg {
       position: relative;
       top: 5px;
-      left: 40px;
+      left: 41px;
     }
   }
 }
@@ -240,7 +247,8 @@
     }
 
     &__value {
-      margin-bottom: 22px;
+      margin-bottom: 18px;
+      margin-top: 3px;
 
       font-size: 24px;
     }
