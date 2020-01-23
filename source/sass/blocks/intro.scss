@@ -118,7 +118,7 @@
 
     &__wrapper--index-page {
       padding-top: 109px;
-      padding-bottom: 92px;
+      padding-bottom: 96px;
 
       background-image: url("../img/iphone-hand-tablet@1x.png");
       background-position: -20px bottom;
@@ -147,7 +147,7 @@
 
     &__main-link {
       margin-top: 16px;
-      margin-bottom: 46px;
+      margin-bottom: 45px;
     }
 
     &__list {
@@ -158,6 +158,10 @@
 
     &__item {
       margin: auto 0;
+    }
+
+    &__item-img--google-play {
+      margin-top: 4px;
     }
 
     &__legend {

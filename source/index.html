@@ -85,6 +85,16 @@
         <path id="path5062" fill="#2DABE2" d="M20.873,41.992H0V22.04h20.873V41.992z"/>
         <path id="path5064" fill="#F9BC15" d="M43.922,41.992H23.049V22.04h20.873V41.992z"/>
       </symbol>
+      <symbol viewBox="0 0 79 63" id="quotes">
+        <path d="M34.967,7.063L30.713,0C28.272,1.495,0,12.207,0,39.617c0,7.231,0.336,24.172,18.9,24.172 c11.187,0,13.94-10.279,13.94-13.584c0-21.977-21.382-14.177-21.382-14.177C11.458,17.957,31.263,9.184,34.967,7.063z"/>
+        <path d="M78.672,7.063L74.418,0c-2.44,1.495-30.713,12.207-30.713,39.617c0,7.231,0.337,24.172,18.9,24.172 c11.187,0,13.939-10.279,13.939-13.584c0-21.977-21.381-14.177-21.381-14.177C55.165,17.957,74.969,9.184,78.672,7.063z"/>
+      </symbol>
+      <symbol viewBox="0 0 22 41" id="arrow-left">
+        <path d="M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261 c-0.331,0.33-0.331,0.867,0,1.197l20.013,20.013c0.164,0.165,0.382,0.248,0.599,0.248s0.434-0.083,0.599-0.248 c0.331-0.331,0.331-0.867,0-1.198L2.045,20.859z"/>
+      </symbol>
+      <symbol viewBox="0 0 22 41" id="arrow-right">
+        <path d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z"/>
+      </symbol>
       <symbol viewBox="-82 5 22 16" id="icon-yes" >
         <path d="M-60.953 5.167a.999.999 0 0 0-1.414 0L-75.75 18.551l-4.9-4.9a.999.999 0 1 0-1.414 1.414l5.607 5.607a.997.997 0 0 0 1.414 0l14.09-14c.391-.481.391-1.114 0-1.505z"/>
       </symbol>
@@ -216,7 +226,7 @@
                 <img src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" width="292" height="302" alt="Фотография мусорных баков через розовый фильтр на Айфоне">
               </picture>
               <h3 class="features__title">Меняет мир вокруг</h3>
-              <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы<br class="features__br"> усилить эффект</p>
             </li>
             <li class="features__item">
               <picture class="features__picture">
@@ -246,13 +256,8 @@
       <section class="reviews">
         <div class="reviews__wrapper slider">
           <h2 class="reviews__title visually-hidden">Отзывы</h2>
-          <svg class="reviews__quotes-item" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="78.672px" height="63.789px" viewBox="0 0 78.672 63.789" enable-background="new 0 0 78.672 63.789" xml:space="preserve">
-            <g>
-              <path d="M34.967,7.063L30.713,0C28.272,1.495,0,12.207,0,39.617c0,7.231,0.336,24.172,18.9,24.172 c11.187,0,13.94-10.279,13.94-13.584c0-21.977-21.382-14.177-21.382-14.177C11.458,17.957,31.263,9.184,34.967,7.063z"/>
-            </g>
-            <g>
-              <path d="M78.672,7.063L74.418,0c-2.44,1.495-30.713,12.207-30.713,39.617c0,7.231,0.337,24.172,18.9,24.172 c11.187,0,13.939-10.279,13.939-13.584c0-21.977-21.381-14.177-21.381-14.177C55.165,17.957,74.969,9.184,78.672,7.063z"/>
-            </g>
+          <svg class="reviews__quotes-item" width="79" height="63">
+            <use xlink:href="#quotes"></use>
           </svg>
           <div class="reviews__list slider__list">
             <blockquote class="reviews__item slider__item">
@@ -263,23 +268,11 @@
               </p>
               <p class="reviews__legend">25 лет, водитель трамвая</p>
             </blockquote>
-<!--            <blockquote class="reviews__item slider__item">-->
-<!--              <cite class="reviews__user-name">Второй посетитель</cite>-->
-<!--              <p class="reviews__text">-->
-<!--                «Это приложение бла-бла-бла»-->
-<!--              </p>-->
-<!--            </blockquote>-->
-<!--            <blockquote class="reviews__item slider__item">-->
-<!--              <cite class="reviews__user-name">Еще один посетитель</cite>-->
-<!--              <p class="reviews__text">-->
-<!--                «Большой текст хвалебного или не очень отзыва»-->
-<!--              </p>-->
-<!--            </blockquote>-->
           </div>
           <button class="reviews__prev-button" type="button">
             <span class="visually-hidden">Предыдущий отзыв</span>
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
-              <path d="M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261 c-0.331,0.33-0.331,0.867,0,1.197l20.013,20.013c0.164,0.165,0.382,0.248,0.599,0.248s0.434-0.083,0.599-0.248 c0.331-0.331,0.331-0.867,0-1.198L2.045,20.859z"/>
+            <svg width="22" height="41">
+              <use xlink:href="#arrow-left"></use>
             </svg>
           </button>
           <div class="reviews__toggles-list">
@@ -289,8 +282,8 @@
           </div>
           <button class="reviews__next-button" type="button">
             <span class="visually-hidden">Следующий отзыв</span>
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
-              <path d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z"/>
+            <svg width="22" height="41">
+              <use xlink:href="#arrow-right"></use>
             </svg>
           </button>
         </div>
