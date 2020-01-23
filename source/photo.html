@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="photo-main">
-  <svg style="display:none">
+  <svg style="display: none;">
     <style>
       .logo-header,
       .logo-footer {
@@ -19,7 +19,7 @@
         display: block;
       }
 
-      @media  (min-width: 660px) {
+      @media (min-width: 660px) {
         .logo-header--mobile {
           display: none;
         }
@@ -29,7 +29,7 @@
         }
       }
 
-      @media  (min-width: 960px) {
+      @media (min-width: 960px) {
         .logo-header--mobile,
         .logo-header--tablet,
         .logo-footer--mobile {
@@ -311,7 +311,7 @@
                   <picture>
                     <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
                     <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.webp 2x 2x">
+                    <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.webp 2x">
 
                     <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
                     <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
@@ -341,7 +341,7 @@
             <picture>
               <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x 2x">
+              <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
 
               <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
@@ -357,24 +357,24 @@
                     <svg class="editing__icon editing__icon--crop" width="44" height="44">
                       <use xlink:href="#icon-crop"></use>
                     </svg>
-                    <input class="editing__range editing__range--crop" name="crop-value" type="range">
                   </label>
+                  <label><input class="editing__range editing__range--crop" min="0" max="100" value="77" name="crop-value" type="range"></label>
                 </li>
                 <li class="editing__element">
                   <label class="editing__label" for="editing-fill">
                     <svg class="editing__icon editing__icon--fill" width="48" height="43">
                       <use xlink:href="#icon-fill"></use>
                     </svg>
-                    <input class="editing__range editing__range--fill" name="fill-value" type="range">
                   </label>
+                  <label><input class="editing__range editing__range--fill" min="0" max="100" value="10" name="fill-value" type="range"></label>
                 </li>
                 <li class="editing__element">
                   <label class="editing__label" for="editing-contrast">
                     <svg class="editing__icon editing__icon--contrast" width="32" height="32">
                       <use xlink:href="#icon-contrast"></use>
                     </svg>
-                    <input class="editing__range editing__range--contrast" name="contrast-value" type="range">
                   </label>
+                  <label><input class="editing__range editing__range--contrast" min="0" max="100" value="50" name="contrast-value" type="range"></label>
                 </li>
               </ul>
               <div class="editing__buttons-wrapper">
@@ -430,6 +430,7 @@
       </div>
     </div>
   </footer>
-  </body>
+
   <script src="js/main.js"></script>
+  </body>
 </html>
