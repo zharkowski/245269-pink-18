@@ -8,6 +8,8 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 var csso = require("gulp-csso");
+var htmlmin = require("gulp-htmlmin");
+var uglyfy = require("gulp-uglyfly");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
@@ -16,6 +18,19 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
 
+gulp.task("clean", function () {
+  return del("build");
+});
+gulp.task("copy", function () {
+  return gulp.src([
+    "source/fonts/**/*.{woff,woff2}",
+    "source/img/**",
+    "source/*.ico"
+  ], {
+    base: "source"
+  })
+    .pipe(gulp.dest("build"));
+});
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
@@ -29,6 +44,11 @@ gulp.task("css", function () {
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
+});
+gulp.task("jsmin", function () {
+  return gulp.src("source/js/*.js")
+    .pipe(uglyfy())
+    .pipe(gulp.dest("build/js"))
 });
 gulp.task("images", function () {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
@@ -57,6 +77,7 @@ gulp.task("html", function () {
     .pipe(posthtml([
       include()
     ]))
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
 });
 gulp.task("server", function () {
@@ -72,20 +93,6 @@ gulp.task("server", function () {
   gulp.watch("source/img/{icon,logo}-*.svg", gulp.series("sprite", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
 });
-gulp.task("copy", function () {
-  return gulp.src([
-    "source/fonts/**/*.{woff,woff2}",
-    "source/img/**",
-    "source/js/**",
-    "source/*.ico"
-  ], {
-    base: "source"
-  })
-    .pipe(gulp.dest("build"));
-});
-gulp.task("clean", function () {
-  return del("build");
-});
 gulp.task("refresh", function () {
   server.reload();
   done();
@@ -95,6 +102,7 @@ gulp.task("build", gulp.series(
   "clean",
   "copy",
   "css",
+  "jsmin",
   "images",
   "webp",
   "sprite",
