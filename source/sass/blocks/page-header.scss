@@ -55,6 +55,14 @@
     fill: $white;
     opacity: 0.3;
   }
+
+  &__pink-logo {
+    display: none;
+  }
+
+  &__pink-logo--mobile {
+    display: block;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -77,6 +85,14 @@
     &__logo-image {
       width: 147px;
       height: 41px;
+    }
+
+    &__pink-logo--mobile {
+      display: none;
+    }
+
+    &__pink-logo--tablet {
+      display: block;
     }
   }
 }
@@ -180,6 +196,15 @@
 
     &__copyright {
       padding-top: 10px;
+    }
+
+    &__pink-logo--mobile,
+    &__pink-logo--tablet {
+      display: none;
+    }
+
+    &__pink-logo--desktop {
+      display: block;
     }
   }
 }
