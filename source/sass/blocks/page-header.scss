@@ -47,11 +47,11 @@
     fill: $white;
   }
 
-  &__logo-image:hover {
+  &__logo-link[href] &__logo-image:hover {
     fill: $pink;
   }
 
-  &__logo-image:active {
+  &__logo-link[href] &__logo-image:active {
     fill: $white;
     opacity: 0.3;
   }
