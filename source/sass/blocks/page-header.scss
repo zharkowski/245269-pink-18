@@ -81,7 +81,7 @@
   }
 }
 
-@media (max-width: calc(#{$desktop-width} - 1px)) {
+@media (max-width: $desktop-width - 1px) {
   .page-header {
     &__wrapper--menu-closed &__main-nav {
       display: none;
