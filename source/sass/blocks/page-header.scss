@@ -13,7 +13,6 @@
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
-    border-bottom: 1px solid black;
     width: 100%;
   }
 
@@ -25,6 +24,7 @@
 
   &__wrapper--menu-opened &__logo-toggle-wrapper {
     padding: 22px 20px 24px;
+    box-shadow: 0 1px 0 0 $black;
     background-color: $background-color-header--opened;
   }
 
@@ -39,6 +39,9 @@
 
   &__logo-link {
     line-height: 0;
+    display: block;
+    width: 74px;
+    height: 23px;
   }
 
   &__logo-image {
@@ -80,6 +83,11 @@
       padding-right: 20px;
       padding-left: 20px;
       padding-bottom: 42px;
+    }
+
+    &__logo-link {
+      width: 147px;
+      height: 40px;
     }
 
     &__logo-image {
