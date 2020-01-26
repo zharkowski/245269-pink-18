@@ -9,6 +9,7 @@
 
   &__wrapper {
     padding-top: 40px;
+    padding-bottom: 40px;
     @include wrapper();
   }
 
@@ -49,7 +50,6 @@
   &__img {
     margin-bottom: -8px;
     fill: $pink;
-
   }
 
   &__img--youtube {
@@ -61,13 +61,21 @@
     fill: $blue--dark;
   }
 
-  &__logo-image:hover {
+  &__logo-link[href] &__logo-image:hover {
     fill: $pink;
   }
 
-  &__logo-image:active {
+  &__logo-link[href] &__logo-image:active {
     fill: $blue--dark;
     opacity: 0.3;
+  }
+
+  &__pink-logo {
+    display: none;
+  }
+
+  &__pink-logo--mobile {
+    display: block;
   }
 }
 
@@ -113,6 +121,14 @@
     &__img--youtube {
       margin-bottom: -6px;
       margin-right: -2px;
+    }
+
+    &__pink-logo--mobile {
+      display: none;
+    }
+
+    &__pink-logo--desktop {
+      display: block;
     }
   }
 }
