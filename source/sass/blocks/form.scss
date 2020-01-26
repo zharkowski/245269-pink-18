@@ -406,29 +406,28 @@
       content: "";
       display: block;
       position: absolute;
-      width: 20px;
-      height: 20px;
 
-      top: 22px;
       right: 22px;
     }
 
     &__label--phone::before {
-      mask: url("../img/icon-phone.svg");
-      mask-size: contain;
-      mask-position: 0 0;
-      mask-repeat: no-repeat;
-      background-color: $pink;
+      top: 22px;
+      width: 20px;
+      height: 20px;
+
+      background-image: url("../img/icon-phone.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
     }
 
     &__label--mail::before {
       top: 26px;
+      width: 18px;
+      height: 13px;
 
-      mask: url("../img/icon-mail.svg");
-      mask-size: contain;
-      mask-position: 0 0;
-      mask-repeat: no-repeat;
-      background-color: $pink;
+      background-image: url("../img/icon-mail.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
     }
 
     &__label-value--contacts {
@@ -516,11 +515,14 @@
     }
 
     &__contacts {
-      display: flex;
-      justify-content: space-between;
       padding-top: 35px;
       margin-top: 4px;
       width: 100%;
+    }
+
+    &__contacts-wrapper {
+      display: flex;
+      justify-content: space-between;
     }
 
     &__label--contacts {

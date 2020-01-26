@@ -111,6 +111,7 @@
             </div>
             <fieldset class="form__contacts">
               <legend class="form__legend form__legend--contacts">Контактная информация</legend>
+              <div class="form__contacts-wrapper">
               <label class="form__label form__label--contacts form__label--phone">
                 <span class="form__label-value form__label-value--contacts">Номер телефона</span>
                 <input class="form__input form__input--contacts" type="tel" name="user-phone-number" placeholder="Номер, пожалуйста" pattern="[^a-zA-zа-яёА-ЯЁ]{1,}">
@@ -119,6 +120,7 @@
                 <span class="form__label-value form__label-value--contacts">Адрес почты</span>
                 <input class="form__input form__input--contacts" type="email" name="user-email" placeholder="Введите почту *" required="">
               </label>
+              </div>
             </fieldset>
             <div class="form__platform-wrapper">
               <fieldset class="form__platform">
@@ -220,5 +222,6 @@
 
     <script src="js/main.js"></script>
     <script src="js/modal.js"></script>
+    <script src="js/picturefill.js" async></script>
   </body>
 </html>

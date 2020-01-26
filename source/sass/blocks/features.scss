@@ -36,6 +36,10 @@
     display: none;
   }
 
+  &__picture img {
+    -ms-wrap-margin: 42px;
+  }
+
   &__item:last-child &__picture {
     display: block;
     order: 2;
