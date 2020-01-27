@@ -5,6 +5,7 @@
 
   &__wrapper {
     padding-top: 16px;
+
     @include wrapper();
   }
 

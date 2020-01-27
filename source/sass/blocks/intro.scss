@@ -29,6 +29,7 @@
   &__wrapper {
     padding-top: 66px;
     padding-bottom: 1px;
+
     @include wrapper();
   }
 

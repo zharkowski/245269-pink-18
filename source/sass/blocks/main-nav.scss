@@ -8,29 +8,6 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .main-nav {
-
-  }
-}
-
-//@media (max-width: calc(#{$desktop-width} - 1px)) {
-//  .main-nav {
-//    &--closed {
-//      background-color: $background-color-header--closed;
-//    }
-//
-//    &--opened {
-//      background-color: $background-color-header--opened;
-//    }
-//
-//    &--closed &__list {
-//      display: none;
-//    }
-//
-//  }
-//}
-
 @media (max-width: calc(#{$desktop-width} - 1px)) and (min-width: $tablet-width) {
   .main-nav {
     &--closed &__logo-toggle-wrapper {

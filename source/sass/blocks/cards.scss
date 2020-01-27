@@ -3,6 +3,7 @@
 
   &__wrapper {
     padding-top: 31px;
+
     @include wrapper();
   }
 

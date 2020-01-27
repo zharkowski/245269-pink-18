@@ -139,13 +139,10 @@
   &__function--on svg {
     top: 18px;
     right: 11px;
-  }
-
-  &__function--on svg{
     fill: $green-leafy;
   }
 
-  &__function--off svg{
+  &__function--off svg {
     fill: $orange;
   }
 }
@@ -155,6 +152,7 @@
     &__wrapper {
       padding-top: 87px;
       padding-bottom: 69px;
+
       @include wrapper();
 
       margin-top: 29px;
@@ -236,9 +234,6 @@
       top: 50px;
     }
 
-    &__element--header {
-    }
-
     &__tariff {
       margin-top: 16px;
 
@@ -254,9 +249,6 @@
 
     &__element--additional {
       font-size: 18px;
-    }
-
-    &__element--additional {
       box-sizing: border-box;
       padding: 14px 20px;
     }

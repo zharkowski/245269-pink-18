@@ -1,5 +1,4 @@
 .site-list {
-
   &__item {
     text-align: center;
     vertical-align: center;
@@ -26,10 +25,6 @@
     color: $menu-mobile-color;
     text-decoration: none;
   }
-}
-
-@media (min-width: $tablet-width) {
-
 }
 
 @media (min-width: $desktop-width) {
