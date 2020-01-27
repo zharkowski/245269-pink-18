@@ -308,7 +308,7 @@
     &__label-value {
       padding-right: 18px;
       padding-left: 0;
-      margin: auto 0;
+      line-height: 64px;
     }
 
     &__name {
@@ -441,9 +441,7 @@
     }
 
     &__message {
-      padding: 20px 58px;
-      padding-top: 37px;
-      padding-bottom: 47px;
+      padding: 37px 58px 47px;
       margin-top: 58px;
       order: 4;
       @include fieldset-border();
@@ -523,6 +521,7 @@
     &__contacts-wrapper {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
     }
 
     &__label--contacts {

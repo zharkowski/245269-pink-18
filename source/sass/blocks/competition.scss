@@ -16,6 +16,7 @@
   &__wrapper {
     padding-top: 31px;
     padding-bottom: 15px;
+
     @include wrapper();
   }
 }

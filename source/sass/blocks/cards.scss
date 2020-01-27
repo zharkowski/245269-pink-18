@@ -9,7 +9,7 @@
   &__slogan {
     text-align: center;
     margin-right: 15px;
-    margin-bottom: 50px;
+    margin-bottom: 49px;
     margin-left: 15px;
 
     font-family: $default-font;
@@ -49,6 +49,7 @@
     text-transform: uppercase;
     color: $text-color--header;
     text-align: center;
+    line-height: 34px;
 
     background-color: $pink;
   }

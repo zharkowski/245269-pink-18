@@ -1,5 +1,5 @@
 .intro {
-  min-height: 236px;
+  min-height: 238px;
 
   color: $text-color--header;
   text-align: center;
@@ -8,7 +8,7 @@
   background-color: $background-color-intro;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center 0;
+  background-position: center calc(100% - 272px);
   background-size: 100%;
 
   @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
@@ -18,7 +18,7 @@
 
   &__page-title {
     display: block;
-    margin-top: 28px;
+    margin-top: 30px;
     margin-bottom: 28px;
     padding: 0 20px;
 
@@ -37,7 +37,7 @@
     padding-bottom: 9px;
 
     background-image: url("../img/iphone-hand-mobile@1x.png");
-    background-position: 0 175px;
+    background-position: 0 177px;
     background-repeat: no-repeat;
 
 
