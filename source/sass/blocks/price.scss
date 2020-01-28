@@ -1,268 +1,258 @@
 .price {
   overflow: hidden;
+}
 
-  &__wrapper {
-    margin-top: 140px;
-    position: relative;
-  }
+.price__wrapper {
+  margin-top: 140px;
+  position: relative;
+}
 
-  &__wrapper::before {
-    content: "";
-    display: block;
-    position: absolute;
+.price__wrapper::before {
+  content: "";
+  display: block;
+  position: absolute;
 
-    width: 130vw;
-    height: 1050px;
-    top: -78px;
-    left: calc(-60vw + 50%);
-    transform: rotate(-5deg);
+  width: 130vw;
+  height: 1050px;
+  top: -78px;
+  left: calc(-60vw + 50%);
+  transform: rotate(-5deg);
 
-    z-index: -1;
-    background-color: $background-color-main--additional;
-  }
+  z-index: -1;
+  background-color: $background-color-main--additional;
+}
 
-  &__table-wrapper {
-    overflow: hidden;
-  }
+.price__table-wrapper {
+  overflow: hidden;
+}
 
-  &__table {
-    border-collapse: collapse;
-    width: calc((100vw - 44px) * 3 + 4px);
+.price__table {
+  border-collapse: collapse;
+  width: calc((100vw - 44px) * 3 + 4px);
 
-    transform: translateX(calc(-100vw + 64px));
-  }
+  transform: translateX(calc(-100vw + 64px));
+}
 
-  &__table tr {
-    background-color: $background-color-main;
-  }
+.price__table tr {
+  background-color: $background-color-main;
+}
 
-  &__table tr:first-child {
-    background-color: $text-color;
-  }
+.price__table tr:first-child {
+  background-color: $text-color;
+}
 
-  &__element {
-    position: relative;
-    padding: 14px 22px;
-    border: 2px solid $background-color-main--additional;
+.price__element {
+  position: relative;
+  padding: 14px 22px;
+  border: 2px solid $background-color-main--additional;
 
-    font-family: $default-font;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 30px;
-    text-transform: uppercase;
-    color: $text-color;
-  }
+  font-family: $default-font;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $text-color;
+}
 
-  &__element--additional {
-    display: none;
-  }
+.price__element--additional {
+  display: none;
+}
 
-  &__element--header {
-    padding: 0;
+.price__element--header {
+  padding: 0;
 
-    color: $text-color--header;
-    border-top: none;
-    border-bottom: none;
-  }
+  color: $text-color--header;
+  border-top: none;
+  border-bottom: none;
+}
 
-  &__element--hit {
-    position: relative;
-    overflow: hidden;
-  }
+.price__element--hit {
+  position: relative;
+  overflow: hidden;
+}
 
-  &__element--hit::before {
-    content: "хит";
-    display: block;
-    position: absolute;
-    width: 95px;
-    height: 27px;
-    top: 12px;
-    left: -24px;
+.price__element--hit::before {
+  content: "хит";
+  display: block;
+  position: absolute;
+  width: 95px;
+  height: 27px;
+  top: 12px;
+  left: -24px;
 
-    font-family: $default-font;
-    font-size: 15px;
-    line-height: 21px;
-    color: $white;
-    text-transform: uppercase;
+  font-family: $default-font;
+  font-size: 15px;
+  line-height: 21px;
+  color: $white;
+  text-transform: uppercase;
 
-    transform: rotate(-45deg);
-    background-color: $pink;
-  }
+  transform: rotate(-45deg);
+  background-color: $pink;
+}
 
-  &__tariff {
-    margin-top: 15px;
-    margin-bottom: 0;
+.price__tariff {
+  margin-top: 15px;
+  margin-bottom: 0;
 
-    font-family: $default-font;
-    font-weight: bold;
-    font-size: 18px;
-  }
+  font-family: $default-font;
+  font-weight: bold;
+  font-size: 18px;
+}
 
-  &__value {
-    margin-top: 2px;
-    margin-bottom: 19px;
+.price__value {
+  margin-top: 2px;
+  margin-bottom: 19px;
 
-    font-family: $default-font;
-    font-weight: 200;
-    font-size: 24px;
-  }
+  font-family: $default-font;
+  font-weight: 200;
+  font-size: 24px;
+}
 
-  &__toggles-list {
-    text-align: center;
-    margin: 42px 0;
-    margin-bottom: 52px;
-    display: flex;
-    justify-content: center;
-  }
+.price__toggles-list {
+  text-align: center;
+  margin: 42px 0;
+  margin-bottom: 52px;
+  display: flex;
+  justify-content: center;
+}
 
-  &__toggle {
-    @include toggles();
-  }
+.price__toggle {
+  @include toggles();
+}
 
-  &__cell-content {
-    position: relative;
-    //display: flex;
-    //justify-content: space-between;
-  }
+.price__cell-content {
+  position: relative;
+}
 
-  &__function--off {
-    //position: relative;
-  }
+.price__function svg {
+  position: absolute;
+  top: 16px;
+  left: auto;
+  right: 19px;
+}
 
-  &__function svg {
-    position: absolute;
-    top: 16px;
-    left: auto;
-    right: 19px;
-  }
+.price__function--on svg {
+  top: 18px;
+  right: 11px;
+  fill: $green-leafy;
+}
 
-  &__function--on svg {
-    top: 18px;
-    right: 11px;
-    fill: $green-leafy;
-  }
-
-  &__function--off svg {
-    fill: $orange;
-  }
+.price__function--off svg {
+  fill: $orange;
 }
 
 @media (min-width: $tablet-width) {
-  .price {
-    &__wrapper {
-      padding-top: 87px;
-      padding-bottom: 69px;
+  .price__wrapper {
+    padding-top: 87px;
+    padding-bottom: 69px;
 
-      @include wrapper();
+    @include wrapper();
 
-      margin-top: 29px;
-    }
+    margin-top: 29px;
+  }
 
-    &__wrapper::before {
-      top: 26px;
-      transform: rotate(-4deg);
-    }
+  .price__wrapper::before {
+    top: 26px;
+    transform: rotate(-4deg);
+  }
 
-    &__table {
-      width: 100%;
-      transform: none;
-    }
+  .price__table {
+    width: 100%;
+    transform: none;
+  }
 
-    &__element {
-      width: 25%;
-      padding: 4px 22px;
-    }
+  .price__element {
+    width: 25%;
+    padding: 4px 22px;
+  }
 
-    &__element--additional {
-      display: table-cell;
-      padding: 7px 14px;
+  .price__element--additional {
+    display: table-cell;
+    padding: 7px 14px;
 
-      font-size: 14px;
-      text-transform: none;
-    }
+    font-size: 14px;
+    text-transform: none;
+  }
 
-    &__element--header {
-      height: 75px;
-      padding: 0;
-    }
+  .price__element--header {
+    height: 75px;
+    padding: 0;
+  }
 
-    &__element--header.price__element--additional {
-      background-color: $background-color-main--additional;
-    }
+  .price__element--header.price__element--additional {
+    background-color: $background-color-main--additional;
+  }
 
-    &__element--hit::before {
-      top: 4px;
-      left: -26px;
-    }
+  .price__element--hit::before {
+    top: 4px;
+    left: -26px;
+  }
 
-    &__tariff {
-      margin-top: 10px;
-      font-size: 16px;
-    }
+  .price__tariff {
+    margin-top: 10px;
+    font-size: 16px;
+  }
 
-    &__value {
-      font-size: 18px;
-      margin-top: 0;
-      margin-bottom: 7px;
-    }
+  .price__value {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 7px;
+  }
 
-    &__description {
-      display: none;
-    }
+  .price__description {
+    display: none;
+  }
 
-    &__toggles-list {
-      display: none;
-    }
+  .price__toggles-list {
+    display: none;
+  }
 
-    &__function svg {
-      position: relative;
-      top: 5px;
-      left: 41px;
-    }
+  .price__function svg {
+    position: relative;
+    top: 5px;
+    left: 41px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .price {
-    &__wrapper {
-      padding-top: 160px;
-      padding-bottom: 97px;
-    }
+  .price__wrapper {
+    padding-top: 160px;
+    padding-bottom: 97px;
+  }
 
-    &__wrapper::before {
-      transform: rotate(-4deg);
-      top: 50px;
-    }
+  .price__wrapper::before {
+    transform: rotate(-4deg);
+    top: 50px;
+  }
 
-    &__tariff {
-      margin-top: 16px;
+  .price__tariff {
+    margin-top: 16px;
 
-      font-size: 18px;
-    }
+    font-size: 18px;
+  }
 
-    &__value {
-      margin-bottom: 18px;
-      margin-top: 3px;
+  .price__value {
+    margin-bottom: 18px;
+    margin-top: 3px;
 
-      font-size: 24px;
-    }
+    font-size: 24px;
+  }
 
-    &__element--additional {
-      font-size: 18px;
-      box-sizing: border-box;
-      padding: 14px 20px;
-    }
+  .price__element--additional {
+    font-size: 18px;
+    box-sizing: border-box;
+    padding: 14px 20px;
+  }
 
-    &__element::before {
-      width: 113px;
-      height: 29px;
-      top: 10px;
-      left: -30px;
-    }
+  .price__element::before {
+    width: 113px;
+    height: 29px;
+    top: 10px;
+    left: -30px;
+  }
 
-    &__function svg {
-      top: 7px;
-      left: calc(50% - 15px);
-    }
+  .price__function svg {
+    top: 7px;
+    left: calc(50% - 15px);
   }
 }

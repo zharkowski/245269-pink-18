@@ -1,154 +1,150 @@
-.post-content {
-  &__photo {
-    display: block;
-    min-width: 100%;
-    height: auto;
-  }
+.post-content__photo {
+  display: block;
+  min-width: 100%;
+  height: auto;
+}
 
-  &--panorama-of-the-day &__photo {
-    display: block;
-    min-width: 100vw;
-    height: auto;
-    position: relative;
-    top: 0;
-    left: calc(-50vw + 50%);
-  }
+.post-content--panorama-of-the-day .post-content__photo {
+  display: block;
+  min-width: 100vw;
+  height: auto;
+  position: relative;
+  top: 0;
+  left: calc(-50vw + 50%);
+}
 
-  &__photo-link {
-    display: block;
-  }
+.post-content__photo-link {
+  display: block;
+}
 
-  &__text {
-    position: relative;
-    padding-top: 17px;
-    padding-right: 18px;
-    padding-bottom: 21px;
-    padding-left: 18px;
-  }
+.post-content__text {
+  position: relative;
+  padding-top: 17px;
+  padding-right: 18px;
+  padding-bottom: 21px;
+  padding-left: 18px;
+}
 
-  &__user {
-    margin: 0;
+.post-content__user {
+  margin: 0;
 
-    font-family: $default-font;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 24px;
-    color: $text-color;
-  }
+  font-family: $default-font;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: $text-color;
+}
 
-  &__posting-time {
-    font-weight: 300;
-    font-size: 12px;
-    text-transform: uppercase;
-  }
+.post-content__posting-time {
+  font-weight: 300;
+  font-size: 12px;
+  text-transform: uppercase;
+}
 
-  &__message {
-    margin: 0;
+.post-content__message {
+  margin: 0;
 
-    font-family: $default-font;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
-    color: $text-color;
-  }
+  font-family: $default-font;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: $text-color;
+}
 
-  &__mobile-hidden {
-    display: none;
-  }
+.post-content__mobile-hidden {
+  display: none;
+}
 
-  &__likes {
-    margin-top: 9px;
-    margin-bottom: 0;
-    padding-left: 31px;
+.post-content__likes {
+  margin-top: 9px;
+  margin-bottom: 0;
+  padding-left: 31px;
 
-    font-family: $default-font;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 24px;
-    text-transform: uppercase;
-    color: $text-color--additional;
-  }
+  font-family: $default-font;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $text-color--additional;
+}
 
-  &__likes-icon {
-    position: absolute;
-    bottom: 26px;
-    left: 18px;
+.post-content__likes-icon {
+  position: absolute;
+  bottom: 26px;
+  left: 18px;
 
-    fill: $pink;
-  }
+  fill: $pink;
 }
 
 @media (min-width: $tablet-width) {
   .post-content {
     min-height: 455px;
+  }
 
-    &--panorama-of-the-day &__photo {
-      min-width: 106vw;
-      left: calc(-53vw + 50%);
-    }
+  .post-content--panorama-of-the-day .post-content__photo {
+    min-width: 106vw;
+    left: calc(-53vw + 50%);
+  }
 
-    &__mobile-hidden {
-      display: inline;
-    }
+  .post-content__mobile-hidden {
+    display: inline;
+  }
 
-    &__text {
-      position: relative;
-      min-height: 74px;
-      padding-top: 24px;
-      padding-right: 28px;
-      padding-bottom: 56px;
-      padding-left: 28px;
-    }
+  .post-content__text {
+    position: relative;
+    min-height: 74px;
+    padding-top: 24px;
+    padding-right: 28px;
+    padding-bottom: 56px;
+    padding-left: 28px;
+  }
 
-    &--panorama-of-the-day &__text {
-      padding-bottom: 24px;
-      padding-top: 24px;
-      min-height: 0;
-    }
+  .post-content--panorama-of-the-day .post-content__text {
+    padding-bottom: 24px;
+    padding-top: 24px;
+    min-height: 0;
+  }
 
-    &__likes {
-      position: absolute;
-      width: 245px;
-      padding-left: 0;
-      left: 27px;
-      bottom: 22px;
-    }
+  .post-content__likes {
+    position: absolute;
+    width: 245px;
+    padding-left: 0;
+    left: 27px;
+    bottom: 22px;
+  }
 
-    &__likes-icon {
-      right: 32px;
-      bottom: 29px;
-      left: auto;
-    }
+  .post-content__likes-icon {
+    right: 32px;
+    bottom: 29px;
+    left: auto;
+  }
 
-    &--panorama-of-the-day &__likes-icon {
-      top: 30px;
-      right: 29px;
-      bottom: auto;
-      left: auto;
-    }
+  .post-content--panorama-of-the-day .post-content__likes-icon {
+    top: 30px;
+    right: 29px;
+    bottom: auto;
+    left: auto;
+  }
 
-    &--panorama-of-the-day &__likes {
-      top: 25px;
-      right: 28px;
-      left: auto;
-      bottom: auto;
-      width: auto;
-      padding-right: 31px;
-      margin: 0;
-    }
+  .post-content--panorama-of-the-day .post-content__likes {
+    top: 25px;
+    right: 28px;
+    left: auto;
+    bottom: auto;
+    width: auto;
+    padding-right: 31px;
+    margin: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .post-content {
-    &--panorama-of-the-day &__photo {
-      min-width: 100vw;
-      left: calc(-50vw + 50%);
-    }
+  .post-content--panorama-of-the-day .post-content__photo {
+    min-width: 100vw;
+    left: calc(-50vw + 50%);
+  }
 
-    &--panorama-of-the-day &__likes {
-      top: 24px;
-      right: 31px;
-    }
+  .post-content--panorama-of-the-day .post-content__likes {
+    top: 24px;
+    right: 31px;
   }
 }

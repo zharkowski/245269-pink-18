@@ -1,14 +1,10 @@
-.page-main {
-  &__intro {
-    margin-top: -66px;
-  }
+.page-main__intro {
+  margin-top: -66px;
 }
 
 
 @media (min-width: $tablet-width) {
-  .page-main {
-    &__intro {
-      margin-top: -110px;
-    }
+  .page-main__intro {
+    margin-top: -110px;
   }
 }

@@ -1,114 +1,110 @@
 .cards {
   overflow: hidden;
+}
 
-  &__wrapper {
-    padding-top: 31px;
+.cards__wrapper {
+  padding-top: 31px;
 
-    @include wrapper();
-  }
+  @include wrapper();
+}
 
-  &__slogan {
-    text-align: center;
-    margin-right: 15px;
-    margin-bottom: 49px;
-    margin-left: 15px;
+.cards__slogan {
+  text-align: center;
+  margin-right: 15px;
+  margin-bottom: 49px;
+  margin-left: 15px;
 
-    font-family: $default-font;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 30px;
-    color: $text-color;
-  }
+  font-family: $default-font;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  color: $text-color;
+}
 
-  &__list {
-    width: 100%;
-  }
+.cards__list {
+  width: 100%;
+}
 
-  &__item {
-    margin-bottom: 20px;
+.cards__item {
+  margin-bottom: 20px;
 
-    background-color: $background-color-main--additional;
-  }
+  background-color: $background-color-main--additional;
+}
 
-  &__item--panorama-of-the-day {
-    position: relative;
-  }
+.cards__item--panorama-of-the-day {
+  position: relative;
+}
 
-  &__item--panorama-of-the-day::before {
-    content: "Панорама дня";
-    display: block;
-    position: absolute;
-    width: 140px;
-    height: 36px;
-    top: 0;
-    right: 0;
-    z-index: 2;
+.cards__item--panorama-of-the-day::before {
+  content: "Панорама дня";
+  display: block;
+  position: absolute;
+  width: 140px;
+  height: 36px;
+  top: 0;
+  right: 0;
+  z-index: 2;
 
-    font-family: $default-font;
-    font-size: 12px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: $text-color--header;
-    text-align: center;
-    line-height: 34px;
+  font-family: $default-font;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $text-color--header;
+  text-align: center;
+  line-height: 34px;
 
-    background-color: $pink;
-  }
+  background-color: $pink;
 }
 
 @media (min-width: $tablet-width) {
-  .cards {
-    &__wrapper {
-      padding-top: 38px;
-    }
+  .cards__wrapper {
+    padding-top: 38px;
+  }
 
-    &__slogan {
-      margin: 53px 0;
-      padding: 0 25px;
-      margin-bottom: 76px;
+  .cards__slogan {
+    margin: 53px 0;
+    padding: 0 25px;
+    margin-bottom: 76px;
 
-      font-size: 18px;
-    }
+    font-size: 18px;
+  }
 
-    &__list {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
+  .cards__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 
-    &__item {
-      width: 300px;
-    }
+  .cards__item {
+    width: 300px;
+  }
 
-    &__item--panorama-of-the-day {
-      order: -1;
-      width: 100%;
-      margin-bottom: 50px;
-    }
+  .cards__item--panorama-of-the-day {
+    order: -1;
+    width: 100%;
+    margin-bottom: 50px;
+  }
 
-    &__item--panorama-of-the-day::before {
-      top: 58px;
-    }
+  .cards__item--panorama-of-the-day::before {
+    top: 58px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .cards {
-    &__slogan {
-      padding: 0 149px;
-      margin-bottom: 89px;
-    }
+  .cards__slogan {
+    padding: 0 149px;
+    margin-bottom: 89px;
+  }
 
-    &__item {
-      margin-bottom: 54px;
-    }
+  .cards__item {
+    margin-bottom: 54px;
+  }
 
-    &__item--panorama-of-the-day {
-      margin-bottom: 50px;
-    }
+  .cards__item--panorama-of-the-day {
+    margin-bottom: 50px;
+  }
 
-    &__item--panorama-of-the-day::before {
-      top: 54px;
-    }
+  .cards__item--panorama-of-the-day::before {
+    top: 54px;
   }
 }

@@ -12,29 +12,29 @@
   background-color: $background-color-main;
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
 
-  &__title {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 24px;
-    color: $black;
-  }
-
-  &__text {
-    font-weight: lighter;
-    font-size: 14px;
-    line-height: 24px;
-    color: $text-color;
-  }
-
-  &__button {
-    margin-top: 43px;
-    border-radius: 2px;
-  }
-
   &--show {
     display: block;
     animation: bounce 0.6s;
   }
+}
+
+.modal__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: $black;
+}
+
+.modal__text {
+  font-weight: lighter;
+  font-size: 14px;
+  line-height: 24px;
+  color: $text-color;
+}
+
+.modal__button {
+  margin-top: 43px;
+  border-radius: 2px;
 }
 
 @media (min-width: $tablet-width) {
@@ -48,22 +48,22 @@
     &--success {
       background: linear-gradient(0deg, $background-color-main--additional 160px, $background-color-main 160px);
     }
+  }
 
-    &__title {
-      margin-top: 0;
-      font-size: 30px;
-      line-height: 40px;
-      padding: 0 18px;
-    }
+  .modal__title {
+    margin-top: 0;
+    font-size: 30px;
+    line-height: 40px;
+    padding: 0 18px;
+  }
 
-    &__text {
-      font-size: 18px;
-      padding: 0 29px;
-    }
+  .modal__text {
+    font-size: 18px;
+    padding: 0 29px;
+  }
 
-    &__button {
-      margin-top: 85px;
-    }
+  .modal__button {
+    margin-top: 85px;
   }
 }
 
@@ -75,15 +75,15 @@
     padding: 50px 162px 54px;
 
     background: linear-gradient(0deg, $background-color-main--additional 160px, $background-color-main 160px);
+  }
 
-    &--success &__button {
-      margin-top: 85px;
-    }
+  .modal--success .modal__button {
+    margin-top: 85px;
+  }
 
-    &--error &__button {
-      margin: 0 auto;
-      margin-top: 110px;
-      width: 296px;
-    }
+  .modal--error .modal__button {
+    margin: 0 auto;
+    margin-top: 110px;
+    width: 296px;
   }
 }

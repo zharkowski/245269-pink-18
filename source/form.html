@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Пинк: Конкурс</title>
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-  <div class="visually-hidden">
-    <include src="build/img/sprite.svg"></include>
-  </div>
+    <div class="visually-hidden">
+      <include src="build/img/sprite.svg"></include>
+    </div>
 
     <header class="page-header">
       <div class="page-header__wrapper page-header__wrapper--menu-opened page-header__wrapper--nojs">
@@ -71,37 +74,37 @@
               <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
               <ul class="form__list form__list--achievements list">
                 <li class="form__item form__item--achievements">
-                  <input class="form__input form__input--achievements" id="selfie-with-a-shark" type="checkbox" name="selfie-with-a-shark" checked="">
+                  <input class="form__input form__input--achievements visually-hidden" id="selfie-with-a-shark" type="checkbox" name="selfie-with-a-shark" checked="">
                   <label class="form__label form__label--checkbox" for="selfie-with-a-shark" tabindex="0">
                     Сделал селфи с акулой
                   </label>
                 </li>
                 <li class="form__item form__item--achievements">
-                  <input class="form__input form__input--achievements" id="sunburned-on-the-beach" type="checkbox" name="sunburned-on-the-beach" checked="">
+                  <input class="form__input form__input--achievements visually-hidden" id="sunburned-on-the-beach" type="checkbox" name="sunburned-on-the-beach" checked="">
                   <label class="form__label form__label--checkbox" for="sunburned-on-the-beach" tabindex="0">
                     Обгорел на пляже
                   </label>
                 </li>
                 <li class="form__item form__item--achievements">
-                  <input class="form__input form__input--achievements" id="saw-chuck-norris" type="checkbox" name="saw-chuck-norris">
+                  <input class="form__input form__input--achievements visually-hidden" id="saw-chuck-norris" type="checkbox" name="saw-chuck-norris">
                   <label class="form__label form__label--checkbox" for="saw-chuck-norris" tabindex="0">
                     Видел Чака Норриса
                   </label>
                 </li>
                 <li class="form__item form__item--achievements">
-                  <input class="form__input form__input--achievements" id="bought-souvenirs" type="checkbox" name="bought-souvenirs">
+                  <input class="form__input form__input--achievements visually-hidden" id="bought-souvenirs" type="checkbox" name="bought-souvenirs">
                   <label class="form__label form__label--checkbox" for="bought-souvenirs" tabindex="0">
                     Накупил сувениров
                   </label>
                 </li>
                 <li class="form__item form__item--achievements">
-                  <input class="form__input form__input--achievements" id="held-the-tower" type="checkbox" name="held-the-tower" checked="">
+                  <input class="form__input form__input--achievements visually-hidden" id="held-the-tower" type="checkbox" name="held-the-tower" checked="">
                   <label class="form__label form__label--checkbox" for="held-the-tower" tabindex="0">
                     Удержал башню
                   </label>
                 </li>
                 <li class="form__item form__item--achievements">
-                  <input class="form__input form__input--achievements" id="defeated-the-hotel" type="checkbox" name="defeated-the-hotel">
+                  <input class="form__input form__input--achievements visually-hidden" id="defeated-the-hotel" type="checkbox" name="defeated-the-hotel">
                   <label class="form__label form__label--checkbox" for="defeated-the-hotel" tabindex="0">
                     Разгромил отель
                   </label>
@@ -127,19 +130,19 @@
                 <legend class="form__legend">С каким приложением путешествовали?</legend>
                 <ul class="form__list form__list--platform list">
                   <li class="form__item form__item--radio">
-                    <input class="form__input form__input--platform" id="mobile-platform--ios" type="radio" name="mobile-platform" checked="">
+                    <input class="form__input form__input--platform visually-hidden" id="mobile-platform--ios" type="radio" name="mobile-platform" checked="">
                     <label class="form__label form__label--radio" for="mobile-platform--ios" tabindex="0">
                       Pink для iOS
                     </label>
                   </li>
                   <li class="form__item form__item--radio">
-                    <input class="form__input form__input--platform" id="mobile-platform--android" type="radio" name="mobile-platform">
+                    <input class="form__input form__input--platform visually-hidden" id="mobile-platform--android" type="radio" name="mobile-platform">
                     <label class="form__label form__label--radio" for="mobile-platform--android" tabindex="0">
                       Pink на Android
                     </label>
                   </li>
                   <li class="form__item form__item--radio">
-                    <input class="form__input form__input--platform" id="mobile-platform--windows-phone" type="radio" name="mobile-platform">
+                    <input class="form__input form__input--platform visually-hidden" id="mobile-platform--windows-phone" type="radio" name="mobile-platform">
                     <label class="form__label form__label--radio" for="mobile-platform--windows-phone" tabindex="0">
                       Windows Phone
                     </label>

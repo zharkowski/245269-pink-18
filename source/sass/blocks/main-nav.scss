@@ -1,52 +1,49 @@
 .main-nav {
   background-color: $background-color-header--opened;
+}
 
-  &__list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
+.main-nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 @media (max-width: calc(#{$desktop-width} - 1px)) and (min-width: $tablet-width) {
-  .main-nav {
-    &--closed &__logo-toggle-wrapper {
-      padding: 27px 20px 42px;
-    }
+  .main-nav--closed .main-nav__logo-toggle-wrapper {
+    padding: 27px 20px 42px;
+  }
 
-    &--opened &__logo-toggle-wrapper {
-      padding: 26px 20px 42px;
-    }
+  .main-nav--opened .main-nav__logo-toggle-wrapper {
+    padding: 26px 20px 42px;
+  }
 
-    &--closed &__toggle::before {
-      top: 9px;
-    }
+  .main-nav--closed .main-nav__toggle::before {
+    top: 9px;
+  }
 
-    &--opened &__toggle::before,
-    &--opened &__toggle::after {
-      top: 20px;
-    }
+  .main-nav--opened .main-nav__toggle::before,
+  .main-nav--opened .main-nav__toggle::after {
+    top: 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-nav {
-    //width: 100%;
     display: flex;
     justify-content: space-between;
     background-color: transparent;
+  }
 
-    &__logo-toggle-wrapper {
-      min-height: 110px;
-      padding: 25px 0;
-      margin: 0;
-      width: auto;
-      box-shadow: none;
-      background-color: transparent;
-    }
+  .main-nav__logo-toggle-wrapper {
+    min-height: 110px;
+    padding: 25px 0;
+    margin: 0;
+    width: auto;
+    box-shadow: none;
+    background-color: transparent;
+  }
 
-    &__toggle {
-      display: none;
-    }
+  .main-nav__toggle {
+    display: none;
   }
 }

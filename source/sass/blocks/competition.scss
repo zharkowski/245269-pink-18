@@ -1,61 +1,54 @@
-.competition {
-  &__slogan {
+.competition__slogan {
+  font-family: $default-font;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  color: $text-color;
+  text-align: center;
+}
 
-    font-family: $default-font;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 30px;
-    color: $text-color;
-    text-align: center;
-  }
+.competition__slogan-form {
+  display: none;
+}
 
-  &__slogan-form {
-    display: none;
-  }
+.competition__wrapper {
+  padding-top: 31px;
+  padding-bottom: 15px;
 
-  &__wrapper {
-    padding-top: 31px;
-    padding-bottom: 15px;
-
-    @include wrapper();
-  }
+  @include wrapper();
 }
 
 @media (min-width: $tablet-width) {
-  .competition {
-    &__wrapper {
-      margin-top: 37px;
-    }
+  .competition__wrapper {
+    margin-top: 37px;
+  }
 
-    &__form {
-      display: flex;
-      flex-direction: column;
-    }
+  .competition__form {
+    display: flex;
+    flex-direction: column;
+  }
 
-    &__slogan {
-      font-size: 18px;
-      padding: 0 29px;
-      margin: 23px 0;
-    }
+  .competition__slogan {
+    font-size: 18px;
+    padding: 0 29px;
+    margin: 23px 0;
+  }
 
-    &__slogan-form {
-      display: inline;
-    }
+  .competition__slogan-form {
+    display: inline;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .competition {
-    &__wrapper {
-      padding-bottom: 0;
-    }
+  .competition__wrapper {
+    padding-bottom: 0;
+  }
 
-    &__slogan {
-      padding: 0 68px;
-    }
+  .competition__slogan {
+    padding: 0 68px;
+  }
 
-    &__form {
-      padding-top: 0;
-    }
+  .competition__form {
+    padding-top: 0;
   }
 }

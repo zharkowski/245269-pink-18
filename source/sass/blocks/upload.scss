@@ -1,92 +1,88 @@
 .upload {
   background-color: $background-color-main;
   text-align: center;
+}
 
-  &__slogan-wrapper,
-  &__editing-wrapper {
-    @include wrapper();
-  }
+.upload__slogan-wrapper,
+.upload__editing-wrapper {
+  @include wrapper();
+}
 
-  &__slogan-wrapper {
-    margin-top: 25px;
-    margin-bottom: 41px;
-  }
+.upload__slogan-wrapper {
+  margin-top: 25px;
+  margin-bottom: 41px;
+}
 
-  &__slogan {
-    font-family: $default-font;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 30px;
-    color: $text-color;
-  }
+.upload__slogan {
+  font-family: $default-font;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  color: $text-color;
+}
 
-  &__editing-wrapper {
-    position: relative;
-    padding-top: 20px;
-    padding-bottom: 27px;
-    z-index: 1;
+.upload__editing-wrapper {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 27px;
+  z-index: 1;
 
-    background-color: $background-color-main--additional;
-  }
+  background-color: $background-color-main--additional;
+}
 
-  &__editing-wrapper::before {
-    content: "";
-    display: block;
-    position: absolute;
-    height: 100%;
-    width: 100vw;
-    z-index: -1;
-    background-color: $background-color-main--additional;
-    top: 0;
-    left: calc(50% - 50vw);
-  }
+.upload__editing-wrapper::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+  z-index: -1;
+  background-color: $background-color-main--additional;
+  top: 0;
+  left: calc(50% - 50vw);
 }
 
 @media (min-width: $tablet-width) {
-  .upload {
-    &__slogan-wrapper {
-      margin-top: 46px;
-      margin-bottom: 69px;
-    }
+  .upload__slogan-wrapper {
+    margin-top: 46px;
+    margin-bottom: 69px;
+  }
 
-    &__slogan {
-      font-size: 18px;
-    }
+  .upload__slogan {
+    font-size: 18px;
+  }
 
-    &__editing-wrapper {
-      padding-top: 57px;
-      padding-bottom: 45px;
-    }
+  .upload__editing-wrapper {
+    padding-top: 57px;
+    padding-bottom: 45px;
+  }
 
-    &__editing {
-      display: flex;
-      justify-content: space-between;
-    }
+  .upload__editing {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .upload {
-    &__slogan-wrapper {
-      margin-top: 0;
-      margin-bottom: 66px;
-    }
+  .upload__slogan-wrapper {
+    margin-top: 0;
+    margin-bottom: 66px;
+  }
 
-    &__slogan {
-      margin-top: 4px;
-    }
+  .upload__slogan {
+    margin-top: 4px;
+  }
 
-    &__editing-wrapper {
-      width: 800px;
-      padding-top: 57px;
-      padding-right: 60px;
-      padding-bottom: 49px;
-      padding-left: 80px;
-      margin-bottom: 28px;
-    }
+  .upload__editing-wrapper {
+    width: 800px;
+    padding-top: 57px;
+    padding-right: 60px;
+    padding-bottom: 49px;
+    padding-left: 80px;
+    margin-bottom: 28px;
+  }
 
-    &__editing-wrapper::before {
-      display: none;
-    }
+  .upload__editing-wrapper::before {
+    display: none;
   }
 }
