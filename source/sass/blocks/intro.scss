@@ -11,14 +11,14 @@
   background-position: 0 0;
   background-size: 100%;
 
-  &--index-page {
-    background-position: center calc(100% - 270px);
-  }
-
   @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
     background-size: 101%;
     background-position: 0 -3px;
+  }
+
+  &--index-page {
+    background-position: center calc(100% - 270px);
   }
 }
 
