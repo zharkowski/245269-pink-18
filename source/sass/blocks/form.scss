@@ -305,6 +305,9 @@
   .form__label-value {
     padding-right: 18px;
     padding-left: 0;
+  }
+
+  .form__label-value--name {
     line-height: 64px;
   }
 
@@ -400,32 +403,19 @@
     position: relative;
   }
 
-  .form__label--contacts::before {
-    content: "";
-    display: block;
+  .form__label-icon {
     position: absolute;
-
+    top: 23px;
     right: 22px;
+    fill: $pink;
   }
 
-  .form__label--phone::before {
-    top: 22px;
-    width: 20px;
-    height: 20px;
-
-    background-image: url("../img/icon-phone.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+  .form__label--mail .form__label-icon {
+    top: 27px;
   }
 
-  .form__label--mail::before {
-    top: 26px;
-    width: 18px;
-    height: 13px;
-
-    background-image: url("../img/icon-mail.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+  .form__input--contacts:focus ~ .form__label-icon {
+    fill: $blue--dark;
   }
 
   .form__label-value--contacts {
@@ -505,6 +495,16 @@
 
   .form__input--name {
     margin-right: 35px;
+  }
+
+  .form__label-icon {
+    top: 21px;
+    right: 22px;
+  }
+
+  .form__label--mail .form__label-icon {
+    top: 24px;
+    right: 23px;
   }
 
   .form__item--radio {
