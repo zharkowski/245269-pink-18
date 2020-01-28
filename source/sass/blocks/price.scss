@@ -1,5 +1,7 @@
 .price {
   overflow: hidden;
+
+  background-color: $background-color-main;
 }
 
 .price__wrapper {
@@ -18,7 +20,7 @@
   left: calc(-60vw + 50%);
   transform: rotate(-5deg);
 
-  z-index: -1;
+  z-index: 0;
   background-color: $background-color-main--additional;
 }
 
@@ -27,6 +29,7 @@
 }
 
 .price__table {
+  position: relative;
   border-collapse: collapse;
   width: calc((100vw - 44px) * 3 + 4px);
 
@@ -149,11 +152,11 @@
     @include wrapper();
 
     margin-top: 29px;
-  }
 
-  .price__wrapper::before {
-    top: 26px;
-    transform: rotate(-4deg);
+    &::before {
+      top: 26px;
+      transform: rotate(-4deg);
+    }
   }
 
   .price__table {
@@ -218,11 +221,11 @@
   .price__wrapper {
     padding-top: 160px;
     padding-bottom: 97px;
-  }
 
-  .price__wrapper::before {
-    transform: rotate(-4deg);
-    top: 50px;
+    &::before {
+      transform: rotate(-4deg);
+      top: 50px;
+    }
   }
 
   .price__tariff {

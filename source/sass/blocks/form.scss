@@ -26,6 +26,10 @@
   letter-spacing: 0;
 }
 
+.form__label-icon {
+  display: none;
+}
+
 .form__input--name,
 .form__input--contacts {
   margin-top: 5px;
@@ -404,6 +408,7 @@
   }
 
   .form__label-icon {
+    display: block;
     position: absolute;
     top: 23px;
     right: 22px;

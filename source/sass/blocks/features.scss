@@ -3,6 +3,8 @@
   position: relative;
   overflow: hidden;
 
+  background-color: $background-color-main;
+
   &::before {
     content: "";
     display: block;
@@ -14,13 +16,14 @@
     left: calc(-60vw + 50%);
     transform: rotate(-5.5deg);
 
-    z-index: -1;
+    z-index: 0;
     background-color: $background-color-main--additional;
   }
 }
 
 .features__wrapper {
   padding-top: 16px;
+  position: relative;
 
   @include wrapper();
 }

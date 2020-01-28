@@ -9,7 +9,7 @@
 }
 
 .upload__slogan-wrapper {
-  margin-top: 25px;
+  padding-top: 11px;
   margin-bottom: 41px;
 }
 
@@ -44,7 +44,7 @@
 
 @media (min-width: $tablet-width) {
   .upload__slogan-wrapper {
-    margin-top: 46px;
+    padding-top: 29px;
     margin-bottom: 69px;
   }
 
@@ -64,8 +64,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .upload {
+    padding-bottom: 28px;
+  }
+
   .upload__slogan-wrapper {
-    margin-top: 0;
+    padding-top: 2px;
     margin-bottom: 66px;
   }
 
@@ -79,7 +83,7 @@
     padding-right: 60px;
     padding-bottom: 49px;
     padding-left: 80px;
-    margin-bottom: 28px;
+    //margin-bottom: 28px;
   }
 
   .upload__editing-wrapper::before {

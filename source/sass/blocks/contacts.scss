@@ -5,6 +5,8 @@
   overflow: hidden;
   z-index: 2;
 
+  background-color: $background-color-main;
+
   &::before {
     content: "";
     display: block;
